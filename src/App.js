@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ComponentForm } from "./ComponentForm";
 import { ProjectForm } from "./ProjectForm";
 
@@ -29,13 +30,13 @@ function Header() {
     );
 }
 
-function Totals() {
+function Totals({ totalPrice }) {
     return (
         <div id="totals-div">
             <h3>TOTALS</h3>
             <div>Core Components: $$</div>
             <div>STC: $$</div>
-            <div>Total Combined Cost: $$</div>
+            <div>Total Combined Cost: ${totalPrice}</div>
             <div>FLA: ##</div>
             <div>Core Components: $$</div>
         </div>
