@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { ComponentForm } from "./ComponentForm";
+import { ProjectForm } from "./ProjectForm";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <div className="App">
+            <Header />
+
+            <div className="container">
+                <div>
+                    <ProjectForm />
+                    <Totals />
+                </div>
+
+                <div>
+                    <ComponentForm />
+                </div>
+            </div>
+        </div>
+    );
 }
 
-export default App;
+function Header() {
+    return (
+        <div>
+            <h3 className="company-name">SUN COAST CONTROLS</h3>
+            <h1>SMCC BoM Maker</h1>
+        </div>
+    );
+}
+
+function Totals() {
+    return (
+        <div id="totals-div">
+            <h3>TOTALS</h3>
+            <div>Core Components: $$</div>
+            <div>STC: $$</div>
+            <div>Total Combined Cost: $$</div>
+            <div>FLA: ##</div>
+            <div>Core Components: $$</div>
+        </div>
+    );
+}
