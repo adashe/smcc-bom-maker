@@ -1,0 +1,20 @@
+[
+    { "id": 0, "components": [1234, 5678] },
+    { "id": 1, "components": [2468, 1357] },
+    { "id": 2, "components": [1357, 2468] },
+    { "id": 3, "components": [2468, 1234] },
+    { "id": 4, "components": [5678, 1357] },
+    { "id": 5, "components": [1357] },
+    { "id": 6, "components": [1357, 5678, 1234] },
+    { "id": 7, "components": [5678] },
+    { "id": 8, "components": [5678, 2468, 1234] },
+    { "id": 9, "components": [5678, 1357] },
+    { "id": 10, "components": [1234] },
+    { "id": 11, "components": [1357, 5678, 1234] },
+    { "id": 12, "components": [1234, 1357] },
+    { "id": 13, "components": [1357, 5678] },
+    { "id": 14, "components": [5678, 2468] },
+    { "id": 15, "components": [1234, 1357] },
+    { "id": 16, "components": [2468, 1234] },
+    { "id": 17, "components": [2468, 1234, 5678] }
+]
