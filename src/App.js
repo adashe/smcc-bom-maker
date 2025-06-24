@@ -2,6 +2,8 @@ import { useState } from "react";
 import { ComponentForm } from "./ComponentForm";
 import { ProjectForm } from "./ProjectForm";
 import { Button } from "./Button";
+import { Totals } from "./Totals";
+import { Header } from "./Header";
 
 export default function App() {
     let initialAssem = {
@@ -24,9 +26,39 @@ export default function App() {
         breaker15hp: 0,
     };
     const [assembly, setAssembly] = useState(initialAssem);
+    const [basePrice, setBasePrice] = useState(100);
+    const [totalPrice, setTotalPrice] = useState(basePrice);
+    const [totalFLA, setTotalFLA] = useState(0);
 
     function handleReset() {
         setAssembly(initialAssem);
+        setBasePrice(100);
+        setTotalPrice(basePrice);
+        setTotalFLA(0);
+    }
+
+    function handleChange(e) {
+        const { name, value } = e.target;
+        setAssembly((previous) => ({
+            ...previous,
+            [name]: Number(value),
+        }));
+
+        calcBasePrice();
+        calcTotalPrice();
+        calcTotalFLA();
+    }
+
+    function calcBasePrice() {
+        setBasePrice(100);
+    }
+
+    function calcTotalPrice() {
+        setTotalPrice((price) => (price += 2));
+    }
+
+    function calcTotalFLA() {
+        setTotalFLA((fla) => (fla += 1));
     }
 
     return (
@@ -36,39 +68,21 @@ export default function App() {
             <div className="container">
                 <div>
                     <ProjectForm />
+                    <Totals
+                        basePrice={basePrice}
+                        totalPrice={totalPrice}
+                        totalFLA={totalFLA}
+                    />
                     <Button handleClick={handleReset}>Reset Form</Button>
-                    <Totals />
                 </div>
 
                 <div>
                     <ComponentForm
                         assembly={assembly}
-                        setAssembly={setAssembly}
+                        handleChange={handleChange}
                     />
                 </div>
             </div>
-        </div>
-    );
-}
-
-function Header() {
-    return (
-        <div>
-            <h3 className="company-name">SUN COAST CONTROLS</h3>
-            <h1>SMCC BoM Maker</h1>
-        </div>
-    );
-}
-
-function Totals({ totalPrice }) {
-    return (
-        <div id="totals-div">
-            <h3>TOTALS</h3>
-            <div>Core Components: $$</div>
-            <div>STC: $$</div>
-            <div>Total Combined Cost: ${totalPrice}</div>
-            <div>FLA: ##</div>
-            <div>Core Components: $$</div>
         </div>
     );
 }

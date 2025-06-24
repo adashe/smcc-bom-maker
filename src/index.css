@@ -7,7 +7,6 @@ body {
 .App {
     background: white;
     width: 860px;
-    /* height: 560px; */
     text-align: center;
     margin: 10px auto;
     padding: 10px;
@@ -29,10 +28,10 @@ body {
     text-align: left;
     margin: 6px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 button {
-    width: 140px;
+    width: 160px;
     margin: 10px;
     padding: 10px;
     font-size: 16px;

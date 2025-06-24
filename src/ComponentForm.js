@@ -1,13 +1,4 @@
-export function ComponentForm({ assembly, setAssembly }) {
-    function handleChange(e) {
-        const { name, value } = e.target;
-        setAssembly((previous) => ({
-            ...previous,
-            [name]: Number(value),
-        }));
-        console.log(assembly);
-    }
-
+export function ComponentForm({ assembly, handleChange }) {
     function handleSelect(e) {
         e.target.select();
     }
