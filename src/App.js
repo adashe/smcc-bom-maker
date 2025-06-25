@@ -5,6 +5,9 @@ import { Button } from "./Button";
 import { Totals } from "./Totals";
 import { Header } from "./Header";
 
+import kitsData from "./data/kits.json";
+import partsData from "./data/parts.json";
+
 export default function App() {
     let initialAssem = {
         starter2hp: 0,
@@ -54,7 +57,40 @@ export default function App() {
     }
 
     function calcTotalPrice() {
-        setTotalPrice((price) => (price += 2));
+        const kitsPrice = calcKitsTotalPrice();
+
+        setTotalPrice(basePrice + kitsPrice);
+    }
+
+    function calcKitsTotalPrice() {
+        let kitsPrice = 0;
+
+        for (const kitID in assembly) {
+            const quantity = assembly[kitID];
+
+            if (quantity > 0) {
+                const kitPrice = calcKitPrice(kitID);
+                kitsPrice += kitPrice * quantity;
+            }
+        }
+
+        // FIX: SKIPS FIRST ADDED KIT??????
+
+        return kitsPrice;
+    }
+
+    function calcKitPrice(kitID) {
+        let kitPrice = 0;
+
+        const kit = kitsData.filter((kit) => kit.id === kitID);
+        const components = kit[0].components;
+
+        components.forEach((componentID) => {
+            const part = partsData.filter((part) => part.id === componentID);
+            kitPrice += part[0].price;
+        });
+
+        return kitPrice;
     }
 
     function calcTotalFLA() {

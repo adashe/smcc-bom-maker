@@ -3,28 +3,28 @@
         "id": 1234,
         "description": "namerooni",
         "manufacturer": "andrea",
-        "cost": 845.0,
+        "price": 845.0,
         "mm": "5"
     },
     {
         "id": 5678,
         "description": "anotherpart",
         "manufacturer": "andrea",
-        "cost": 845.0,
+        "price": 845.0,
         "mm": "5"
     },
     {
         "id": 2468,
         "description": "somepart",
         "manufacturer": "andrea",
-        "cost": 845.0,
+        "price": 845.0,
         "mm": "5"
     },
     {
         "id": 1357,
         "description": "yourpart",
         "manufacturer": "andrea",
-        "cost": 845.0,
+        "price": 845.0,
         "mm": "5"
     }
 ]
