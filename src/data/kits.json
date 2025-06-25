@@ -1,19 +1,87 @@
 [
-    { "id": "starter2hp", "components": [1234, 5678] },
-    { "id": "starter10hp", "components": [2468, 1357] },
-    { "id": "starter15hp", "components": [1357, 2468] },
-    { "id": "starter40hp", "components": [2468, 1234] },
-    { "id": "vfd1hp", "components": [5678, 1357] },
-    { "id": "vfd3hp", "components": [1357] },
-    { "id": "vfd5hp", "components": [1357, 5678, 1234] },
-    { "id": "vfd7hp", "components": [5678] },
-    { "id": "vfd10hp", "components": [5678, 2468, 1234] },
-    { "id": "vfd15hp", "components": [5678, 1357] },
-    { "id": "vfd20hp", "components": [1234] },
-    { "id": "vfd40hp", "components": [1357, 5678, 1234] },
-    { "id": "breaker3hp", "components": [1234, 1357] },
-    { "id": "breaker5hp", "components": [1357, 5678] },
-    { "id": "breaker7hp", "components": [5678, 2468] },
-    { "id": "breaker10hp", "components": [1234, 1357] },
-    { "id": "breaker15hp", "components": [2468, 1234] }
+    {
+        "id": "starter2hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1234, 5678]
+    },
+    {
+        "id": "starter10hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [2468, 1357]
+    },
+    {
+        "id": "starter15hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1357, 2468]
+    },
+    {
+        "id": "starter40hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [2468, 1234]
+    },
+    {
+        "id": "vfd1hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [5678, 1357]
+    },
+    {
+        "id": "vfd3hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1357]
+    },
+    {
+        "id": "vfd5hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1357, 5678, 1234]
+    },
+    {
+        "id": "vfd7hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [5678]
+    },
+    {
+        "id": "vfd10hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [5678, 2468, 1234]
+    },
+    {
+        "id": "vfd15hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [5678, 1357]
+    },
+    {
+        "id": "vfd20hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1234]
+    },
+    {
+        "id": "vfd40hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1357, 5678, 1234]
+    },
+    {
+        "id": "breaker3hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1234, 1357]
+    },
+    {
+        "id": "breaker5hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1357, 5678]
+    },
+    {
+        "id": "breaker7hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [5678, 2468]
+    },
+    {
+        "id": "breaker10hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [1234, 1357]
+    },
+    {
+        "id": "breaker15hp",
+        "label": "1, 1.5, 2, and 3HP Starter/HP",
+        "components": [2468, 1234]
+    }
 ]

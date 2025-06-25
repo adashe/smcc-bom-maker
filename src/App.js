@@ -60,6 +60,8 @@ export default function App() {
         const kitsPrice = calcKitsTotalPrice();
 
         setTotalPrice(basePrice + kitsPrice);
+
+        // FIX: SKIPS FIRST ADDED KIT??????
     }
 
     function calcKitsTotalPrice() {
@@ -109,13 +111,14 @@ export default function App() {
                         totalPrice={totalPrice}
                         totalFLA={totalFLA}
                     />
-                    <Button handleClick={handleReset}>Reset Form</Button>
+                    <Button handleClick={handleReset}>RESET FORM</Button>
                 </div>
 
                 <div>
                     <ComponentForm
                         assembly={assembly}
                         handleChange={handleChange}
+                        calcKitPrice={calcKitPrice}
                     />
                 </div>
             </div>
