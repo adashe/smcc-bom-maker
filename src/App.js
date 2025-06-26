@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ComponentForm } from "./ComponentForm";
+import { ComponentRow } from "./ComponentRow";
 import { ProjectForm } from "./ProjectForm";
 import { Button } from "./Button";
 import { Totals } from "./Totals";
@@ -32,6 +33,10 @@ export default function App() {
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
     const [totalFLA, setTotalFLA] = useState(0);
+
+    const kitsArray = kitsData.map((kit) => kit.id);
+    const arr = kitsData.filter((kit) => kit.id === "starter2hp");
+    const sampleKit = arr[0];
 
     function handleReset() {
         setAssembly(initialAssem);
@@ -115,11 +120,17 @@ export default function App() {
                 </div>
 
                 <div>
-                    <ComponentForm
-                        assembly={assembly}
-                        handleChange={handleChange}
-                        calcKitPrice={calcKitPrice}
-                    />
+                    <ComponentForm>
+                        {kitsData.map((kit) => (
+                            <ComponentRow
+                                kit={kit}
+                                assembly={assembly}
+                                handleChange={handleChange}
+                                calcKitPrice={calcKitPrice}
+                                key={kit.id}
+                            />
+                        ))}
+                    </ComponentForm>
                 </div>
             </div>
         </div>
