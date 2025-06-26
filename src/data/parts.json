@@ -4,27 +4,31 @@
         "description": "namerooni",
         "manufacturer": "andrea",
         "price": 845.0,
-        "mm": "5"
+        "fla": 1,
+        "mm": 5
     },
     {
         "id": 5678,
         "description": "anotherpart",
         "manufacturer": "andrea",
         "price": 845.0,
-        "mm": "5"
+        "fla": 1,
+        "mm": 5
     },
     {
         "id": 2468,
         "description": "somepart",
         "manufacturer": "andrea",
         "price": 845.0,
-        "mm": "5"
+        "fla": 1,
+        "mm": 5
     },
     {
         "id": 1357,
         "description": "yourpart",
         "manufacturer": "andrea",
         "price": 845.0,
-        "mm": "5"
+        "fla": 1,
+        "mm": 5
     }
 ]

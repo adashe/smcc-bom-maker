@@ -1,17 +1,13 @@
 import { useState } from "react";
-import { ComponentForm } from "./ComponentForm";
-import { ComponentRow } from "./ComponentRow";
-import { ProjectForm } from "./ProjectForm";
-import { Button } from "./Button";
-import { Totals } from "./Totals";
 import { Header } from "./Header";
-
+import { Forms } from "./Forms";
+import { BoM } from "./BoM";
 import kitsData from "./data/kits.json";
 import partsData from "./data/parts.json";
 
 export default function App() {
-    let initialAssem = {
-        starter2hp: 0,
+    const initialAssem = {
+        starter3hp: 0,
         starter10hp: 0,
         starter15hp: 0,
         starter40hp: 0,
@@ -33,10 +29,15 @@ export default function App() {
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
     const [totalFLA, setTotalFLA] = useState(0);
+    const [page, setPage] = useState("forms");
 
-    const kitsArray = kitsData.map((kit) => kit.id);
-    const arr = kitsData.filter((kit) => kit.id === "starter2hp");
-    const sampleKit = arr[0];
+    function handleShowBom() {
+        setPage("bom");
+    }
+
+    function handleShowForms() {
+        setPage("forms");
+    }
 
     function handleReset() {
         setAssembly(initialAssem);
@@ -44,14 +45,16 @@ export default function App() {
         setTotalPrice(basePrice);
         setTotalFLA(0);
     }
-
     function handleChange(e) {
         const { name, value } = e.target;
+
         setAssembly((previous) => ({
             ...previous,
             [name]: Number(value),
         }));
+    }
 
+    function handleUpdateTotals() {
         calcBasePrice();
         calcTotalPrice();
         calcTotalFLA();
@@ -62,77 +65,63 @@ export default function App() {
     }
 
     function calcTotalPrice() {
-        const kitsPrice = calcKitsTotalPrice();
-
-        setTotalPrice(basePrice + kitsPrice);
-
-        // FIX: SKIPS FIRST ADDED KIT??????
-    }
-
-    function calcKitsTotalPrice() {
         let kitsPrice = 0;
 
         for (const kitID in assembly) {
             const quantity = assembly[kitID];
-
-            if (quantity > 0) {
-                const kitPrice = calcKitPrice(kitID);
-                kitsPrice += kitPrice * quantity;
-            }
+            const kitPrice = calcKitPrice(kitID);
+            kitsPrice += kitPrice * quantity;
         }
 
-        // FIX: SKIPS FIRST ADDED KIT??????
-
-        return kitsPrice;
+        setTotalPrice(kitsPrice + basePrice);
     }
 
     function calcKitPrice(kitID) {
-        let kitPrice = 0;
-
-        const kit = kitsData.filter((kit) => kit.id === kitID);
-        const components = kit[0].components;
-
-        components.forEach((componentID) => {
-            const part = partsData.filter((part) => part.id === componentID);
-            kitPrice += part[0].price;
-        });
-
-        return kitPrice;
+        const arr = kitsData.filter((kit) => kit.id === kitID);
+        const kit = arr[0];
+        return kit.price;
     }
 
     function calcTotalFLA() {
-        setTotalFLA((fla) => (fla += 1));
+        let kitsFLA = 0;
+
+        for (const kitID in assembly) {
+            const quantity = assembly[kitID];
+            const kitFLA = calcKitFLA(kitID);
+            kitsFLA += kitFLA * quantity;
+        }
+        setTotalFLA(kitsFLA);
+    }
+
+    function calcKitFLA(kitID) {
+        const arr = kitsData.filter((kit) => kit.id === kitID);
+        const kit = arr[0];
+        return kit.fla;
     }
 
     return (
         <div className="App">
             <Header />
-
-            <div className="container">
-                <div>
-                    <ProjectForm />
-                    <Totals
-                        basePrice={basePrice}
-                        totalPrice={totalPrice}
-                        totalFLA={totalFLA}
-                    />
-                    <Button handleClick={handleReset}>RESET FORM</Button>
-                </div>
-
-                <div>
-                    <ComponentForm>
-                        {kitsData.map((kit) => (
-                            <ComponentRow
-                                kit={kit}
-                                assembly={assembly}
-                                handleChange={handleChange}
-                                calcKitPrice={calcKitPrice}
-                                key={kit.id}
-                            />
-                        ))}
-                    </ComponentForm>
-                </div>
-            </div>
+            {page === "forms" ? (
+                <Forms
+                    basePrice={basePrice}
+                    totalPrice={totalPrice}
+                    totalFLA={totalFLA}
+                    handleReset={handleReset}
+                    handleChange={handleChange}
+                    handleUpdateTotals={handleUpdateTotals}
+                    assembly={assembly}
+                    kitsData={kitsData}
+                    handleShowBom={handleShowBom}
+                />
+            ) : (
+                <BoM
+                    assembly={assembly}
+                    kitsData={kitsData}
+                    partsData={partsData}
+                    handleShowForms={handleShowForms}
+                />
+            )}
         </div>
     );
 }
