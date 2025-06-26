@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Header } from "./Header";
 import { Forms } from "./Forms";
-import { BoM } from "./BoM";
+import { BomKitsView } from "./BomKitsView";
+import { BomPartsView } from "./BomPartsView";
 import kitsData from "./data/kits.json";
 import partsData from "./data/parts.json";
 
@@ -29,10 +30,14 @@ export default function App() {
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
     const [totalFLA, setTotalFLA] = useState(0);
-    const [page, setPage] = useState("forms");
+    const [page, setPage] = useState("parts");
 
-    function handleShowBom() {
-        setPage("bom");
+    function handleShowBomKits() {
+        setPage("kits");
+    }
+
+    function handleShowBomParts() {
+        setPage("parts");
     }
 
     function handleShowForms() {
@@ -102,7 +107,7 @@ export default function App() {
     return (
         <div className="App">
             <Header />
-            {page === "forms" ? (
+            {page === "forms" && (
                 <Forms
                     basePrice={basePrice}
                     totalPrice={totalPrice}
@@ -112,14 +117,26 @@ export default function App() {
                     handleUpdateTotals={handleUpdateTotals}
                     assembly={assembly}
                     kitsData={kitsData}
-                    handleShowBom={handleShowBom}
+                    handleShowBomKits={handleShowBomKits}
+                    handleShowBomParts={handleShowBomParts}
                 />
-            ) : (
-                <BoM
+            )}
+            {page === "kits" && (
+                <BomKitsView
                     assembly={assembly}
                     kitsData={kitsData}
                     partsData={partsData}
                     handleShowForms={handleShowForms}
+                    handleShowBomParts={handleShowBomParts}
+                />
+            )}
+            {page === "parts" && (
+                <BomPartsView
+                    assembly={assembly}
+                    kitsData={kitsData}
+                    partsData={partsData}
+                    handleShowForms={handleShowForms}
+                    handleShowBomKits={handleShowBomKits}
                 />
             )}
         </div>

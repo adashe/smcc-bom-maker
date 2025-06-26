@@ -29,6 +29,10 @@ body {
     margin: 6px;
     padding: 10px;
 }
+.button-bank {
+    display: inline-block;
+    width: 200px;
+}
 .bom-div {
     display: inline-block;
 }
