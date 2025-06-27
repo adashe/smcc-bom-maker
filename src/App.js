@@ -30,7 +30,7 @@ export default function App() {
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
     const [totalFLA, setTotalFLA] = useState(0);
-    const [page, setPage] = useState("parts");
+    const [page, setPage] = useState("forms");
 
     function handleShowBomKits() {
         setPage("kits");
