@@ -14,7 +14,7 @@ export function BomKitsView({
             <div>BoM Kits View</div>
             <div>
                 {selectedKitsArr.map((kit) => (
-                    <BomRow
+                    <KitBomRow
                         assembly={assembly}
                         kit={kit}
                         partsData={partsData}
@@ -58,7 +58,7 @@ function PartsList({ components, partsData }) {
     );
 }
 
-function BomRow({ assembly, kit, partsData }) {
+function KitBomRow({ assembly, kit, partsData }) {
     return (
         <div className="bom-row">
             <div className="bom-row-header">
