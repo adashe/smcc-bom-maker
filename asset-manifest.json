@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/smcc-bom-maker/static/css/main.d7f1bc4e.css",
+    "main.js": "/smcc-bom-maker/static/js/main.c39c3c7d.js",
+    "index.html": "/smcc-bom-maker/index.html",
+    "main.d7f1bc4e.css.map": "/smcc-bom-maker/static/css/main.d7f1bc4e.css.map",
+    "main.c39c3c7d.js.map": "/smcc-bom-maker/static/js/main.c39c3c7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7f1bc4e.css",
+    "static/js/main.c39c3c7d.js"
+  ]
+}
