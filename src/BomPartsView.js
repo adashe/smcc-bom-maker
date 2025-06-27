@@ -15,7 +15,8 @@ export function BomPartsView({
             const kit = arr[0];
             kit.components.forEach(
                 (component) =>
-                    (partsBom[component] = partsBom[component] + 1 || 1)
+                    (partsBom[component] =
+                        partsBom[component] + assembly[k] || assembly[k])
             );
         }
     }
