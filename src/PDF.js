@@ -105,10 +105,12 @@ function PDFItemization() {
         <div className="container">
             <form className="itemization-form">
                 <div className="itemization-row">
-                    <div className="itemization-col">Quantity</div>
-                    <div className="itemization-col item-desc">Description</div>
-                    <div className="itemization-col">Unit Price</div>
-                    <div className="itemization-col">Line Total</div>
+                    <div className="itemization-col header">Quantity</div>
+                    <div className="itemization-col item-desc-col header">
+                        Description
+                    </div>
+                    <div className="itemization-col header">Unit Price</div>
+                    <div className="itemization-col header">Line Total</div>
                 </div>
                 <div className="itemization-row">
                     <div className="itemization-col">
@@ -116,9 +118,12 @@ function PDFItemization() {
                             <input type="number"></input>
                         </label>
                     </div>
-                    <div className="itemization-col item-desc">
+                    <div className="itemization-col item-desc-col">
                         <label>
-                            <input className="item-desc" type="text"></input>
+                            <input
+                                className="item-desc-input"
+                                type="text"
+                            ></input>
                         </label>
                     </div>
                     <div className="itemization-col">

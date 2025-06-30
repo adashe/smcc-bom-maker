@@ -192,9 +192,9 @@ select {
     text-align: center;
     width: 200px;
 }
-.item-desc {
-    width: 380px;
+.item-desc-col {
+    width: 400px;
 }
-.item-desc input {
+.item-desc-input {
     width: 340px;
 }
