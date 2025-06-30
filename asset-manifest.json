@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/smcc-bom-maker/static/css/main.d7f1bc4e.css",
-    "main.js": "/smcc-bom-maker/static/js/main.c39c3c7d.js",
+    "main.css": "/smcc-bom-maker/static/css/main.d97a92a3.css",
+    "main.js": "/smcc-bom-maker/static/js/main.e54563e0.js",
+    "static/media/logo.webp": "/smcc-bom-maker/static/media/logo.8132c00868ab8af40e8f.webp",
     "index.html": "/smcc-bom-maker/index.html",
-    "main.d7f1bc4e.css.map": "/smcc-bom-maker/static/css/main.d7f1bc4e.css.map",
-    "main.c39c3c7d.js.map": "/smcc-bom-maker/static/js/main.c39c3c7d.js.map"
+    "main.d97a92a3.css.map": "/smcc-bom-maker/static/css/main.d97a92a3.css.map",
+    "main.e54563e0.js.map": "/smcc-bom-maker/static/js/main.e54563e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7f1bc4e.css",
-    "static/js/main.c39c3c7d.js"
+    "static/css/main.d97a92a3.css",
+    "static/js/main.e54563e0.js"
   ]
 }
