@@ -1,4 +1,5 @@
 export function ComponentRow({ kit, assembly, handleChange }) {
+    // Select value when user clicks in the input box (for easier editing)
     function handleSelect(e) {
         e.target.select();
     }

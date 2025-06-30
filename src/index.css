@@ -13,7 +13,7 @@ body {
 }
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .company-name {
     color: #72d1d4;
@@ -33,29 +33,6 @@ body {
     display: inline-block;
     width: 200px;
 }
-.bom-div {
-    display: inline-block;
-}
-.bom-row {
-    text-align: left;
-}
-.bom-row div {
-    width: 800px;
-}
-.bom-row-header {
-    display: flex;
-    width: 600px;
-    padding: 10px;
-    margin-top: 20px;
-    border-bottom: 1px solid #d3d2d2;
-}
-.bom-li {
-    display: flex;
-}
-.bom-li div {
-    width: 120px;
-    text-align: left;
-}
 
 button {
     width: 180px;
@@ -67,6 +44,9 @@ button {
     background-color: #b4b3b3;
     border-radius: 3px;
     cursor: pointer;
+}
+button.active {
+    background-color: #72d1d4;
 }
 
 /* FORM STYLES */
@@ -93,6 +73,50 @@ select {
     padding: 10px;
     color: #434343;
 }
+.info-box {
+    margin: 10px;
+    padding: 10px;
+    background-color: #72d1d4;
+    border-radius: 3px;
+}
+.info-col {
+    text-align: left;
+    min-width: 200px;
+}
+.info-row {
+    display: flex;
+    margin: 8px;
+}
+.info-label {
+    min-width: 100px;
+}
+.info-content {
+    font-weight: bold;
+    margin-left: 6px;
+}
+.bom-div {
+    display: inline-block;
+}
+.bom-row {
+    text-align: left;
+}
+.bom-row div {
+    width: 800px;
+}
+.bom-row-header {
+    display: flex;
+    width: 600px;
+    padding: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid #d3d2d2;
+}
+.bom-li {
+    display: flex;
+}
+.bom-li div {
+    width: 120px;
+    text-align: left;
+}
 .component-row {
     display: flex;
     text-align: left;
@@ -116,4 +140,61 @@ select {
     text-align: center;
     margin-bottom: 10px;
     font-size: 14px;
+}
+.letterhead {
+    text-align: left;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+}
+.address {
+    width: 280px;
+    margin: 0 10px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.phone {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 8px;
+}
+.letterhead img {
+    width: 300px;
+    margin: auto;
+}
+.pdf-row {
+    display: flex;
+    text-align: left;
+    margin: 8px 0;
+}
+.pdf-label {
+    width: 160px;
+}
+.pdf-col {
+    width: 400px;
+}
+.shipping-form {
+    display: flex;
+}
+.shipping-col {
+    width: 200px;
+    text-align: center;
+}
+
+.itemization-row {
+    display: flex;
+    justify-content: space-between;
+}
+.itemization-col {
+    text-align: center;
+    width: 200px;
+}
+.item-desc {
+    width: 380px;
+}
+.item-desc input {
+    width: 340px;
 }

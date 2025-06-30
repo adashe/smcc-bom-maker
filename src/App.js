@@ -5,8 +5,19 @@ import { BomKitsView } from "./BomKitsView";
 import { BomPartsView } from "./BomPartsView";
 import kitsData from "./data/kits.json";
 import partsData from "./data/parts.json";
+import { ProjectInfo } from "./ProjectInfo";
+import { PDF } from "./PDF";
 
 export default function App() {
+    const initialProjectInfo = {
+        jobNum: "12345",
+        project: "abcd",
+        customer: "me",
+        contact: "you",
+        engineer: "azem",
+        shipDate: "tomorrow",
+        partsDueDate: "yesterday",
+    };
     const initialAssem = {
         starter3hp: 0,
         starter10hp: 0,
@@ -26,6 +37,7 @@ export default function App() {
         breaker10hp: 0,
         breaker15hp: 0,
     };
+    const [projectInfo, setProjectInfo] = useState(initialProjectInfo);
     const [assembly, setAssembly] = useState(initialAssem);
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
@@ -33,22 +45,39 @@ export default function App() {
     const [page, setPage] = useState("forms");
 
     function handleShowBomKits() {
+        handleUpdateTotals();
         setPage("kits");
     }
 
     function handleShowBomParts() {
+        handleUpdateTotals();
         setPage("parts");
     }
 
+    function handleShowPDF() {
+        handleUpdateTotals();
+        setPage("pdf");
+    }
+
     function handleShowForms() {
+        handleUpdateTotals();
         setPage("forms");
     }
 
     function handleReset() {
+        setProjectInfo(initialProjectInfo);
         setAssembly(initialAssem);
         setBasePrice(100);
         setTotalPrice(basePrice);
         setTotalFLA(0);
+    }
+    function handleChangeProjectInfo(e) {
+        const { name, value } = e.target;
+
+        setProjectInfo((previous) => ({
+            ...previous,
+            [name]: value,
+        }));
     }
     function handleChange(e) {
         const { name, value } = e.target;
@@ -113,12 +142,15 @@ export default function App() {
                     totalPrice={totalPrice}
                     totalFLA={totalFLA}
                     handleReset={handleReset}
+                    handleChangeProjectInfo={handleChangeProjectInfo}
                     handleChange={handleChange}
                     handleUpdateTotals={handleUpdateTotals}
                     assembly={assembly}
+                    projectInfo={projectInfo}
                     kitsData={kitsData}
                     handleShowBomKits={handleShowBomKits}
                     handleShowBomParts={handleShowBomParts}
+                    handleShowPDF={handleShowPDF}
                 />
             )}
             {page === "kits" && (
@@ -128,7 +160,13 @@ export default function App() {
                     partsData={partsData}
                     handleShowForms={handleShowForms}
                     handleShowBomParts={handleShowBomParts}
-                />
+                    handleShowPDF={handleShowPDF}
+                >
+                    <ProjectInfo
+                        projectInfo={projectInfo}
+                        totalPrice={totalPrice}
+                    />
+                </BomKitsView>
             )}
             {page === "parts" && (
                 <BomPartsView
@@ -137,6 +175,20 @@ export default function App() {
                     partsData={partsData}
                     handleShowForms={handleShowForms}
                     handleShowBomKits={handleShowBomKits}
+                    handleShowPDF={handleShowPDF}
+                >
+                    <ProjectInfo
+                        projectInfo={projectInfo}
+                        totalPrice={totalPrice}
+                    />
+                </BomPartsView>
+            )}
+            {page === "pdf" && (
+                <PDF
+                    projectInfo={projectInfo}
+                    handleShowForms={handleShowForms}
+                    handleShowBomKits={handleShowBomKits}
+                    handleShowBomParts={handleShowBomParts}
                 />
             )}
         </div>

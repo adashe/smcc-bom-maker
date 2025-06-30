@@ -6,6 +6,8 @@ export function BomPartsView({
     partsData,
     handleShowForms,
     handleShowBomKits,
+    handleShowPDF,
+    children,
 }) {
     let partsBom = {};
 
@@ -25,7 +27,8 @@ export function BomPartsView({
 
     return (
         <div className="container bom-div">
-            <div>BoM Parts View</div>
+            {children}
+            <h2>BoM Parts</h2>
 
             <div className="bom-row">
                 {selectedPartsArr.map((part) => (
@@ -39,6 +42,7 @@ export function BomPartsView({
 
             <Button handleClick={handleShowForms}>EDIT INPUTS</Button>
             <Button handleClick={handleShowBomKits}>BoM KITS VIEW</Button>
+            <Button handleClick={handleShowPDF}>PRINT PDF</Button>
         </div>
     );
 }

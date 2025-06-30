@@ -9,17 +9,23 @@ export function Forms({
     totalPrice,
     totalFLA,
     handleReset,
+    handleChangeProjectInfo,
     handleChange,
     handleUpdateTotals,
     assembly,
+    projectInfo,
     kitsData,
     handleShowBomKits,
     handleShowBomParts,
+    handleShowPDF,
 }) {
     return (
         <div className="container">
             <div>
-                <ProjectForm />
+                <ProjectForm
+                    projectInfo={projectInfo}
+                    handleChangeProjectInfo={handleChangeProjectInfo}
+                />
                 <Totals
                     basePrice={basePrice}
                     totalPrice={totalPrice}
@@ -37,6 +43,7 @@ export function Forms({
                     <Button handleClick={handleShowBomParts}>
                         BoM PARTS VIEW
                     </Button>
+                    <Button handleClick={handleShowPDF}>PRINT PDF</Button>
                 </div>
             </div>
 

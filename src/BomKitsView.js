@@ -6,12 +6,15 @@ export function BomKitsView({
     partsData,
     handleShowForms,
     handleShowBomParts,
+    handleShowPDF,
+    children,
 }) {
     const selectedKitsArr = kitsData.filter((kit) => assembly[kit.id] > 0);
 
     return (
         <div className="container bom-div">
-            <div>BoM Kits View</div>
+            {children}
+            <h2>BoM Kits</h2>
             <div>
                 {selectedKitsArr.map((kit) => (
                     <KitBomRow
@@ -26,21 +29,24 @@ export function BomKitsView({
             <div>
                 <Button handleClick={handleShowForms}>EDIT INPUTS</Button>
                 <Button handleClick={handleShowBomParts}>BoM PARTS VIEW</Button>
+                <Button handleClick={handleShowPDF}>PRINT PDF</Button>
             </div>
         </div>
     );
 }
 
-function PartListItem({ component, partsData }) {
-    const arr = partsData.filter((p) => p.id === component);
-    const item = arr[0];
-
+function KitBomRow({ assembly, kit, partsData }) {
     return (
-        <li className="bom-li">
-            <div>{item.id}</div>
-            <div>{item.description}</div>
-            <div>${item.price}</div>
-        </li>
+        <div className="bom-row">
+            <div className="bom-row-header">
+                <div>{kit.label}</div>
+                <div>QTY: {assembly[kit.id]}</div>
+            </div>
+
+            <div>
+                <PartsList components={kit.components} partsData={partsData} />
+            </div>
+        </div>
     );
 }
 
@@ -58,17 +64,15 @@ function PartsList({ components, partsData }) {
     );
 }
 
-function KitBomRow({ assembly, kit, partsData }) {
-    return (
-        <div className="bom-row">
-            <div className="bom-row-header">
-                <div>{kit.label}</div>
-                <div>QTY: {assembly[kit.id]}</div>
-            </div>
+function PartListItem({ component, partsData }) {
+    const arr = partsData.filter((p) => p.id === component);
+    const item = arr[0];
 
-            <div>
-                <PartsList components={kit.components} partsData={partsData} />
-            </div>
-        </div>
+    return (
+        <li className="bom-li">
+            <div>{item.id}</div>
+            <div>{item.description}</div>
+            <div>${item.price}</div>
+        </li>
     );
 }
