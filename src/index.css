@@ -41,12 +41,12 @@ button {
     padding: 10px;
     font-size: 16px;
     border: none;
-    background-color: #b4b3b3;
+    /*     background-color: #b4b3b3; */
     border-radius: 3px;
-    cursor: pointer;
 }
 button.active {
-    background-color: #72d1d4;
+    background-color: #b8f1f3;
+    cursor: pointer;
 }
 
 /* FORM STYLES */

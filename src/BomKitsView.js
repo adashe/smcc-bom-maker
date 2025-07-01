@@ -1,4 +1,10 @@
-export function BomKitsView({ assembly, kitsData, partsData, children }) {
+export function BomKitsView({
+    assembly,
+    kitsData,
+    partsData,
+    calcKitPrice,
+    children,
+}) {
     const selectedKitsArr = kitsData.filter((kit) => assembly[kit.id] > 0);
 
     return (
@@ -12,6 +18,7 @@ export function BomKitsView({ assembly, kitsData, partsData, children }) {
                         kit={kit}
                         partsData={partsData}
                         key={kit.id}
+                        calcKitPrice={calcKitPrice}
                     />
                 ))}
             </div>
@@ -19,12 +26,13 @@ export function BomKitsView({ assembly, kitsData, partsData, children }) {
     );
 }
 
-function KitBomRow({ assembly, kit, partsData }) {
+function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
     return (
         <div className="bom-row">
             <div className="bom-row-header">
                 <div>{kit.label}</div>
                 <div>QTY: {assembly[kit.id]}</div>
+                <div>KIT COST: ${calcKitPrice(kit.id).toFixed(2)}</div>
             </div>
 
             <div>
@@ -56,7 +64,7 @@ function PartListItem({ component, partsData }) {
         <li className="bom-li">
             <div>{item?.id}</div>
             <div>{item?.description}</div>
-            <div>${item?.cost}</div>
+            <div>${item?.cost.toFixed(2)}</div>
         </li>
     );
 }

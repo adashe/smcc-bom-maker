@@ -5,6 +5,7 @@ import { Button } from "./Button";
 import { Totals } from "./Totals";
 
 export function Forms({
+    calcKitPrice,
     basePrice,
     totalPrice,
     totalFLA,
@@ -14,7 +15,7 @@ export function Forms({
     assembly,
     projectInfo,
     kitsData,
-    children,
+    handleReset,
 }) {
     return (
         <div className="container">
@@ -28,17 +29,20 @@ export function Forms({
                     totalPrice={totalPrice}
                     totalFLA={totalFLA}
                 >
-                    <Button handleClick={handleUpdateTotals}>
+                    <Button
+                        isActive={"active"}
+                        handleClick={handleUpdateTotals}
+                    >
                         UPDATE TOTALS
                     </Button>
                 </Totals>
-                {children}
             </div>
 
             <div>
                 <ComponentForm>
                     {kitsData.map((kit) => (
                         <ComponentRow
+                            calcKitPrice={calcKitPrice}
                             kit={kit}
                             assembly={assembly}
                             handleChange={handleChange}
@@ -46,6 +50,9 @@ export function Forms({
                         />
                     ))}
                 </ComponentForm>
+                <Button isActive={"active"} handleClick={handleReset}>
+                    RESET FORM
+                </Button>
             </div>
         </div>
     );

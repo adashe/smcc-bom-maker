@@ -107,9 +107,17 @@ export default function App() {
     }
 
     function calcKitPrice(kitID) {
-        const arr = kitsData.filter((kit) => kit.id === kitID);
-        const kit = arr[0];
-        return kit.price;
+        const kArr = kitsData.filter((kit) => kit.id === kitID);
+        const kit = kArr[0];
+        let sum = 0;
+
+        // Cycle through kit components, look up in partsData, sum cost
+        kit.components.forEach((component) => {
+            const pArr = partsData.filter((part) => part.id === component);
+            const part = pArr[0];
+            sum += part?.cost || 0;
+        });
+        return sum;
     }
 
     function calcTotalFLA() {
@@ -133,7 +141,7 @@ export default function App() {
         <div className="App">
             <Header />
             <Navigation
-                handleReset={handleReset}
+                page={page}
                 handleShowForms={handleShowForms}
                 handleShowBomKits={handleShowBomKits}
                 handleShowBomParts={handleShowBomParts}
@@ -141,6 +149,7 @@ export default function App() {
             />
             {page === "forms" && (
                 <Forms
+                    calcKitPrice={calcKitPrice}
                     basePrice={basePrice}
                     totalPrice={totalPrice}
                     totalFLA={totalFLA}
@@ -150,6 +159,7 @@ export default function App() {
                     assembly={assembly}
                     projectInfo={projectInfo}
                     kitsData={kitsData}
+                    handleReset={handleReset}
                 />
             )}
             {page === "kits" && (
@@ -157,6 +167,7 @@ export default function App() {
                     assembly={assembly}
                     kitsData={kitsData}
                     partsData={partsData}
+                    calcKitPrice={calcKitPrice}
                 >
                     <ProjectInfo
                         projectInfo={projectInfo}

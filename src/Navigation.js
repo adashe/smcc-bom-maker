@@ -1,7 +1,7 @@
 import { Button } from "./Button";
 
 export function Navigation({
-    handleReset,
+    page,
     handleShowForms,
     handleShowBomKits,
     handleShowBomParts,
@@ -9,11 +9,30 @@ export function Navigation({
 }) {
     return (
         <div>
-            <Button handleClick={handleReset}>RESET FORM</Button>
-            <Button handleClick={handleShowForms}>EDIT INPUTS</Button>
-            <Button handleClick={handleShowBomKits}>BoM KITS VIEW</Button>
-            <Button handleClick={handleShowBomParts}>BoM PARTS VIEW</Button>
-            <Button handleClick={handleShowPDF}>PRINT PDF</Button>
+            <Button
+                isActive={page === "forms" ? "" : "active"}
+                handleClick={handleShowForms}
+            >
+                INPUTS
+            </Button>
+            <Button
+                isActive={page === "kits" ? "" : "active"}
+                handleClick={handleShowBomKits}
+            >
+                BoM KITS
+            </Button>
+            <Button
+                isActive={page === "parts" ? "" : "active"}
+                handleClick={handleShowBomParts}
+            >
+                BoM PARTS
+            </Button>
+            <Button
+                isActive={page === "pdf" ? "" : "active"}
+                handleClick={handleShowPDF}
+            >
+                PDF
+            </Button>
         </div>
     );
 }
