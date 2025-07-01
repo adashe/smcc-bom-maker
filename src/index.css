@@ -101,7 +101,7 @@ select {
     text-align: left;
 }
 .bom-row div {
-    width: 800px;
+    width: 1000px;
 }
 .bom-row-header {
     display: flex;
@@ -114,7 +114,7 @@ select {
     display: flex;
 }
 .bom-li div {
-    width: 120px;
+    width: 320px;
     text-align: left;
 }
 .component-row {

@@ -70,9 +70,9 @@ function PartListItem({ component, partsData }) {
 
     return (
         <li className="bom-li">
-            <div>{item.id}</div>
-            <div>{item.description}</div>
-            <div>${item.price}</div>
+            <div>{item?.id}</div>
+            <div>{item?.description}</div>
+            <div>${item?.cost}</div>
         </li>
     );
 }

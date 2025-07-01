@@ -9,6 +9,7 @@ export function BomPartsView({
     handleShowPDF,
     children,
 }) {
+    // Build a partsBom from the assembly object with the parts numbers and their quantities
     let partsBom = {};
 
     for (const k in assembly) {
@@ -23,6 +24,7 @@ export function BomPartsView({
         }
     }
 
+    // Use the partsBom object to filter the partsData array
     const selectedPartsArr = partsData.filter((part) => partsBom[part.id] > 0);
 
     return (

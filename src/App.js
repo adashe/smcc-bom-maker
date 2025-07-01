@@ -20,22 +20,16 @@ export default function App() {
     };
     const initialAssem = {
         starter3hp: 0,
+        starter5hp: 0,
+        starter7hp: 0,
         starter10hp: 0,
         starter15hp: 0,
-        starter40hp: 0,
+        starter25hp: 0,
+        starter30hp: 0,
         vfd1hp: 0,
         vfd3hp: 0,
-        vfd5hp: 0,
-        vfd7hp: 0,
-        vfd10hp: 0,
         vfd15hp: 0,
         vfd20hp: 0,
-        vfd40hp: 0,
-        breaker3hp: 0,
-        breaker5hp: 0,
-        breaker7hp: 0,
-        breaker10hp: 0,
-        breaker15hp: 0,
     };
     const [projectInfo, setProjectInfo] = useState(initialProjectInfo);
     const [assembly, setAssembly] = useState(initialAssem);
@@ -71,6 +65,7 @@ export default function App() {
         setTotalPrice(basePrice);
         setTotalFLA(0);
     }
+
     function handleChangeProjectInfo(e) {
         const { name, value } = e.target;
 
@@ -79,6 +74,7 @@ export default function App() {
             [name]: value,
         }));
     }
+
     function handleChange(e) {
         const { name, value } = e.target;
 
