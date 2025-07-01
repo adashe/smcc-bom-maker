@@ -7,6 +7,7 @@ import kitsData from "./data/kits.json";
 import partsData from "./data/parts.json";
 import { ProjectInfo } from "./ProjectInfo";
 import { PDF } from "./PDF";
+import { Navigation } from "./Navigation";
 
 export default function App() {
     const initialProjectInfo = {
@@ -38,6 +39,10 @@ export default function App() {
     const [totalFLA, setTotalFLA] = useState(0);
     const [page, setPage] = useState("forms");
 
+    function handleShowForms() {
+        handleUpdateTotals();
+        setPage("forms");
+    }
     function handleShowBomKits() {
         handleUpdateTotals();
         setPage("kits");
@@ -51,11 +56,6 @@ export default function App() {
     function handleShowPDF() {
         handleUpdateTotals();
         setPage("pdf");
-    }
-
-    function handleShowForms() {
-        handleUpdateTotals();
-        setPage("forms");
     }
 
     function handleReset() {
@@ -132,21 +132,24 @@ export default function App() {
     return (
         <div className="App">
             <Header />
+            <Navigation
+                handleReset={handleReset}
+                handleShowForms={handleShowForms}
+                handleShowBomKits={handleShowBomKits}
+                handleShowBomParts={handleShowBomParts}
+                handleShowPDF={handleShowPDF}
+            />
             {page === "forms" && (
                 <Forms
                     basePrice={basePrice}
                     totalPrice={totalPrice}
                     totalFLA={totalFLA}
-                    handleReset={handleReset}
                     handleChangeProjectInfo={handleChangeProjectInfo}
                     handleChange={handleChange}
                     handleUpdateTotals={handleUpdateTotals}
                     assembly={assembly}
                     projectInfo={projectInfo}
                     kitsData={kitsData}
-                    handleShowBomKits={handleShowBomKits}
-                    handleShowBomParts={handleShowBomParts}
-                    handleShowPDF={handleShowPDF}
                 />
             )}
             {page === "kits" && (
@@ -154,9 +157,6 @@ export default function App() {
                     assembly={assembly}
                     kitsData={kitsData}
                     partsData={partsData}
-                    handleShowForms={handleShowForms}
-                    handleShowBomParts={handleShowBomParts}
-                    handleShowPDF={handleShowPDF}
                 >
                     <ProjectInfo
                         projectInfo={projectInfo}
@@ -169,9 +169,6 @@ export default function App() {
                     assembly={assembly}
                     kitsData={kitsData}
                     partsData={partsData}
-                    handleShowForms={handleShowForms}
-                    handleShowBomKits={handleShowBomKits}
-                    handleShowPDF={handleShowPDF}
                 >
                     <ProjectInfo
                         projectInfo={projectInfo}
@@ -179,14 +176,7 @@ export default function App() {
                     />
                 </BomPartsView>
             )}
-            {page === "pdf" && (
-                <PDF
-                    projectInfo={projectInfo}
-                    handleShowForms={handleShowForms}
-                    handleShowBomKits={handleShowBomKits}
-                    handleShowBomParts={handleShowBomParts}
-                />
-            )}
+            {page === "pdf" && <PDF projectInfo={projectInfo} />}
         </div>
     );
 }

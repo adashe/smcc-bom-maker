@@ -1,14 +1,4 @@
-import { Button } from "./Button";
-
-export function BomPartsView({
-    assembly,
-    kitsData,
-    partsData,
-    handleShowForms,
-    handleShowBomKits,
-    handleShowPDF,
-    children,
-}) {
+export function BomPartsView({ assembly, kitsData, partsData, children }) {
     // Build a partsBom from the assembly object with the parts numbers and their quantities
     let partsBom = {};
 
@@ -41,10 +31,6 @@ export function BomPartsView({
                     />
                 ))}
             </div>
-
-            <Button handleClick={handleShowForms}>EDIT INPUTS</Button>
-            <Button handleClick={handleShowBomKits}>BoM KITS VIEW</Button>
-            <Button handleClick={handleShowPDF}>PRINT PDF</Button>
         </div>
     );
 }

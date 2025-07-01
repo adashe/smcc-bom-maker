@@ -1,23 +1,13 @@
-import { Button } from "./Button";
 import { Letterhead } from "./Letterhead";
 
-export function PDF({
-    projectInfo,
-    handleShowForms,
-    handleShowBomKits,
-    handleShowBomParts,
-}) {
+export function PDF({ projectInfo, children }) {
     return (
         <div>
+            {children}
             <Letterhead />
             <PDFProjectInfo projectInfo={projectInfo} />
             <PDFShippingInfo />
             <PDFItemization />
-            <div>
-                <Button handleClick={handleShowForms}>EDIT INPUTS</Button>
-                <Button handleClick={handleShowBomKits}>BoM KITS VIEW</Button>
-                <Button handleClick={handleShowBomParts}>BoM PARTS VIEW</Button>
-            </div>
         </div>
     );
 }

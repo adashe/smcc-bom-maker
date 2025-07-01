@@ -1,14 +1,4 @@
-import { Button } from "./Button";
-
-export function BomKitsView({
-    assembly,
-    kitsData,
-    partsData,
-    handleShowForms,
-    handleShowBomParts,
-    handleShowPDF,
-    children,
-}) {
+export function BomKitsView({ assembly, kitsData, partsData, children }) {
     const selectedKitsArr = kitsData.filter((kit) => assembly[kit.id] > 0);
 
     return (
@@ -24,12 +14,6 @@ export function BomKitsView({
                         key={kit.id}
                     />
                 ))}
-            </div>
-
-            <div>
-                <Button handleClick={handleShowForms}>EDIT INPUTS</Button>
-                <Button handleClick={handleShowBomParts}>BoM PARTS VIEW</Button>
-                <Button handleClick={handleShowPDF}>PRINT PDF</Button>
             </div>
         </div>
     );

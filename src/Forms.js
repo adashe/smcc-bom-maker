@@ -8,16 +8,13 @@ export function Forms({
     basePrice,
     totalPrice,
     totalFLA,
-    handleReset,
     handleChangeProjectInfo,
     handleChange,
     handleUpdateTotals,
     assembly,
     projectInfo,
     kitsData,
-    handleShowBomKits,
-    handleShowBomParts,
-    handleShowPDF,
+    children,
 }) {
     return (
         <div className="container">
@@ -35,16 +32,7 @@ export function Forms({
                         UPDATE TOTALS
                     </Button>
                 </Totals>
-                <div className="button-bank">
-                    <Button handleClick={handleReset}>RESET FORM</Button>
-                    <Button handleClick={handleShowBomKits}>
-                        BoM KITS VIEW
-                    </Button>
-                    <Button handleClick={handleShowBomParts}>
-                        BoM PARTS VIEW
-                    </Button>
-                    <Button handleClick={handleShowPDF}>PRINT PDF</Button>
-                </div>
+                {children}
             </div>
 
             <div>
