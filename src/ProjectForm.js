@@ -1,6 +1,6 @@
 export function ProjectForm({ projectInfo, handleChangeProjectInfo }) {
     return (
-        <form>
+        <form className="project-form">
             <div>
                 <label>
                     Job Number:

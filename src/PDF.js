@@ -4,12 +4,14 @@ import addresses from "./data/addresses.json";
 
 export function PDF({ projectInfo, children }) {
     return (
-        <div>
+        <div className="pdf">
             {children}
             <Letterhead />
             <PDFProjectInfo projectInfo={projectInfo} />
             <PDFShippingInfo />
             <PDFItemization />
+            <PDFTotals />
+            <PDFNotes />
         </div>
     );
 }
@@ -37,7 +39,6 @@ function PDFProjectInfo({ projectInfo }) {
                 <form>
                     <div className="pdf-row">
                         <label>
-                            Recipient:
                             <select
                                 name="customer"
                                 id="customer"
@@ -46,11 +47,17 @@ function PDFProjectInfo({ projectInfo }) {
                                 <option value="sonnys">Sonny's</option>
                                 <option value="azems">Azem's Car Wash</option>
                                 <option value="scott">Scott Industrial</option>
+                                <option value="other">Other</option>
                             </select>
                         </label>
                     </div>
-                    <div className="pdf-row">{customer.addressLine1}</div>
-                    <div className="pdf-row">{customer.addressLine2}</div>
+                    <div className="pdf-row">
+                        {customer?.addressLine1 || ""}
+                    </div>
+
+                    <div className="pdf-row">
+                        {customer?.addressLine2 || ""}
+                    </div>
                 </form>
             </div>
 
@@ -155,6 +162,44 @@ function PDFItemization() {
                             <input type="number"></input>
                         </label>
                     </div>
+                </div>
+            </form>
+        </div>
+    );
+}
+
+function PDFTotals() {
+    return (
+        <div className="itemization-totals">
+            <div>Subtotal: $$</div>
+            <div>Sales Tax: $$</div>
+            <div>Total Div Price: $$</div>
+        </div>
+    );
+}
+
+function PDFNotes() {
+    return (
+        <div className="notes-col">
+            <form className="notes-form">
+                <label>
+                    Quoted Per:
+                    <input name="quotedPer" type="text"></input>
+                </label>
+                <label>
+                    Clarifications:
+                    <input name="clarifications" type="text"></input>
+                </label>
+                <label>
+                    Exceptions:
+                    <input name="exceptions" type="text"></input>
+                </label>
+                <label>
+                    Quotation Prepared By:
+                    <input name="preparedBy" type="text"></input>
+                </label>
+                <div className="thank-you">
+                    Thank you for choosing Sun Coast!
                 </div>
             </form>
         </div>

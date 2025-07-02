@@ -37,7 +37,6 @@ button {
     padding: 10px;
     font-size: 16px;
     border: none;
-    /*     background-color: #b4b3b3; */
     border-radius: 3px;
 }
 button.active {
@@ -46,7 +45,7 @@ button.active {
 }
 
 /* FORM STYLES */
-form {
+.project-form {
     margin: 10px;
     padding: 10px;
     display: block;
@@ -61,6 +60,7 @@ input {
     margin: 10px;
     padding: 10px;
     color: #434343;
+    font-size: 16px;
 }
 select {
     display: inline-block;
@@ -68,6 +68,7 @@ select {
     margin: 10px;
     padding: 10px;
     color: #434343;
+    font-size: 16px;
 }
 .info-box {
     margin: 10px;
@@ -171,7 +172,6 @@ div.wide-col {
 .address div {
     padding: 4px;
 }
-
 .pdf-row {
     display: flex;
     text-align: left;
@@ -182,6 +182,13 @@ div.wide-col {
 }
 .pdf-col {
     width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+select#customer {
+    margin: 0px;
+    padding: 0px;
+    width: 180px;
 }
 .shipping-form {
     display: flex;
@@ -189,6 +196,12 @@ div.wide-col {
 .shipping-col {
     width: 200px;
     text-align: center;
+}
+.itemization-form {
+    border-top: 1px solid #b4b3b3;
+    border-bottom: 1px solid #b4b3b3;
+    margin: 20px 0;
+    padding: 20px 0;
 }
 .itemization-row {
     display: flex;
@@ -203,4 +216,41 @@ div.wide-col {
 }
 .item-desc-input {
     width: 340px;
+}
+.itemization-totals {
+    text-align: right;
+    margin: 10px 80px;
+    padding: 10px;
+    border-bottom: 1px solid #b4b3b3;
+}
+.itemization-totals div {
+    padding: 4px;
+}
+.notes-col {
+    text-align: right;
+    margin: 40px;
+    padding: 10px;
+}
+.notes-col input {
+    width: 740px;
+}
+.thank-you {
+    color: #72d1d4;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px;
+    padding: 10px;
+}
+.pdf input {
+    border: none;
+}
+.pdf input:hover {
+    border: 1px solid #b4b3b3;
+}
+.pdf select {
+    border: none;
+}
+.pdf select:hover {
+    border: 1px solid #b4b3b3;
 }

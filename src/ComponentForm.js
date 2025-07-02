@@ -1,6 +1,6 @@
 export function ComponentForm({ children }) {
     return (
-        <form>
+        <form className="component-form">
             <div className="component-row">
                 <div className="option-col header">OPTION NAME</div>
                 <div className="col header">MSP</div>
