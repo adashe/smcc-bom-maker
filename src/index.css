@@ -197,12 +197,6 @@ select#customer {
     width: 200px;
     text-align: center;
 }
-.itemization-form {
-    border-top: 1px solid #b4b3b3;
-    border-bottom: 1px solid #b4b3b3;
-    margin: 20px 0;
-    padding: 20px 0;
-}
 .itemization-row {
     display: flex;
     justify-content: space-between;
@@ -221,10 +215,10 @@ select#customer {
     text-align: right;
     margin: 10px 80px;
     padding: 10px;
-    border-bottom: 1px solid #b4b3b3;
 }
 .itemization-totals div {
     padding: 4px;
+    margin: 10px;
 }
 .notes-col {
     text-align: right;
@@ -253,4 +247,9 @@ select#customer {
 }
 .pdf select:hover {
     border: 1px solid #b4b3b3;
+}
+
+.line {
+    border-top: 1px solid #b4b3b3;
+    margin: 20px 60px;
 }

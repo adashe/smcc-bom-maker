@@ -8,9 +8,13 @@ export function PDF({ projectInfo, children }) {
             {children}
             <Letterhead />
             <PDFProjectInfo projectInfo={projectInfo} />
+            <Line />
             <PDFShippingInfo />
+            <Line />
             <PDFItemization />
+            <Line />
             <PDFTotals />
+            <Line />
             <PDFNotes />
         </div>
     );
@@ -26,6 +30,10 @@ function PDFProjectInfo({ projectInfo }) {
     const date = new Date();
     let dateIn30Days = new Date();
     dateIn30Days.setDate(dateIn30Days.getDate() + 30);
+
+    function handleResetPDF() {
+        // pass
+    }
 
     function handleChangeCustomer(e) {
         const customerID = e.target.value;
@@ -138,32 +146,39 @@ function PDFItemization() {
                     <div className="itemization-col header">Unit Price</div>
                     <div className="itemization-col header">Line Total</div>
                 </div>
-                <div className="itemization-row">
-                    <div className="itemization-col">
-                        <label>
-                            <input type="number"></input>
-                        </label>
-                    </div>
-                    <div className="itemization-col item-desc-col">
-                        <label>
-                            <input
-                                className="item-desc-input"
-                                type="text"
-                            ></input>
-                        </label>
-                    </div>
-                    <div className="itemization-col">
-                        <label>
-                            <input type="number"></input>
-                        </label>
-                    </div>
-                    <div className="itemization-col">
-                        <label>
-                            <input type="number"></input>
-                        </label>
-                    </div>
-                </div>
+                <PDFItemizationRow />
+                <PDFItemizationRow />
+                <PDFItemizationRow />
+                <PDFItemizationRow />
+                <PDFItemizationRow />
             </form>
+        </div>
+    );
+}
+
+function PDFItemizationRow() {
+    return (
+        <div className="itemization-row">
+            <div className="itemization-col">
+                <label>
+                    <input type="number"></input>
+                </label>
+            </div>
+            <div className="itemization-col item-desc-col">
+                <label>
+                    <input className="item-desc-input" type="text"></input>
+                </label>
+            </div>
+            <div className="itemization-col">
+                <label>
+                    <input type="number"></input>
+                </label>
+            </div>
+            <div className="itemization-col">
+                <label>
+                    <input type="number"></input>
+                </label>
+            </div>
         </div>
     );
 }
@@ -204,4 +219,8 @@ function PDFNotes() {
             </form>
         </div>
     );
+}
+
+function Line() {
+    return <div className="line"></div>;
 }
