@@ -12,12 +12,12 @@ export function BomKitsView({
             {children}
             <h2>BoM Kits</h2>
             <div>
-                {selectedKitsArr.map((kit) => (
+                {selectedKitsArr.map((kit, i) => (
                     <KitBomRow
                         assembly={assembly}
                         kit={kit}
                         partsData={partsData}
-                        key={kit.id}
+                        key={i}
                         calcKitPrice={calcKitPrice}
                     />
                 ))}
@@ -45,11 +45,11 @@ function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
 function PartsList({ components, partsData }) {
     return (
         <ul>
-            {components.map((component) => (
+            {components.map((component, i) => (
                 <PartListItem
                     component={component}
                     partsData={partsData}
-                    key={component}
+                    key={i}
                 />
             ))}
         </ul>
@@ -61,10 +61,13 @@ function PartListItem({ component, partsData }) {
     const item = arr[0];
 
     return (
-        <li className="bom-li">
+        <li className="kit-bom-row">
             <div>{item?.id}</div>
-            <div>{item?.description}</div>
-            <div>${item?.cost.toFixed(2)}</div>
+            <div className="wide-col">
+                {item?.description || "Item not found in parts database"}
+            </div>
+            <div>{item?.manufacturer}</div>
+            <div>${item?.cost.toFixed(2) || 0.0}</div>
         </li>
     );
 }

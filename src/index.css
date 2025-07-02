@@ -76,12 +76,12 @@ select {
 .info-box {
     margin: 10px;
     padding: 10px;
-    background-color: #72d1d4;
+    background-color: #e7e6e6;
     border-radius: 3px;
 }
 .info-col {
     text-align: left;
-    min-width: 200px;
+    min-width: 240px;
 }
 .info-row {
     display: flex;
@@ -107,15 +107,30 @@ select {
     display: flex;
     width: 600px;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 24px;
+    border-bottom: 1px solid #d3d2d2;
+    font-weight: bold;
+}
+.kit-bom-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+.kit-bom-row div {
+    width: 100px;
+    text-align: left;
+}
+.parts-bom-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     border-bottom: 1px solid #d3d2d2;
 }
-.bom-li {
-    display: flex;
+.parts-bom-row div {
+    width: 80px;
 }
-.bom-li div {
-    width: 320px;
-    text-align: left;
+div.wide-col {
+    width: 300px;
 }
 .component-row {
     display: flex;

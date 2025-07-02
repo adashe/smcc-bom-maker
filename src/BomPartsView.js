@@ -37,9 +37,11 @@ export function BomPartsView({ assembly, kitsData, partsData, children }) {
 
 function PartsBomRow({ part, partsBom }) {
     return (
-        <div className="bom-row-header">
+        <div className="parts-bom-row">
             <div>{part.id}</div>
-            <div>{part.description}</div>
+            <div className="wide-col">{part.description}</div>
+            <div>{part.manufacturer}</div>
+            <div>${part.cost.toFixed(2)}</div>
             <div>QTY: {partsBom[part.id]}</div>
         </div>
     );
