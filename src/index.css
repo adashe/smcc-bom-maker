@@ -18,6 +18,10 @@ body {
 .company-name {
     color: #72d1d4;
 }
+.navigation {
+    margin: 20px;
+    padding: 20px;
+}
 #totals-div {
     border: 1px solid #434343;
     border-radius: 3px;

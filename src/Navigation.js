@@ -8,7 +8,7 @@ export function Navigation({
     handleShowPDF,
 }) {
     return (
-        <div>
+        <div className="navigation">
             <Button
                 isActive={page === "forms" ? "" : "active"}
                 handleClick={handleShowForms}

@@ -3,13 +3,38 @@ import { Letterhead } from "./Letterhead";
 import addresses from "./data/addresses.json";
 
 export function PDF({ projectInfo, children }) {
+    const initialShippingInfo = {
+        shippingMethod: "",
+        shippingTerms: "",
+        estimatedDelivery: "",
+        paymentTerms: "",
+        freight: "",
+    };
+
+    const [shippingInfo, setShippingInfo] = useState(initialShippingInfo);
+
+    function handleChangeShippingInfo(e) {
+        const { name, value } = e.target;
+
+        setShippingInfo((previous) => ({
+            ...previous,
+            [name]: value,
+        }));
+    }
+
+    function handleResetShipping() {
+        setShippingInfo(initialShippingInfo);
+    }
     return (
         <div className="pdf">
             {children}
             <Letterhead />
             <PDFProjectInfo projectInfo={projectInfo} />
             <Line />
-            <PDFShippingInfo />
+            <PDFShippingInfo
+                shippingInfo={shippingInfo}
+                handleChangeShippingInfo={handleChangeShippingInfo}
+            />
             <Line />
             <PDFItemization />
             <Line />
@@ -27,13 +52,11 @@ function PDFProjectInfo({ projectInfo }) {
         addressLine1: "1200 Main Street",
         addressLine2: "Jacksonville, FL 32206",
     });
+
+    // Generate dates for quoted and valid until dates fields
     const date = new Date();
     let dateIn30Days = new Date();
     dateIn30Days.setDate(dateIn30Days.getDate() + 30);
-
-    function handleResetPDF() {
-        // pass
-    }
 
     function handleChangeCustomer(e) {
         const customerID = e.target.value;
@@ -95,38 +118,50 @@ function PDFProjectInfo({ projectInfo }) {
     );
 }
 
-function PDFShippingInfo() {
+function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
     return (
         <div className="container">
             <form className="shipping-form">
                 <div className="shipping-col">
                     <label>
                         SHIPPING METHOD
-                        <input type="text"></input>
+                        <input
+                            type="text"
+                            value={shippingInfo.shippingMethod}
+                        ></input>
                     </label>
                 </div>
                 <div className="shipping-col">
                     <label>
                         SHIPPING TERMS
-                        <input type="text"></input>
+                        <input
+                            type="text"
+                            value={shippingInfo.shippingTerms}
+                        ></input>
                     </label>
                 </div>
                 <div className="shipping-col">
                     <label>
                         ESTIMATED DELIVERY
-                        <input type="text"></input>
+                        <input
+                            type="text"
+                            value={shippingInfo.estimatedDelivery}
+                        ></input>
                     </label>
                 </div>
                 <div className="shipping-col">
                     <label>
                         PAYMENT TERMS
-                        <input type="text"></input>
+                        <input
+                            type="text"
+                            value={shippingInfo.paymentTerms}
+                        ></input>
                     </label>
                 </div>
                 <div className="shipping-col">
                     <label>
                         FREIGHT
-                        <input type="text"></input>
+                        <input type="text" value={shippingInfo.freight}></input>
                     </label>
                 </div>
             </form>
@@ -139,12 +174,12 @@ function PDFItemization() {
         <div className="container">
             <form className="itemization-form">
                 <div className="itemization-row">
-                    <div className="itemization-col header">Quantity</div>
+                    <div className="itemization-col header">QUANTITY</div>
                     <div className="itemization-col item-desc-col header">
-                        Description
+                        DESCRIPTION
                     </div>
-                    <div className="itemization-col header">Unit Price</div>
-                    <div className="itemization-col header">Line Total</div>
+                    <div className="itemization-col header">UNIT PRICE</div>
+                    <div className="itemization-col header">LINE TOTAL</div>
                 </div>
                 <PDFItemizationRow />
                 <PDFItemizationRow />
