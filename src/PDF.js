@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Letterhead } from "./Letterhead";
+import { Button } from "./Button";
 import addresses from "./data/addresses.json";
 
 export function PDF({ projectInfo, children }) {
@@ -10,6 +11,18 @@ export function PDF({ projectInfo, children }) {
         paymentTerms: "",
         freight: "",
     };
+    const [customer, setCustomer] = useState({
+        id: "sonnys",
+        customerName: "Sonny's",
+        addressLine1: "1200 Main Street",
+        addressLine2: "Jacksonville, FL 32206",
+    });
+
+    function handleChangeCustomer(e) {
+        const customerID = e.target.value;
+        const arr = addresses.filter((address) => address.id === customerID);
+        setCustomer(arr[0]);
+    }
 
     const [shippingInfo, setShippingInfo] = useState(initialShippingInfo);
 
@@ -21,15 +34,20 @@ export function PDF({ projectInfo, children }) {
             [name]: value,
         }));
     }
-
-    function handleResetShipping() {
+    function handleResetPDF() {
         setShippingInfo(initialShippingInfo);
     }
     return (
         <div className="pdf">
             {children}
+
             <Letterhead />
-            <PDFProjectInfo projectInfo={projectInfo} />
+
+            <PDFProjectInfo
+                projectInfo={projectInfo}
+                customer={customer}
+                handleChangeCustomer={handleChangeCustomer}
+            />
             <Line />
             <PDFShippingInfo
                 shippingInfo={shippingInfo}
@@ -41,28 +59,18 @@ export function PDF({ projectInfo, children }) {
             <PDFTotals />
             <Line />
             <PDFNotes />
+            <Button isActive="active" onClick={handleResetPDF}>
+                RESET
+            </Button>
         </div>
     );
 }
 
-function PDFProjectInfo({ projectInfo }) {
-    const [customer, setCustomer] = useState({
-        id: "sonnys",
-        customerName: "Sonny's",
-        addressLine1: "1200 Main Street",
-        addressLine2: "Jacksonville, FL 32206",
-    });
-
+function PDFProjectInfo({ projectInfo, customer, handleChangeCustomer }) {
     // Generate dates for quoted and valid until dates fields
     const date = new Date();
     let dateIn30Days = new Date();
     dateIn30Days.setDate(dateIn30Days.getDate() + 30);
-
-    function handleChangeCustomer(e) {
-        const customerID = e.target.value;
-        const arr = addresses.filter((address) => address.id === customerID);
-        setCustomer(arr[0]);
-    }
 
     return (
         <div className="container">
@@ -127,7 +135,9 @@ function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
                         SHIPPING METHOD
                         <input
                             type="text"
+                            name="shippingMethod"
                             value={shippingInfo.shippingMethod}
+                            onChange={handleChangeShippingInfo}
                         ></input>
                     </label>
                 </div>
@@ -136,7 +146,9 @@ function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
                         SHIPPING TERMS
                         <input
                             type="text"
+                            name="shippingTerms"
                             value={shippingInfo.shippingTerms}
+                            onChange={handleChangeShippingInfo}
                         ></input>
                     </label>
                 </div>
@@ -145,7 +157,9 @@ function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
                         ESTIMATED DELIVERY
                         <input
                             type="text"
+                            name="estimatedDelivery"
                             value={shippingInfo.estimatedDelivery}
+                            onChange={handleChangeShippingInfo}
                         ></input>
                     </label>
                 </div>
@@ -154,14 +168,21 @@ function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
                         PAYMENT TERMS
                         <input
                             type="text"
+                            name="paymentTerms"
                             value={shippingInfo.paymentTerms}
+                            onChange={handleChangeShippingInfo}
                         ></input>
                     </label>
                 </div>
                 <div className="shipping-col">
                     <label>
                         FREIGHT
-                        <input type="text" value={shippingInfo.freight}></input>
+                        <input
+                            type="text"
+                            name="freight"
+                            value={shippingInfo.freight}
+                            onChange={handleChangeShippingInfo}
+                        ></input>
                     </label>
                 </div>
             </form>

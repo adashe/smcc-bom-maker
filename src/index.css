@@ -252,6 +252,14 @@ select#customer {
 .pdf select:hover {
     border: 1px solid #b4b3b3;
 }
+.pdf textarea {
+    border: none;
+    resize: none;
+    margin: 10px;
+}
+.pdf textarea:hover {
+    border: 1px solid #b4b3b3;
+}
 
 .line {
     border-top: 1px solid #b4b3b3;
