@@ -153,27 +153,23 @@ div.wide-col {
     font-size: 14px;
 }
 .letterhead {
-    text-align: left;
     width: 300px;
     margin: 10px 10px 10px 60px;
     padding: 10px;
     font-size: 12px;
+    align-items: center;
 }
 .letterhead img {
     width: 300px;
+    align-items: center;
 }
 .address {
-    width: 280px;
-    margin: 0 10px;
     font-size: 12px;
     letter-spacing: 0.5px;
     text-align: center;
 }
-.phone {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    margin-top: 8px;
+.address div {
+    padding: 4px;
 }
 
 .pdf-row {
