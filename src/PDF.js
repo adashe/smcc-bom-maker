@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Letterhead } from "./Letterhead";
+import addresses from "./data/addresses.json";
 
 export function PDF({ projectInfo, children }) {
     return (
@@ -13,22 +15,49 @@ export function PDF({ projectInfo, children }) {
 }
 
 function PDFProjectInfo({ projectInfo }) {
+    const [customer, setCustomer] = useState({
+        id: "sonnys",
+        customerName: "Sonny's",
+        addressLine1: "1200 Main Street",
+        addressLine2: "Jacksonville, FL 32206",
+    });
     const date = new Date();
     let dateIn30Days = new Date();
     dateIn30Days.setDate(dateIn30Days.getDate() + 30);
 
+    function handleChangeCustomer(e) {
+        const customerID = e.target.value;
+        const arr = addresses.filter((address) => address.id === customerID);
+        setCustomer(arr[0]);
+    }
+
     return (
         <div className="container">
             <div className="pdf-col">
-                <div className="pdf-row">
-                    <div className="pdf-label">To:</div>
-                    <div>{projectInfo.contact.toUpperCase()}</div>
-                </div>
+                <form>
+                    <div className="pdf-row">
+                        <label>
+                            Recipient:
+                            <select
+                                name="customer"
+                                id="customer"
+                                onChange={handleChangeCustomer}
+                            >
+                                <option value="sonnys">Sonny's</option>
+                                <option value="azems">Azem's Car Wash</option>
+                                <option value="scott">Scott Industrial</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div className="pdf-row">{customer.addressLine1}</div>
+                    <div className="pdf-row">{customer.addressLine2}</div>
+                </form>
             </div>
+
             <div className="pdf-col">
                 <div className="pdf-row">
-                    <div className="pdf-label">Salesperson:</div>
-                    <div>YOUR NAME HERE</div>
+                    <div className="pdf-label">Engineer:</div>
+                    <div>{projectInfo.engineer.toUpperCase()}</div>
                 </div>
                 <div className="pdf-row">
                     <div className="pdf-label">Project Name:</div>

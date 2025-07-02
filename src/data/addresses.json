@@ -1,0 +1,20 @@
+[
+    {
+        "id": "sonnys",
+        "customerName": "Sonny's",
+        "addressLine1": "1200 Main Street",
+        "addressLine2": "Jacksonville, FL 32206"
+    },
+    {
+        "id": "azems",
+        "customer": "Azem's Car Wash",
+        "addressLine1": "1111 Second Street",
+        "addressLine2": "Orlando, FL 32065"
+    },
+    {
+        "id": "scott",
+        "customer": "Scott Industrial",
+        "addressLine1": "4545 Highway 1",
+        "addressLine2": "Miami, FL 32888"
+    }
+]

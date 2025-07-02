@@ -29,10 +29,6 @@ body {
     margin: 6px;
     padding: 10px;
 }
-.button-bank {
-    display: inline-block;
-    width: 200px;
-}
 
 button {
     width: 180px;
@@ -159,9 +155,12 @@ div.wide-col {
 .letterhead {
     text-align: left;
     width: 300px;
-    margin: 10px;
+    margin: 10px 10px 10px 60px;
     padding: 10px;
     font-size: 12px;
+}
+.letterhead img {
+    width: 300px;
 }
 .address {
     width: 280px;
@@ -176,10 +175,7 @@ div.wide-col {
     justify-content: space-evenly;
     margin-top: 8px;
 }
-.letterhead img {
-    width: 300px;
-    margin: auto;
-}
+
 .pdf-row {
     display: flex;
     text-align: left;
@@ -198,7 +194,6 @@ div.wide-col {
     width: 200px;
     text-align: center;
 }
-
 .itemization-row {
     display: flex;
     justify-content: space-between;

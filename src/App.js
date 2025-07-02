@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Header } from "./Header";
+import { Navigation } from "./Navigation";
 import { Forms } from "./Forms";
+import { ProjectInfo } from "./ProjectInfo";
 import { BomKitsView } from "./BomKitsView";
 import { BomPartsView } from "./BomPartsView";
+import { PDF } from "./PDF";
+
 import kitsData from "./data/kits.json";
 import partsData from "./data/parts.json";
-import { ProjectInfo } from "./ProjectInfo";
-import { PDF } from "./PDF";
-import { Navigation } from "./Navigation";
 
 export default function App() {
     const initialProjectInfo = {
