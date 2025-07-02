@@ -40,9 +40,7 @@ export function PDF({ projectInfo, children }) {
     return (
         <div className="pdf">
             {children}
-
             <Letterhead />
-
             <PDFProjectInfo
                 projectInfo={projectInfo}
                 customer={customer}
@@ -60,14 +58,14 @@ export function PDF({ projectInfo, children }) {
             <Line />
             <PDFNotes />
             <Button isActive="active" onClick={handleResetPDF}>
-                RESET
+                RESET (not working)
             </Button>
         </div>
     );
 }
 
 function PDFProjectInfo({ projectInfo, customer, handleChangeCustomer }) {
-    // Generate dates for quoted and valid until dates fields
+    // Generate dates for quoted on and valid until dates fields
     const date = new Date();
     let dateIn30Days = new Date();
     dateIn30Days.setDate(dateIn30Days.getDate() + 30);
