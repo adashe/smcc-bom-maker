@@ -36,11 +36,13 @@ body {
 
 button {
     font-family: "Source Sans 3", serif;
+    color: #434343;
     width: 180px;
     height: 40px;
     margin: 10px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     border: none;
     border-radius: 3px;
 }
@@ -172,7 +174,7 @@ div.wide-col {
     align-items: center;
 }
 .address {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.5px;
     text-align: center;
 }
