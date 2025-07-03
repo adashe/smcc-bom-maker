@@ -8,31 +8,30 @@ export function BomKitsView({
     const selectedKitsArr = kitsData.filter((kit) => assembly[kit.id] > 0);
 
     return (
-        <div className="container bom-div">
+        <div className="kit-bom-div">
             {children}
             <h2>BoM Kits</h2>
-            <div>
-                {selectedKitsArr.map((kit, i) => (
-                    <KitBomRow
-                        assembly={assembly}
-                        kit={kit}
-                        partsData={partsData}
-                        key={i}
-                        calcKitPrice={calcKitPrice}
-                    />
-                ))}
-            </div>
+
+            {selectedKitsArr.map((kit, i) => (
+                <KitBomRow
+                    assembly={assembly}
+                    kit={kit}
+                    partsData={partsData}
+                    key={i}
+                    calcKitPrice={calcKitPrice}
+                />
+            ))}
         </div>
     );
 }
 
 function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
     return (
-        <div className="bom-row">
-            <div className="bom-row-header">
-                <div>{kit.label}</div>
+        <div>
+            <div className="kit-bom-row-header">
+                <div className="wide-col">{kit.label.toUpperCase()}</div>
                 <div>QTY: {assembly[kit.id]}</div>
-                <div>KIT COST: ${calcKitPrice(kit.id).toFixed(2)}</div>
+                <div>UNIT COST: ${calcKitPrice(kit.id).toFixed(2)}</div>
             </div>
 
             <div>
@@ -62,7 +61,7 @@ function PartListItem({ component, partsData }) {
 
     return (
         <li className="kit-bom-row">
-            <div>{item?.id}</div>
+            <div>{item?.id || component}</div>
             <div className="wide-col">
                 {item?.description || "Item not found in parts database"}
             </div>

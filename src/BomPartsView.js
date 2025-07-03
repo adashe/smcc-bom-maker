@@ -18,26 +18,20 @@ export function BomPartsView({ assembly, kitsData, partsData, children }) {
     const selectedPartsArr = partsData.filter((part) => partsBom[part.id] > 0);
 
     return (
-        <div className="container bom-div">
+        <div className="part-bom-div">
             {children}
             <h2>BoM Parts</h2>
 
-            <div className="bom-row">
-                {selectedPartsArr.map((part) => (
-                    <PartsBomRow
-                        part={part}
-                        partsBom={partsBom}
-                        key={part.id}
-                    />
-                ))}
-            </div>
+            {selectedPartsArr.map((part) => (
+                <PartsBomRow part={part} partsBom={partsBom} key={part.id} />
+            ))}
         </div>
     );
 }
 
 function PartsBomRow({ part, partsBom }) {
     return (
-        <div className="parts-bom-row">
+        <div className="part-bom-row">
             <div>{part.id}</div>
             <div className="wide-col">{part.description}</div>
             <div>{part.manufacturer}</div>

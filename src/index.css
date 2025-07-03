@@ -10,6 +10,8 @@ body {
     text-align: center;
     margin: 10px auto;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #c2c0c0;
 }
 .container {
     display: flex;
@@ -17,23 +19,15 @@ body {
 }
 .company-name {
     color: #72d1d4;
+    font-size: 22px;
+}
+.page-title {
+    font-size: 38px;
 }
 .navigation {
     margin: 20px;
     padding: 20px;
 }
-#totals-div {
-    border: 1px solid #434343;
-    border-radius: 3px;
-    margin: 20px;
-    padding: 10px;
-}
-#totals-div div {
-    text-align: left;
-    margin: 6px;
-    padding: 10px;
-}
-
 button {
     font-family: "Source Sans 3", serif;
     color: #434343;
@@ -41,7 +35,7 @@ button {
     height: 40px;
     margin: 10px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     border: none;
     border-radius: 3px;
@@ -51,13 +45,7 @@ button.active {
     cursor: pointer;
 }
 
-/* FORM STYLES */
-.project-form {
-    margin: 10px;
-    padding: 10px;
-    display: block;
-    text-align: right;
-}
+/* FORM ELEMENTS */
 label {
     display: inline-block;
 }
@@ -79,65 +67,32 @@ select {
     color: #434343;
     font-size: 16px;
 }
-.info-box {
+
+/* PROJECT FORM STYLES */
+.project-form {
     margin: 10px;
     padding: 10px;
-    background-color: #e7e6e6;
+    display: block;
+    text-align: right;
+}
+
+/* TOTALS DISPLAY STYLES */
+.totals-header {
+    margin: 10px;
+}
+#totals-div {
+    border: 1px solid #b4b3b3;
     border-radius: 3px;
-}
-.info-col {
-    text-align: left;
-    min-width: 240px;
-}
-.info-row {
-    display: flex;
-    margin: 8px;
-}
-.info-label {
-    min-width: 100px;
-}
-.info-content {
-    font-weight: bold;
-    margin-left: 6px;
-}
-.bom-div {
-    display: inline-block;
-}
-.bom-row {
-    text-align: left;
-}
-.bom-row div {
-    width: 1000px;
-}
-.bom-row-header {
-    display: flex;
-    width: 600px;
+    margin: 20px;
     padding: 10px;
-    margin-top: 24px;
-    border-bottom: 1px solid #d3d2d2;
-    font-weight: bold;
 }
-.kit-bom-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 2px;
-}
-.kit-bom-row div {
-    width: 100px;
+#totals-div div {
     text-align: left;
-}
-.parts-bom-row {
-    display: flex;
-    justify-content: space-between;
+    margin: 6px;
     padding: 10px;
-    border-bottom: 1px solid #d3d2d2;
 }
-.parts-bom-row div {
-    width: 80px;
-}
-div.wide-col {
-    width: 300px;
-}
+
+/* COMPONENT FORM STYLES */
 .component-row {
     display: flex;
     text-align: left;
@@ -162,24 +117,92 @@ div.wide-col {
     margin-bottom: 10px;
     font-size: 14px;
 }
-.letterhead {
-    width: 300px;
-    margin: 10px 10px 10px 60px;
+
+/* INFO BOX STYLES */
+.info-box {
+    margin: 10px;
     padding: 10px;
-    font-size: 12px;
-    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 3px;
 }
-.letterhead img {
+.info-col {
+    text-align: left;
+    min-width: 240px;
+}
+.info-row {
+    display: flex;
+    margin: 8px;
+}
+.info-label {
+    min-width: 100px;
+}
+.info-content {
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+/* KITS BOM STYLES */
+.kit-bom-div {
+    width: 900px;
+    display: inline-block;
+}
+.kit-bom-row-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 24px;
+    border-bottom: 1px solid #d3d2d2;
+    font-weight: bold;
+}
+.kit-bom-row-header div {
+    width: 200px;
+    text-align: left;
+}
+.kit-bom-row {
+    display: flex;
+    justify-content: space-between;
+}
+.kit-bom-row div {
+    width: 160px;
+    text-align: left;
+    color: #7e7d7d;
+}
+
+/* PARTS BOM STYLES */
+.part-bom-div {
+    width: 900px;
+    display: inline-block;
+}
+.part-bom-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #d3d2d2;
+    text-align: left;
+}
+.part-bom-row div {
+    width: 80px;
+}
+div.wide-col {
     width: 300px;
-    align-items: center;
 }
-.address {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    text-align: center;
+
+/* PDF STYLES */
+.pdf-div {
+    width: 900px;
+    display: inline-block;
 }
-.address div {
-    padding: 4px;
+.pdf-div input {
+    border: none;
+}
+.pdf-div input:hover {
+    border: 1px solid #b4b3b3;
+}
+.pdf-div select {
+    border: none;
+}
+.pdf-div select:hover {
+    border: 1px solid #b4b3b3;
 }
 .pdf-row {
     display: flex;
@@ -194,6 +217,24 @@ div.wide-col {
     margin: 10px;
     padding: 10px;
 }
+.letterhead {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    align-items: left;
+}
+.letterhead img {
+    width: 300px;
+    align-items: center;
+}
+.address {
+    font-size: 14px;
+}
+.address div {
+    padding: 4px;
+}
+
 select#customer {
     margin: 0px;
     padding: 0px;
@@ -244,26 +285,6 @@ select#customer {
     font-style: italic;
     margin: 10px;
     padding: 10px;
-}
-.pdf input {
-    border: none;
-}
-.pdf input:hover {
-    border: 1px solid #b4b3b3;
-}
-.pdf select {
-    border: none;
-}
-.pdf select:hover {
-    border: 1px solid #b4b3b3;
-}
-.pdf textarea {
-    border: none;
-    resize: none;
-    margin: 10px;
-}
-.pdf textarea:hover {
-    border: 1px solid #b4b3b3;
 }
 
 .line {

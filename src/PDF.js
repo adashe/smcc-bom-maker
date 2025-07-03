@@ -38,7 +38,7 @@ export function PDF({ projectInfo, children }) {
         setShippingInfo(initialShippingInfo);
     }
     return (
-        <div className="pdf">
+        <div className="pdf-div">
             {children}
             <Letterhead />
             <PDFProjectInfo
