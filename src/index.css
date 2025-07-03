@@ -188,12 +188,22 @@ div.wide-col {
 }
 
 /* PDF STYLES */
+.line {
+    border-top: 1px solid #b4b3b3;
+    margin: 10px auto;
+    width: 100%;
+}
 .pdf-div {
     width: 900px;
     display: inline-block;
 }
+.pdf-section {
+    display: flex;
+    justify-content: space-evenly;
+}
 .pdf-div input {
     border: none;
+    color: #2e787a;
 }
 .pdf-div input:hover {
     border: 1px solid #b4b3b3;
@@ -204,19 +214,8 @@ div.wide-col {
 .pdf-div select:hover {
     border: 1px solid #b4b3b3;
 }
-.pdf-row {
-    display: flex;
-    text-align: left;
-    margin: 8px 0;
-}
-.pdf-label {
-    width: 160px;
-}
-.pdf-col {
-    width: 400px;
-    margin: 10px;
-    padding: 10px;
-}
+
+/* LETTERHEAD STYLES */
 .letterhead {
     width: 300px;
     margin: 10px;
@@ -235,32 +234,65 @@ div.wide-col {
     padding: 4px;
 }
 
-select#customer {
+/* INFO SECTION STYLES */
+.info-col {
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+.info-row {
+    display: flex;
+    text-align: left;
+    margin: 8px 0;
+}
+.info-row select {
     margin: 0px;
     padding: 0px;
     width: 180px;
 }
+.info-row div {
+    width: 160px;
+}
+
+/* SHIPPING SECTION STYLES */
 .shipping-form {
     display: flex;
 }
 .shipping-col {
-    width: 200px;
     text-align: center;
 }
+.shipping-col input {
+    width: 100px;
+}
+
+/* ITEMIZATION SECTION STYLES */
 .itemization-row {
     display: flex;
     justify-content: space-between;
 }
-.itemization-col {
+.itemization-header {
+    width: 80px;
+    margin: auto 10px;
+}
+.itemization-row div {
     text-align: center;
-    width: 200px;
 }
-.item-desc-col {
-    width: 400px;
+.itemization-row input {
+    text-align: center;
+    width: 80px;
+    margin: 0px;
 }
-.item-desc-input {
-    width: 340px;
+div.itemization-desc-header {
+    width: 530px;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
 }
+input.item-desc-input {
+    width: 540px;
+    text-align: left;
+}
+
+/* PDF TOTALS SECTION STYLES */
 .itemization-totals {
     text-align: right;
     margin: 10px 80px;
@@ -270,13 +302,15 @@ select#customer {
     padding: 4px;
     margin: 10px;
 }
+
+/* NOTES SECTION STYLES */
 .notes-col {
     text-align: right;
     margin: 40px;
     padding: 10px;
 }
 .notes-col input {
-    width: 740px;
+    width: 600px;
 }
 .thank-you {
     color: #72d1d4;
@@ -285,9 +319,4 @@ select#customer {
     font-style: italic;
     margin: 10px;
     padding: 10px;
-}
-
-.line {
-    border-top: 1px solid #b4b3b3;
-    margin: 20px 60px;
 }

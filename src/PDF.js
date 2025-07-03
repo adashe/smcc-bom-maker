@@ -71,10 +71,10 @@ function PDFProjectInfo({ projectInfo, customer, handleChangeCustomer }) {
     dateIn30Days.setDate(dateIn30Days.getDate() + 30);
 
     return (
-        <div className="container">
-            <div className="pdf-col">
+        <div className="pdf-section">
+            <div className="info-col">
                 <form>
-                    <div className="pdf-row">
+                    <div className="info-row">
                         <label>
                             <select
                                 name="customer"
@@ -88,35 +88,35 @@ function PDFProjectInfo({ projectInfo, customer, handleChangeCustomer }) {
                             </select>
                         </label>
                     </div>
-                    <div className="pdf-row">
+                    <div className="info-row">
                         {customer?.addressLine1 || ""}
                     </div>
 
-                    <div className="pdf-row">
+                    <div className="info-row">
                         {customer?.addressLine2 || ""}
                     </div>
                 </form>
             </div>
 
-            <div className="pdf-col">
-                <div className="pdf-row">
-                    <div className="pdf-label">Engineer:</div>
+            <div className="info-col">
+                <div className="info-row">
+                    <div>Engineer:</div>
                     <div>{projectInfo.engineer.toUpperCase()}</div>
                 </div>
-                <div className="pdf-row">
-                    <div className="pdf-label">Project Name:</div>
+                <div className="info-row">
+                    <div>Project Name:</div>
                     <div>{projectInfo.project.toUpperCase()}</div>
                 </div>
-                <div className="pdf-row">
-                    <div className="pdf-label">Quote ID:</div>
+                <div className="info-row">
+                    <div>Quote ID:</div>
                     <div>####??</div>
                 </div>
-                <div className="pdf-row">
-                    <div className="pdf-label">Quoted On:</div>
+                <div className="info-row">
+                    <div>Quoted On:</div>
                     <div>{date.toLocaleDateString()}</div>
                 </div>
-                <div className="pdf-row">
-                    <div className="pdf-label">Valid Until:</div>
+                <div className="info-row">
+                    <div>Valid Until:</div>
                     <div>{dateIn30Days.toLocaleDateString()}</div>
                 </div>
             </div>
@@ -126,7 +126,7 @@ function PDFProjectInfo({ projectInfo, customer, handleChangeCustomer }) {
 
 function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
     return (
-        <div className="container">
+        <div className="pdf-section">
             <form className="shipping-form">
                 <div className="shipping-col">
                     <label>
@@ -190,15 +190,13 @@ function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
 
 function PDFItemization() {
     return (
-        <div className="container">
-            <form className="itemization-form">
+        <div className="pdf-section">
+            <form>
                 <div className="itemization-row">
-                    <div className="itemization-col header">QUANTITY</div>
-                    <div className="itemization-col item-desc-col header">
-                        DESCRIPTION
-                    </div>
-                    <div className="itemization-col header">UNIT PRICE</div>
-                    <div className="itemization-col header">LINE TOTAL</div>
+                    <div className="itemization-header">QUANTITY</div>
+                    <div className="itemization-desc-header">DESCRIPTION</div>
+                    <div className="itemization-header">UNIT PRICE</div>
+                    <div className="itemization-header">LINE TOTAL</div>
                 </div>
                 <PDFItemizationRow />
                 <PDFItemizationRow />
@@ -213,22 +211,22 @@ function PDFItemization() {
 function PDFItemizationRow() {
     return (
         <div className="itemization-row">
-            <div className="itemization-col">
+            <div>
                 <label>
                     <input type="number"></input>
                 </label>
             </div>
-            <div className="itemization-col item-desc-col">
+            <div>
                 <label>
                     <input className="item-desc-input" type="text"></input>
                 </label>
             </div>
-            <div className="itemization-col">
+            <div>
                 <label>
                     <input type="number"></input>
                 </label>
             </div>
-            <div className="itemization-col">
+            <div>
                 <label>
                     <input type="number"></input>
                 </label>
