@@ -6,6 +6,7 @@ export function Navigation({
     handleShowBomKits,
     handleShowBomParts,
     handleShowPDF,
+    children,
 }) {
     return (
         <div className="navigation">
@@ -33,6 +34,7 @@ export function Navigation({
             >
                 PDF
             </Button>
+            {children}
         </div>
     );
 }

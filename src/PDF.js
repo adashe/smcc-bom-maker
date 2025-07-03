@@ -3,7 +3,7 @@ import { Letterhead } from "./Letterhead";
 import { Button } from "./Button";
 import addresses from "./data/addresses.json";
 
-export function PDF({ projectInfo, children }) {
+export function PDF({ projectInfo }) {
     const initialShippingInfo = {
         shippingMethod: "",
         shippingTerms: "",
@@ -39,7 +39,6 @@ export function PDF({ projectInfo, children }) {
     }
     return (
         <div className="pdf-div">
-            {children}
             <Letterhead />
             <PDFProjectInfo
                 projectInfo={projectInfo}
@@ -188,7 +187,7 @@ function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
     );
 }
 
-function PDFItemization() {
+function PDFItemization({ totalAssemblyPrice }) {
     return (
         <div className="pdf-section">
             <form>
@@ -198,7 +197,7 @@ function PDFItemization() {
                     <div className="itemization-header">UNIT PRICE</div>
                     <div className="itemization-header">LINE TOTAL</div>
                 </div>
-                <PDFItemizationRow />
+                <PDFItemizationRow totalAssemblyPrice={totalAssemblyPrice} />
                 <PDFItemizationRow />
                 <PDFItemizationRow />
                 <PDFItemizationRow />

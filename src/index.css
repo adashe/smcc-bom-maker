@@ -228,7 +228,7 @@ div.wide-col {
     align-items: center;
 }
 .address {
-    font-size: 14px;
+    font-size: 15px;
 }
 .address div {
     padding: 4px;
@@ -284,8 +284,6 @@ div.wide-col {
 }
 div.itemization-desc-header {
     width: 530px;
-    text-align: left;
-    padding: 0px 0px 0px 20px;
 }
 input.item-desc-input {
     width: 540px;
@@ -314,6 +312,7 @@ input.item-desc-input {
 }
 .thank-you {
     color: #72d1d4;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
     font-style: italic;
