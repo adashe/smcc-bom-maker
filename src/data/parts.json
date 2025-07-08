@@ -1357,7 +1357,7 @@
         "manufacturer": "SanDisc",
         "cost": 12.47,
         "mm": 0,
-        "category": "x"
+        "category": "misc"
     },
     {
         "id": "890-382",
@@ -1365,6 +1365,38 @@
         "manufacturer": "Wago",
         "cost": 6.7,
         "mm": 0,
-        "category": "x"
+        "category": "misc"
+    },
+    {
+        "id": "3RV2711-1JD10",
+        "description": "MANUAL STARTER 600VAC 7-10 AMP IEC",
+        "manufacturer": "Siemens",
+        "cost": 56.35,
+        "mm": 0,
+        "category": "starter"
+    },
+    {
+        "id": "3RV2721-4CD10",
+        "description": "MANUAL STARTER 600VAC 22AMP IEC",
+        "manufacturer": "Siemens",
+        "cost": 127.65,
+        "mm": 0,
+        "category": "starter"
+    },
+    {
+        "id": "3RV2742-5FD10",
+        "description": "MANUAL STARTER 600VAC 35 AMP IEC",
+        "manufacturer": "Siemens",
+        "cost": 197.2,
+        "mm": 0,
+        "category": "starter"
+    },
+    {
+        "id": "3RV2742-5LD10",
+        "description": "MANUAL STARTER 600VAC 60 AMP IEC",
+        "manufacturer": "Siemens",
+        "cost": 248.95,
+        "mm": 0,
+        "category": "starter"
     }
 ]

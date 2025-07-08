@@ -163,7 +163,8 @@ select {
     justify-content: space-between;
 }
 .kit-bom-row div {
-    width: 160px;
+    font-size: 14px;
+    width: 80px;
     text-align: left;
     color: #7e7d7d;
 }
@@ -179,12 +180,13 @@ select {
     padding: 10px;
     border-bottom: 1px solid #d3d2d2;
     text-align: left;
+    font-size: 14px;
 }
 .part-bom-row div {
     width: 80px;
 }
 div.wide-col {
-    width: 300px;
+    width: 320px;
 }
 
 /* PDF STYLES */

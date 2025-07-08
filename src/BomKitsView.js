@@ -31,7 +31,7 @@ function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
             <div className="kit-bom-row-header">
                 <div className="wide-col">{kit.label.toUpperCase()}</div>
                 <div>QTY: {assembly[kit.id]}</div>
-                <div>UNIT COST: ${calcKitPrice(kit.id).toFixed(2)}</div>
+                <div>KIT COST: ${calcKitPrice(kit.id).toFixed(2)}</div>
             </div>
 
             <div>
@@ -42,12 +42,30 @@ function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
 }
 
 function PartsList({ components, partsData }) {
+    /* Build an object from the kit parts array with the part numbers and their quantities */
+    let kitBom = {};
+
+    components.forEach((component) => {
+        kitBom[component] = kitBom[component] + 1 || 1;
+    });
+
+    // Use the kitBom object to filter the partsData array
+    const selectedPartsArr = partsData.filter((part) => kitBom[part.id] > 0);
+
     return (
         <ul>
-            {components.map((component, i) => (
+            <li className="kit-bom-row">
+                <div>QTY</div>
+                <div>NUMBER</div>
+                <div className="wide-col">DESCRIPTION</div>
+                <div>MANU.</div>
+                <div>PRICE</div>
+                <div>TOTAL</div>
+            </li>
+            {selectedPartsArr.map((component, i) => (
                 <PartListItem
                     component={component}
-                    partsData={partsData}
+                    quantity={kitBom[component.id]}
                     key={i}
                 />
             ))}
@@ -55,18 +73,17 @@ function PartsList({ components, partsData }) {
     );
 }
 
-function PartListItem({ component, partsData }) {
-    const arr = partsData.filter((p) => p.id === component);
-    const item = arr[0];
-
+function PartListItem({ component, quantity }) {
     return (
         <li className="kit-bom-row">
-            <div>{item?.id || component}</div>
+            <div>{quantity}</div>
+            <div>{component?.id || component}</div>
             <div className="wide-col">
-                {item?.description || "Item not found in parts database"}
+                {component?.description || "Item not found in parts database"}
             </div>
-            <div>{item?.manufacturer}</div>
-            <div>${item?.cost.toFixed(2) || 0.0}</div>
+            <div>{component?.manufacturer}</div>
+            <div>${component?.cost.toFixed(2) || 0.0}</div>
+            <div>${(component?.cost * quantity).toFixed(2) || 0.0}</div>
         </li>
     );
 }
