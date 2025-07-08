@@ -29,19 +29,27 @@ function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
     return (
         <div>
             <div className="kit-bom-row-header">
-                <div className="extra-wide-col">{kit.label.toUpperCase()}</div>
+                <div className="wide-col">{kit.label.toUpperCase()}</div>
                 <div>QTY: {assembly[kit.id]}</div>
                 <div>KIT PRICE: ${calcKitPrice(kit.id).toFixed(2)}</div>
+                <div>
+                    TOTAL: $
+                    {(calcKitPrice(kit.id) * assembly[kit.id]).toFixed(2)}
+                </div>
             </div>
 
             <div>
-                <PartsList components={kit.components} partsData={partsData} />
+                <PartsList
+                    components={kit.components}
+                    partsData={partsData}
+                    kitQty={assembly[kit.id]}
+                />
             </div>
         </div>
     );
 }
 
-function PartsList({ components, partsData }) {
+function PartsList({ components, partsData, kitQty }) {
     /* Build an object from the kit parts array with the part numbers and their quantities */
     let kitBom = {};
 
@@ -66,6 +74,7 @@ function PartsList({ components, partsData }) {
                 <PartListItem
                     component={component}
                     quantity={kitBom[component.id]}
+                    kitQty={kitQty}
                     key={i}
                 />
             ))}
@@ -73,17 +82,19 @@ function PartsList({ components, partsData }) {
     );
 }
 
-function PartListItem({ component, quantity }) {
+function PartListItem({ component, quantity, kitQty }) {
     return (
         <li className="kit-bom-row">
-            <div>{quantity}</div>
+            <div>{quantity * kitQty}</div>
             <div className="med-col">{component?.id || component}</div>
             <div className="wide-col">
                 {component?.description || "Item not found in parts database"}
             </div>
             <div>{component?.manufacturer}</div>
             <div>${component?.cost.toFixed(2) || 0.0}</div>
-            <div>${(component?.cost * quantity).toFixed(2) || 0.0}</div>
+            <div>
+                ${(component?.cost * quantity * kitQty).toFixed(2) || 0.0}
+            </div>
         </li>
     );
 }

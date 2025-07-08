@@ -5,7 +5,7 @@ export function ComponentForm({ children }) {
                 <div className="option-col header">OPTION NAME</div>
                 <div className="col header">MSP</div>
                 <div className="col header">CONT.</div>
-                <div className="col header">UNIT PRICE</div>
+                <div className="col header">KIT PRICE</div>
             </div>
             {children}
         </form>
