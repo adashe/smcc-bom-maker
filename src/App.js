@@ -20,6 +20,7 @@ export default function App() {
         engineer: "azem",
         shipDate: "tomorrow",
         partsDueDate: "yesterday",
+        stc: "32",
     };
     const initialAssem = {
         starter3hp: 0,
@@ -59,45 +60,6 @@ export default function App() {
         handleUpdateTotals();
         setPage("pdf");
     }
-    /*     function buildCSVURL() {
-        let csvString =
-            "ID, Main ID, Item ID, Component ID, Qty Per Assembly, Save Changes";
-
-        let partsBom = {};
-
-        const quoteID = "7777777";
-
-        for (const k in assembly) {
-            if (assembly[k] > 0) {
-                const arr = kitsData.filter((kit) => kit.id === k);
-                const kit = arr[0];
-                kit.components.forEach(
-                    (component) =>
-                        (partsBom[component] =
-                            partsBom[component] + assembly[k] || assembly[k])
-                );
-            }
-        }
-
-        const selectedPartsArr = partsData.filter(
-            (part) => partsBom[part.id] > 0
-        );
-
-        selectedPartsArr.map(
-            (part, i) =>
-                (csvString += `\n${i + 1},1,${quoteID},${part.id},${
-                    partsBom[part.id]
-                },Y`)
-        );
-        console.log(csv);
-
-        const blob = new Blob([csv], { type: "text/csv;charset=utf-8," });
-        const csvURL = URL.createObjectURL(blob);
-
-        return csvURL;
-    } */
-
-    /*     const csvURL = buildCSVURL(); */
 
     function handleReset() {
         setProjectInfo(initialProjectInfo);

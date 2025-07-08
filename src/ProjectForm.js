@@ -88,14 +88,18 @@ export function ProjectForm({ projectInfo, handleChangeProjectInfo }) {
             <div>
                 <label>
                     STC:
-                    <select name="stc">
-                        <option value="stc32">32</option>
-                        <option value="stc48">48</option>
-                        <option value="stc64">64</option>
-                        <option value="stc80">80</option>
-                        <option value="stc96">96</option>
-                        <option value="stc112">112</option>
-                        <option value="stc128">128</option>
+                    <select
+                        name="stc"
+                        value={projectInfo.stc}
+                        onChange={handleChangeProjectInfo}
+                    >
+                        <option value="32">32</option>
+                        <option value="48">48</option>
+                        <option value="64">64</option>
+                        <option value="80">80</option>
+                        <option value="96">96</option>
+                        <option value="112">112</option>
+                        <option value="128">128</option>
                     </select>
                 </label>
             </div>

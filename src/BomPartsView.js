@@ -21,6 +21,14 @@ export function BomPartsView({ assembly, kitsData, partsData, children }) {
         <div className="part-bom-div">
             {children}
             <h2>BoM Parts</h2>
+            <div className="part-bom-row">
+                <div>QTY</div>
+                <div className="med-col">NUMBER</div>
+                <div className="wide-col">DESCRIPTION</div>
+                <div>MANU.</div>
+                <div>PRICE</div>
+                <div>TOTAL</div>
+            </div>
 
             {selectedPartsArr.map((part) => (
                 <PartsBomRow part={part} partsBom={partsBom} key={part.id} />
@@ -32,11 +40,12 @@ export function BomPartsView({ assembly, kitsData, partsData, children }) {
 function PartsBomRow({ part, partsBom }) {
     return (
         <div className="part-bom-row">
-            <div>{part.id}</div>
+            <div>{partsBom[part.id]}</div>
+            <div className="med-col">{part.id}</div>
             <div className="wide-col">{part.description}</div>
             <div>{part.manufacturer}</div>
             <div>${part.cost.toFixed(2)}</div>
-            <div>QTY: {partsBom[part.id]}</div>
+            <div>${(part.cost * partsBom[part.id]).toFixed(2)}</div>
         </div>
     );
 }

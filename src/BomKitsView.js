@@ -29,9 +29,9 @@ function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
     return (
         <div>
             <div className="kit-bom-row-header">
-                <div className="wide-col">{kit.label.toUpperCase()}</div>
+                <div className="extra-wide-col">{kit.label.toUpperCase()}</div>
                 <div>QTY: {assembly[kit.id]}</div>
-                <div>KIT COST: ${calcKitPrice(kit.id).toFixed(2)}</div>
+                <div>KIT PRICE: ${calcKitPrice(kit.id).toFixed(2)}</div>
             </div>
 
             <div>
@@ -56,7 +56,7 @@ function PartsList({ components, partsData }) {
         <ul>
             <li className="kit-bom-row">
                 <div>QTY</div>
-                <div>NUMBER</div>
+                <div className="med-col">NUMBER</div>
                 <div className="wide-col">DESCRIPTION</div>
                 <div>MANU.</div>
                 <div>PRICE</div>
@@ -77,7 +77,7 @@ function PartListItem({ component, quantity }) {
     return (
         <li className="kit-bom-row">
             <div>{quantity}</div>
-            <div>{component?.id || component}</div>
+            <div className="med-col">{component?.id || component}</div>
             <div className="wide-col">
                 {component?.description || "Item not found in parts database"}
             </div>

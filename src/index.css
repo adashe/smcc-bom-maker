@@ -36,7 +36,7 @@ button {
     margin: 10px;
     padding: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     border-radius: 3px;
 }
@@ -137,7 +137,7 @@ select {
     min-width: 100px;
 }
 .info-content {
-    font-weight: bold;
+    font-weight: 600;
     margin-left: 6px;
 }
 
@@ -152,7 +152,7 @@ select {
     padding: 10px;
     margin-top: 24px;
     border-bottom: 1px solid #d3d2d2;
-    font-weight: bold;
+    font-weight: 600;
 }
 .kit-bom-row-header div {
     width: 200px;
@@ -185,8 +185,14 @@ select {
 .part-bom-row div {
     width: 80px;
 }
+div.extra-wide-col {
+    width: 480px;
+}
 div.wide-col {
     width: 320px;
+}
+div.med-col {
+    width: 100px;
 }
 
 /* PDF STYLES */

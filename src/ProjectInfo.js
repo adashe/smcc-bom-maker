@@ -26,15 +26,15 @@ export function ProjectInfo({ projectInfo, totalPrice }) {
                         {projectInfo.contact.toUpperCase()}
                     </div>
                 </div>
-            </div>
-
-            <div className="info-col">
                 <div className="info-row">
                     <div className="info-label">Engineer:</div>
                     <div className="info-content">
                         {projectInfo.engineer.toUpperCase()}
                     </div>
                 </div>
+            </div>
+
+            <div className="info-col">
                 <div className="info-row">
                     <div className="info-label">Ship Date:</div>
                     <div className="info-content">{projectInfo.shipDate}</div>
@@ -44,6 +44,10 @@ export function ProjectInfo({ projectInfo, totalPrice }) {
                     <div className="info-content">
                         {projectInfo.partsDueDate}
                     </div>
+                </div>
+                <div className="info-row">
+                    <div className="info-label">STC:</div>
+                    <div className="info-content">{projectInfo.stc}</div>
                 </div>
                 <div className="info-row">
                     <div className="info-label">Total Price:</div>
