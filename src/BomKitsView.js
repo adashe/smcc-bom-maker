@@ -8,20 +8,22 @@ export function BomKitsView({
     const selectedKitsArr = kitsData.filter((kit) => assembly[kit.id] > 0);
 
     return (
-        <div className="kit-bom-div">
+        <>
             {children}
-            <h2>BoM Kits</h2>
+            <div className="kit-bom-div">
+                <h2>Kits View</h2>
 
-            {selectedKitsArr.map((kit, i) => (
-                <KitBomRow
-                    assembly={assembly}
-                    kit={kit}
-                    partsData={partsData}
-                    key={i}
-                    calcKitPrice={calcKitPrice}
-                />
-            ))}
-        </div>
+                {selectedKitsArr.map((kit, i) => (
+                    <KitBomRow
+                        assembly={assembly}
+                        kit={kit}
+                        partsData={partsData}
+                        key={i}
+                        calcKitPrice={calcKitPrice}
+                    />
+                ))}
+            </div>
+        </>
     );
 }
 
@@ -63,12 +65,12 @@ function PartsList({ components, partsData, kitQty }) {
     return (
         <ul>
             <li className="kit-bom-row">
-                <div>QTY</div>
-                <div className="med-col">NUMBER</div>
-                <div className="wide-col">DESCRIPTION</div>
-                <div>MANU.</div>
-                <div>PRICE</div>
-                <div>TOTAL</div>
+                <div className="kit-bom-label">QTY</div>
+                <div className="kit-bom-label med-col">NUMBER</div>
+                <div className="kit-bom-label wide-col">DESCRIPTION</div>
+                <div className="kit-bom-label">MANU.</div>
+                <div className="kit-bom-label">PRICE</div>
+                <div className="kit-bom-label">TOTAL</div>
             </li>
             {selectedPartsArr.map((component, i) => (
                 <PartListItem

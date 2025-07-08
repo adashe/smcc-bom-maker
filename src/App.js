@@ -12,14 +12,20 @@ import kitsData from "./data/kits.json";
 import partsData from "./data/parts.json";
 
 export default function App() {
+    let dateIn30Days = new Date();
+    dateIn30Days.setDate(dateIn30Days.getDate() + 30);
+
+    let dateIn60Days = new Date();
+    dateIn60Days.setDate(dateIn60Days.getDate() + 60);
+
     const initialProjectInfo = {
-        jobNum: "12345",
-        project: "abcd",
-        customer: "me",
-        contact: "you",
-        engineer: "azem",
-        shipDate: "tomorrow",
-        partsDueDate: "yesterday",
+        jobNum: "P21###",
+        project: "West River Car Wash",
+        customer: "Sonny's",
+        contact: "Eric Ericson",
+        engineer: "Azem Karaca",
+        shipDate: dateIn30Days.toISOString().split("T")[0],
+        partsDueDate: dateIn60Days.toISOString().split("T")[0],
         size: "small",
         stc: "32",
     };

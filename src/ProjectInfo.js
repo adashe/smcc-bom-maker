@@ -1,6 +1,13 @@
 export function ProjectInfo({ projectInfo, totalPrice }) {
+    // Convert dates to midnight at user's local timezone to avoid timezone errors
+    const shipDateString = `${projectInfo.shipDate}T00:00:00`;
+    const shipDate = new Date(shipDateString).toLocaleDateString();
+
+    const partsDateString = `${projectInfo.partsDueDate}T00:00:00`;
+    const partsDueDate = new Date(partsDateString).toLocaleDateString();
+
     return (
-        <div className="info-box container">
+        <div className="info-box">
             <div className="info-col">
                 <div className="info-row">
                     <div className="info-label">Job Number: </div>
@@ -37,13 +44,11 @@ export function ProjectInfo({ projectInfo, totalPrice }) {
             <div className="info-col">
                 <div className="info-row">
                     <div className="info-label">Ship Date:</div>
-                    <div className="info-content">{projectInfo.shipDate}</div>
+                    <div className="info-content">{shipDate}</div>
                 </div>
                 <div className="info-row">
                     <div className="info-label">Parts Due:</div>
-                    <div className="info-content">
-                        {projectInfo.partsDueDate}
-                    </div>
+                    <div className="info-content">{partsDueDate}</div>
                 </div>
                 <div className="info-row">
                     <div className="info-label">Size:</div>

@@ -9,7 +9,7 @@ body {
     width: 1100px;
     text-align: center;
     margin: 10px auto;
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
     border-radius: 5px;
     box-shadow: 2px 2px #c2c0c0;
 }
@@ -120,25 +120,23 @@ select {
 
 /* INFO BOX STYLES */
 .info-box {
-    margin: 10px;
+    display: flex;
+    width: 900px;
+    margin: 10px auto;
     padding: 10px;
     background-color: #f0f0f0;
     border-radius: 3px;
-}
-.info-col {
-    text-align: left;
-    min-width: 240px;
+    justify-content: space-evenly;
 }
 .info-row {
     display: flex;
-    margin: 8px;
+    text-align: left;
+    margin: 10px auto;
+    padding: 10px auto;
 }
 .info-label {
-    min-width: 100px;
-}
-.info-content {
+    width: 120px;
     font-weight: 600;
-    margin-left: 6px;
 }
 
 /* KITS BOM STYLES */
@@ -168,7 +166,9 @@ select {
     text-align: left;
     color: #7e7d7d;
 }
-
+.kit-bom-label {
+    font-weight: 600;
+}
 /* PARTS BOM STYLES */
 .part-bom-div {
     width: 900px;
@@ -184,6 +184,9 @@ select {
 }
 .part-bom-row div {
     width: 80px;
+}
+.part-bom-label {
+    font-weight: 600;
 }
 div.extra-wide-col {
     width: 480px;
@@ -242,23 +245,23 @@ div.med-col {
     padding: 4px;
 }
 
-/* INFO SECTION STYLES */
-.info-col {
+/* PDF INFO SECTION STYLES */
+.pdf-info-col {
     width: 400px;
     margin: 10px;
     padding: 10px;
 }
-.info-row {
+.pdf-info-row {
     display: flex;
     text-align: left;
     margin: 8px 0;
 }
-.info-row select {
+.pdf-info-row select {
     margin: 0px;
     padding: 0px;
     width: 180px;
 }
-.info-row div {
+.pdf-info-row div {
     width: 160px;
 }
 
@@ -300,13 +303,17 @@ input.item-desc-input {
 
 /* PDF TOTALS SECTION STYLES */
 .itemization-totals {
-    text-align: right;
     margin: 10px 80px;
     padding: 10px;
+    text-align: right;
 }
 .itemization-totals div {
-    padding: 4px;
-    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.itemization-label {
+    width: 100px;
+    margin: auto 14px;
 }
 
 /* NOTES SECTION STYLES */

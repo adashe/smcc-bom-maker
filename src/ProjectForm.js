@@ -65,7 +65,7 @@ export function ProjectForm({ projectInfo, handleChangeProjectInfo }) {
                 <label>
                     Ship Date:
                     <input
-                        type="text"
+                        type="date"
                         name="shipDate"
                         value={projectInfo.shipDate}
                         onChange={handleChangeProjectInfo}
@@ -77,7 +77,7 @@ export function ProjectForm({ projectInfo, handleChangeProjectInfo }) {
                 <label>
                     Parts Due Date:
                     <input
-                        type="text"
+                        type="date"
                         name="partsDueDate"
                         value={projectInfo.partsDueDate}
                         onChange={handleChangeProjectInfo}

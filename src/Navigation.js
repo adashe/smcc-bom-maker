@@ -20,13 +20,13 @@ export function Navigation({
                 isActive={page === "kits" ? "" : "active"}
                 handleClick={handleShowBomKits}
             >
-                BoM KITS
+                KITS VIEW
             </Button>
             <Button
                 isActive={page === "parts" ? "" : "active"}
                 handleClick={handleShowBomParts}
             >
-                BoM PARTS
+                PARTS VIEW
             </Button>
             <Button
                 isActive={page === "pdf" ? "" : "active"}

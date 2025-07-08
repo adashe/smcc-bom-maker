@@ -18,22 +18,28 @@ export function BomPartsView({ assembly, kitsData, partsData, children }) {
     const selectedPartsArr = partsData.filter((part) => partsBom[part.id] > 0);
 
     return (
-        <div className="part-bom-div">
+        <>
             {children}
-            <h2>BoM Parts</h2>
-            <div className="part-bom-row">
-                <div>QTY</div>
-                <div className="med-col">NUMBER</div>
-                <div className="wide-col">DESCRIPTION</div>
-                <div>MANU.</div>
-                <div>PRICE</div>
-                <div>TOTAL</div>
-            </div>
+            <div className="part-bom-div">
+                <h2>Parts View</h2>
+                <div className="part-bom-row">
+                    <div className="part-bom-label">QTY</div>
+                    <div className="part-bom-label med-col">NUMBER</div>
+                    <div className="part-bom-label wide-col">DESCRIPTION</div>
+                    <div className="part-bom-label">MANU.</div>
+                    <div className="part-bom-label">PRICE</div>
+                    <div className="part-bom-label">TOTAL</div>
+                </div>
 
-            {selectedPartsArr.map((part) => (
-                <PartsBomRow part={part} partsBom={partsBom} key={part.id} />
-            ))}
-        </div>
+                {selectedPartsArr.map((part) => (
+                    <PartsBomRow
+                        part={part}
+                        partsBom={partsBom}
+                        key={part.id}
+                    />
+                ))}
+            </div>
+        </>
     );
 }
 
