@@ -87,6 +87,22 @@ export function ProjectForm({ projectInfo, handleChangeProjectInfo }) {
 
             <div>
                 <label>
+                    Size:
+                    <select
+                        name="size"
+                        value={projectInfo.size}
+                        onChange={handleChangeProjectInfo}
+                    >
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">Extra Large</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <label>
                     STC:
                     <select
                         name="stc"

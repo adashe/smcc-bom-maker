@@ -8,7 +8,6 @@ export function Forms({
     calcKitPrice,
     basePrice,
     totalPrice,
-    totalFLA,
     handleChangeProjectInfo,
     handleChange,
     handleUpdateTotals,
@@ -24,11 +23,7 @@ export function Forms({
                     projectInfo={projectInfo}
                     handleChangeProjectInfo={handleChangeProjectInfo}
                 />
-                <Totals
-                    basePrice={basePrice}
-                    totalPrice={totalPrice}
-                    totalFLA={totalFLA}
-                >
+                <Totals basePrice={basePrice} totalPrice={totalPrice}>
                     <Button
                         isActive={"active"}
                         handleClick={handleUpdateTotals}

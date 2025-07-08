@@ -4,7 +4,6 @@ export function Totals({ basePrice, totalPrice, totalFLA, children }) {
             <h2 className="totals-header">TOTALS</h2>
             <div>Base Price: ${basePrice}</div>
             <div>Total Cost: ${totalPrice.toFixed(2)}</div>
-            <div>Total FLA: {totalFLA}</div>
             {children}
         </div>
     );

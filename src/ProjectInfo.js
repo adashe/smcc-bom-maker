@@ -46,8 +46,14 @@ export function ProjectInfo({ projectInfo, totalPrice }) {
                     </div>
                 </div>
                 <div className="info-row">
+                    <div className="info-label">Size:</div>
+                    <div className="info-content">
+                        {projectInfo.size.toUpperCase()}
+                    </div>
+                </div>
+                <div className="info-row">
                     <div className="info-label">STC:</div>
-                    <div className="info-content">{projectInfo.stc}</div>
+                    <div className="info-content">STC-{projectInfo.stc}</div>
                 </div>
                 <div className="info-row">
                     <div className="info-label">Total Price:</div>

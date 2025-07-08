@@ -20,6 +20,7 @@ export default function App() {
         engineer: "azem",
         shipDate: "tomorrow",
         partsDueDate: "yesterday",
+        size: "small",
         stc: "32",
     };
     const initialAssem = {
@@ -39,7 +40,6 @@ export default function App() {
     const [assembly, setAssembly] = useState(initialAssem);
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
-    const [totalFLA, setTotalFLA] = useState(0);
     const [page, setPage] = useState("forms");
 
     function handleShowForms() {
@@ -66,7 +66,6 @@ export default function App() {
         setAssembly(initialAssem);
         setBasePrice(100);
         setTotalPrice(basePrice);
-        setTotalFLA(0);
     }
 
     function handleChangeProjectInfo(e) {
@@ -90,7 +89,6 @@ export default function App() {
     function handleUpdateTotals() {
         calcBasePrice();
         calcTotalPrice();
-        calcTotalFLA();
     }
 
     function calcBasePrice() {
@@ -123,23 +121,6 @@ export default function App() {
         return sum;
     }
 
-    function calcTotalFLA() {
-        let kitsFLA = 0;
-
-        for (const kitID in assembly) {
-            const quantity = assembly[kitID];
-            const kitFLA = calcKitFLA(kitID);
-            kitsFLA += kitFLA * quantity;
-        }
-        setTotalFLA(kitsFLA);
-    }
-
-    function calcKitFLA(kitID) {
-        const arr = kitsData.filter((kit) => kit.id === kitID);
-        const kit = arr[0];
-        return kit.fla;
-    }
-
     return (
         <div className="App">
             <Header />
@@ -161,7 +142,6 @@ export default function App() {
                     calcKitPrice={calcKitPrice}
                     basePrice={basePrice}
                     totalPrice={totalPrice}
-                    totalFLA={totalFLA}
                     handleChangeProjectInfo={handleChangeProjectInfo}
                     handleChange={handleChange}
                     handleUpdateTotals={handleUpdateTotals}
