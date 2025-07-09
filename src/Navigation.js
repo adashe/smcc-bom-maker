@@ -28,12 +28,12 @@ export function Navigation({
             >
                 PARTS VIEW
             </Button>
-            <Button
+            {/*             <Button
                 isActive={page === "pdf" ? "" : "active"}
                 handleClick={handleShowPDF}
             >
                 PDF
-            </Button>
+            </Button> */}
             {children}
         </div>
     );
