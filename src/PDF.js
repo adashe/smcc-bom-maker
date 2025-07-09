@@ -4,6 +4,12 @@ import { Button } from "./Button";
 import addresses from "./data/addresses.json";
 
 export function PDF({ projectInfo }) {
+    const initialCustomer = {
+        id: "sonnys",
+        customerName: "Sonny's",
+        addressLine1: "1200 Main Street",
+        addressLine2: "Jacksonville, FL 32206",
+    };
     const initialShippingInfo = {
         shippingMethod: "",
         shippingTerms: "",
@@ -12,14 +18,8 @@ export function PDF({ projectInfo }) {
         freight: "",
     };
 
-    const [customer, setCustomer] = useState({
-        id: "sonnys",
-        customerName: "Sonny's",
-        addressLine1: "1200 Main Street",
-        addressLine2: "Jacksonville, FL 32206",
-    });
+    const [customer, setCustomer] = useState(initialCustomer);
     const [shippingInfo, setShippingInfo] = useState(initialShippingInfo);
-    const [subtotal, setSubtotal] = useState(0);
 
     function handleChangeCustomer(e) {
         const customerID = e.target.value;
@@ -35,12 +35,9 @@ export function PDF({ projectInfo }) {
             [name]: value,
         }));
     }
-    function handleUpdateSubtotal(e) {
-        // FIX
-        setSubtotal(Number(e.target.value));
-    }
 
     function handleResetPDF() {
+        // FIX
         setShippingInfo(initialShippingInfo);
     }
     return (
@@ -57,16 +54,13 @@ export function PDF({ projectInfo }) {
                 handleChangeShippingInfo={handleChangeShippingInfo}
             />
             <Line />
-            <PDFItemization
-                subtotal={subtotal}
-                handleUpdateSubtotal={handleUpdateSubtotal}
-            />
+            <PDFItemization />
             <Line />
-            <PDFTotals subtotal={subtotal} salesTax={0.06} />
+            <PDFTotals />
             <Line />
             <PDFNotes />
-            <Button isActive="active" onClick={handleResetPDF}>
-                RESET (not working)
+            <Button isActive="active" handleClick={handleResetPDF}>
+                RESET
             </Button>
         </div>
     );
@@ -196,7 +190,7 @@ function PDFShippingInfo({ shippingInfo, handleChangeShippingInfo }) {
     );
 }
 
-function PDFItemization({ handleUpdateSubtotal }) {
+function PDFItemization() {
     return (
         <div className="pdf-section">
             <form>
@@ -206,46 +200,52 @@ function PDFItemization({ handleUpdateSubtotal }) {
                     <div className="itemization-header">UNIT PRICE</div>
                     <div className="itemization-header">LINE TOTAL</div>
                 </div>
-                <PDFItemizationRow
-                    handleUpdateSubtotal={handleUpdateSubtotal}
-                />
+
+                <PDFItemizationRow />
+                <PDFItemizationRow />
+                <PDFItemizationRow />
+                <PDFItemizationRow />
+                <PDFItemizationRow />
             </form>
         </div>
     );
 }
 
-function PDFItemizationRow({ handleUpdateSubtotal, i }) {
+function PDFItemizationRow() {
     return (
         <div className="itemization-row">
             <div>
                 <label>
-                    <input type="number"></input>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <input className="item-desc-input" type="text"></input>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <input type="number"></input>
+                    <input type="number" name="quantity"></input>
                 </label>
             </div>
             <div>
                 <label>
                     <input
-                        type="number"
-                        name={`price`}
-                        onChange={handleUpdateSubtotal}
+                        className="item-desc-input"
+                        type="text"
+                        name="description"
                     ></input>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="number" name="unitPrice"></input>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="number" name="lineTotal"></input>
                 </label>
             </div>
         </div>
     );
 }
 
-function PDFTotals({ subtotal, salesTax }) {
+function PDFTotals() {
+    const subtotal = 0;
+    const salesTax = 0.06;
+
     return (
         <div className="itemization-totals">
             <div>

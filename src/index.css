@@ -311,9 +311,13 @@ input.item-desc-input {
     display: flex;
     justify-content: flex-end;
 }
+
 .itemization-label {
-    width: 100px;
+    width: 120px;
     margin: auto 14px;
+}
+.subtotal-div {
+    display: flex;
 }
 
 /* NOTES SECTION STYLES */
