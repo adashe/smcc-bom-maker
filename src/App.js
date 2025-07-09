@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { Header } from "./Header";
-import { Navigation } from "./Navigation";
-import { Forms } from "./Forms";
+import { Header } from "./components/Header";
+import { Navigation } from "./components/Navigation";
 import { ProjectInfo } from "./ProjectInfo";
-import { BomKitsView } from "./BomKitsView";
-import { BomPartsView } from "./BomPartsView";
-import { PDF } from "./PDF";
-import { CSVButton } from "./CSV";
+
+import { Forms } from "./pages/Forms";
+import { BomKitsView } from "./pages/BomKitsView";
+import { BomPartsView } from "./pages/BomPartsView";
+import { PDF } from "./pages/PDF";
+import { CSVButton } from "./pages/CSV";
 
 import kitsData from "./data/kits.json";
 import partsData from "./data/parts.json";

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Letterhead } from "./Letterhead";
-import { Button } from "./Button";
-import addresses from "./data/addresses.json";
+import { Letterhead } from "../components/Letterhead";
+import { Button } from "../components/Button";
+import addresses from "../data/addresses.json";
 
 export function PDF({ projectInfo }) {
     const initialCustomer = {
