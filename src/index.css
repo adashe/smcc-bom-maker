@@ -6,8 +6,8 @@ body {
 }
 .App {
     background: white;
-    width: 1100px;
     text-align: center;
+    width: 1300px;
     margin: 10px auto;
     padding: 10px 10px 50px 10px;
     border-radius: 5px;
@@ -27,6 +27,15 @@ body {
 .navigation {
     margin: 20px;
     padding: 20px;
+}
+.sidebar {
+    width: 220px;
+    padding-top: 120px;
+    padding-right: 20px;
+    border-right: 1px solid #d3d2d2;
+}
+.page {
+    width: 1000px;
 }
 button {
     font-family: "Source Sans 3", serif;

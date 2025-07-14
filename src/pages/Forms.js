@@ -1,8 +1,8 @@
-import { ComponentForm } from "../ComponentForm";
-import { ComponentRow } from "../ComponentRow";
-import { ProjectForm } from "../ProjectForm";
+import { ComponentForm } from "../components/ComponentForm";
+import { ComponentRow } from "../components/ComponentRow";
+import { ProjectForm } from "../components/ProjectForm";
 import { Button } from "../components/Button";
-import { Totals } from "../Totals";
+import { Totals } from "../components/Totals";
 
 export function Forms({
     calcKitPrice,
