@@ -3,15 +3,18 @@ import { ComponentRow } from "../components/ComponentRow";
 import { ProjectForm } from "../components/ProjectForm";
 import { Button } from "../components/Button";
 import { Totals } from "../components/Totals";
+import { OptionsForm } from "../components/OptionsForm";
 
 export function Forms({
     kitsData,
     projectInfo,
+    options,
     assembly,
     basePrice,
     totalPrice,
     handleReset,
     handleChangeProjectInfo,
+    handleChangeOptions,
     handleChangeAssembly,
     handleUpdateTotals,
     calcKitPrice,
@@ -32,6 +35,12 @@ export function Forms({
                         RESET FORM
                     </Button>
                 </Totals>
+            </div>
+            <div>
+                <OptionsForm
+                    options={options}
+                    handleChangeOptions={handleChangeOptions}
+                />
             </div>
             <div>
                 <ComponentForm>

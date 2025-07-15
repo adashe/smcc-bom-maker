@@ -18,6 +18,8 @@ export function MCCQuoteGenerator({
     partsData,
     initialProjectInfo,
 }) {
+    const initialOptions = { size: "small", stc: "32" };
+
     // Build initial assembly object based on kits in kitsData
     const initialAssembly = kitsData.reduce((prev, curr) => {
         prev[curr.id] = 0;
@@ -25,6 +27,7 @@ export function MCCQuoteGenerator({
     }, {});
 
     const [projectInfo, setProjectInfo] = useState(initialProjectInfo);
+    const [options, setOptions] = useState(initialOptions);
     const [assembly, setAssembly] = useState(initialAssembly);
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
@@ -45,6 +48,14 @@ export function MCCQuoteGenerator({
         const { name, value } = e.target;
 
         setProjectInfo((previous) => ({
+            ...previous,
+            [name]: value,
+        }));
+    }
+    function handleChangeOptions(e) {
+        const { name, value } = e.target;
+
+        setOptions((previous) => ({
             ...previous,
             [name]: value,
         }));
@@ -126,11 +137,13 @@ export function MCCQuoteGenerator({
                 <Forms
                     kitsData={kitsData}
                     projectInfo={projectInfo}
+                    options={options}
                     assembly={assembly}
                     basePrice={basePrice}
                     totalPrice={totalPrice}
                     handleReset={handleReset}
                     handleChangeProjectInfo={handleChangeProjectInfo}
+                    handleChangeOptions={handleChangeOptions}
                     handleChangeAssembly={handleChangeAssembly}
                     handleUpdateTotals={handleUpdateTotals}
                     calcKitPrice={calcKitPrice}
@@ -145,6 +158,7 @@ export function MCCQuoteGenerator({
                 >
                     <ProjectInfo
                         projectInfo={projectInfo}
+                        options={options}
                         totalPrice={totalPrice}
                     />
                 </BomKitsView>
@@ -157,6 +171,7 @@ export function MCCQuoteGenerator({
                 >
                     <ProjectInfo
                         projectInfo={projectInfo}
+                        options={options}
                         totalPrice={totalPrice}
                     />
                 </BomPartsView>

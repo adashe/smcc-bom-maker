@@ -29,8 +29,6 @@ export default function App() {
         engineer: "Azem Karaca",
         shipDate: dateIn30Days.toISOString().split("T")[0],
         partsDueDate: dateIn60Days.toISOString().split("T")[0],
-        size: "small",
-        stc: "32",
     };
 
     return (

@@ -1,4 +1,4 @@
-export function ProjectInfo({ projectInfo, totalPrice }) {
+export function ProjectInfo({ projectInfo, options, totalPrice }) {
     // Convert dates to midnight at user's local timezone to avoid timezone errors
     const shipDateString = `${projectInfo.shipDate}T00:00:00`;
     const shipDate = new Date(shipDateString).toLocaleDateString();
@@ -53,12 +53,12 @@ export function ProjectInfo({ projectInfo, totalPrice }) {
                 <div className="info-row">
                     <div className="info-label">Size:</div>
                     <div className="info-content">
-                        {projectInfo.size.toUpperCase()}
+                        {options.size.toUpperCase()}
                     </div>
                 </div>
                 <div className="info-row">
                     <div className="info-label">STC:</div>
-                    <div className="info-content">STC-{projectInfo.stc}</div>
+                    <div className="info-content">STC-{options.stc}</div>
                 </div>
                 <div className="info-row">
                     <div className="info-label">Total Price:</div>
