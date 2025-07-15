@@ -1,0 +1,1651 @@
+[
+    {
+        "id": "vfd1hpWrap",
+        "label": "1.5HP Wrap VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1082.95,
+        "fla": 4.6,
+        "msp": "6A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd1hpWrapBnd",
+        "label": "1.5HP Wrap VFD BND",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1082.95,
+        "fla": 4.6,
+        "msp": "6A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd1hpTopBrush",
+        "label": "1.5HP Top Brush VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1082.95,
+        "fla": 4.6,
+        "msp": "6A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd1hpTopBrushRev",
+        "label": "1.5HP Top Brush VFD REV",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1082.95,
+        "fla": 4.6,
+        "msp": "6A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd1hpTopBrushBnd",
+        "label": "1.5HP Top Brush VFD BND",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1082.95,
+        "fla": 4.6,
+        "msp": "6A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd1hpOmni",
+        "label": "1.5HP Omni VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1082.95,
+        "fla": 4.6,
+        "msp": "6A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd1hpMitter",
+        "label": "1.5HP Mitter VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1082.95,
+        "fla": 4.6,
+        "msp": "6A",
+        "cont": "12A"
+    },
+    {
+        "id": "1hpMitter",
+        "label": "1.5HP Mitter",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1082.95,
+        "fla": 4.6,
+        "msp": "6A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd3hpOmni1",
+        "label": "3HP Omni 1 VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 635.25,
+        "fla": 4.6,
+        "msp": "6/12A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd3hpRocker1",
+        "label": "3HP Rocker 1 VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 635.25,
+        "fla": 4.6,
+        "msp": "6/12A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd3hpTireBrush1",
+        "label": "3HP Tire Brush 1 VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 635.25,
+        "fla": 4.6,
+        "msp": "6/12A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd3hpTireShine1",
+        "label": "3HP Tire Shine 1 VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 635.25,
+        "fla": 4.6,
+        "msp": "6/12A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd3hpSideBrush1",
+        "label": "3HP Side Brush 1 VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 635.25,
+        "fla": 4.6,
+        "msp": "6/12A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd3hpGrillBrush1",
+        "label": "3HP Grill Brush 1 VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 635.25,
+        "fla": 4.6,
+        "msp": "6/12A",
+        "cont": "12A"
+    },
+    {
+        "id": "vfd3hpWheelBlaster1",
+        "label": "3HP Wheel Blaster 1 VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 635.25,
+        "fla": 4.6,
+        "msp": "6/12A",
+        "cont": "12A"
+    },
+    {
+        "id": "3hpBoosterPump",
+        "label": "3HP Booster Pump",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 8.4,
+        "msp": "10A",
+        "cont": "18A"
+    },
+    {
+        "id": "3hpPUOmni",
+        "label": "3HP P/U Omni",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 8.4,
+        "msp": "10A",
+        "cont": "18A"
+    },
+    {
+        "id": "3hpPUTireShine",
+        "label": "3HP P/U Tire Shine",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 8.4,
+        "msp": "10A",
+        "cont": "18A"
+    },
+    {
+        "id": "3hpPUTopBrush",
+        "label": "3HP P/U Top Brush",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 8.4,
+        "msp": "10A",
+        "cont": "18A"
+    },
+    {
+        "id": "vfd3hpConveyor",
+        "label": "3HP Conveyor VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 8.4,
+        "msp": "10A",
+        "cont": "18A"
+    },
+    {
+        "id": "5hpBooster",
+        "label": "5HP Booster",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPrepGun",
+        "label": "5HP Prep Gun",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPU2FLOmni",
+        "label": "5HP P/U 2FL Omni",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPUGrillBrush",
+        "label": "5HP P/U Grill Brush",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPURockers",
+        "label": "5HP P/U Rockers",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPUSideBrush",
+        "label": "5HP P/U Side Brush",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPUTopBrush",
+        "label": "5HP P/U Top Brush",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPUTireBrush",
+        "label": "5HP P/U Tire Brush",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPUTireShine",
+        "label": "5HP P/U Tire Shine",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPUConveyor",
+        "label": "5HP P/U Conveyor",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "5hpPUTwinConveyor",
+        "label": "5HP P/U Twin Conveyor",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 264.99,
+        "fla": 14.3,
+        "msp": "20A",
+        "cont": "32A"
+    },
+    {
+        "id": "breaker1hpRO",
+        "label": "1.5HP R/O Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 4.3,
+        "msp": "6A",
+        "cont": null
+    },
+    {
+        "id": "breaker2hpOzone",
+        "label": "2HP Ozone Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 4.6,
+        "msp": "10A",
+        "cont": null
+    },
+    {
+        "id": "breaker3hpRO",
+        "label": "3HP R/O Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 8.4,
+        "msp": "12A",
+        "cont": null
+    },
+    {
+        "id": "breaker5hpHydraflex",
+        "label": "5HP Hydraflex Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 8.4,
+        "msp": "12A",
+        "cont": null
+    },
+    {
+        "id": "breaker5hpAirComp",
+        "label": "5HP Air Comp Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 14.3,
+        "msp": "25A",
+        "cont": null
+    },
+    {
+        "id": "breaker5hpBoosterPump",
+        "label": "5HP Booster Pump Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 14.3,
+        "msp": "25A",
+        "cont": null
+    },
+    {
+        "id": "breaker5hpRO",
+        "label": "5HP R/O Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 14.3,
+        "msp": "25A",
+        "cont": null
+    },
+    {
+        "id": "breaker5hpReclaim",
+        "label": "5HP Reclaim Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 14.3,
+        "msp": "25A",
+        "cont": null
+    },
+    {
+        "id": "breaker5hpRejectPump",
+        "label": "5HP Reject Pump Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 14.3,
+        "msp": "25A",
+        "cont": null
+    },
+    {
+        "id": "breaker5hpRepressPump",
+        "label": "5HP Repress Pump Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 14.3,
+        "msp": "25A",
+        "cont": null
+    },
+    {
+        "id": "breaker6hpHydraflex",
+        "label": "6HP Hydraflex Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": null
+    },
+    {
+        "id": "breaker7hpAirComp",
+        "label": "7HP Air Comp Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": null
+    },
+    {
+        "id": "breaker10hpAirComp",
+        "label": "10HP Air Comp Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 277.09,
+        "fla": 24.0,
+        "msp": "32A",
+        "cont": null
+    },
+    {
+        "id": "breaker25hpVacuum",
+        "label": "25HP Vacuum Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 361.79,
+        "fla": 62.0,
+        "msp": "75A",
+        "cont": null
+    },
+    {
+        "id": "breaker30hpVacuum",
+        "label": "30HP Vacuum Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 410.19,
+        "fla": 75.0,
+        "msp": "90A",
+        "cont": null
+    },
+    {
+        "id": "breaker40hpVacuum",
+        "label": "40HP Vacuum Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 410.19,
+        "fla": 101.0,
+        "msp": "150A",
+        "cont": null
+    },
+    {
+        "id": "breaker50hpVacuum",
+        "label": "50HP Vacuum Breaker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 603.79,
+        "fla": 124,
+        "msp": "175A",
+        "cont": null
+    },
+    {
+        "id": "7hp2FLOther",
+        "label": "7.5HP 2FL **Other**",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hpHaloPump",
+        "label": "7.5HP Halo Pump",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 21.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hpPrepGun",
+        "label": "7.5HP Prep Gun",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 21.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp2FLWraps",
+        "label": "7.5HP 2FL Wraps",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp2FLTireRocker",
+        "label": "7.5HP 2FL Tire/Rocker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp2FL63inSides",
+        "label": "7.5HP 2FL 63\" Sides",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp2FLGrillBrush",
+        "label": "7.5HP 2FL Grill Brush",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp2FLOmni",
+        "label": "7.5HP 2FL Omni",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp2FLTopBrushRocker",
+        "label": "7.5HP 2FL Top Brush/Rocker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp3FLOmni",
+        "label": "7.5HP 3FL Omni",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hpConveyor",
+        "label": "7.5HP Conveyor",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp2FLConveyorTireShine",
+        "label": "7.5HP 2FL Conveyor/Tire Shine",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hpTwinConveyor",
+        "label": "7.5HP 2FL Twin Conveyor",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 289.19,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "7hp2FLTwinConveyorTireShine",
+        "label": "7.5HP 2FL Twin Converyor/Tire Shine",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 578.38,
+        "fla": 20.0,
+        "msp": "25A",
+        "cont": "38A"
+    },
+    {
+        "id": "10hpOther",
+        "label": "10HP **OTHER**",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 301.29,
+        "fla": 26.7,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hpPUOther",
+        "label": "10HP P/U **OTHER**",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 301.29,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hp3FLWrapsTire",
+        "label": "10HP 3FL Wraps/Tire",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 301.29,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hp3FLTopBrushRocker",
+        "label": "10HP 3FL Top Brush/Rocker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 301.29,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hp3FLTopSideOmniRocker",
+        "label": "10HP 3FL Top/Side Omni, Rocker",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 301.29,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hpBlower",
+        "label": "10HP Blower",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 301.29,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hpConveyor",
+        "label": "10HP Conveyor",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 301.29,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hp2FLConveyorTireShine",
+        "label": "10HP 2FL Conveyor/Tire Shine",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 301.29,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hpTwinConveyor",
+        "label": "10HP Twin Conveyor",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 602.58,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "10hp2FLTwinConveyorTireShine",
+        "label": "10HP 2FL Twin Conveyor/Tire Shine",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 602.58,
+        "fla": 27.4,
+        "msp": "32A",
+        "cont": "40A"
+    },
+    {
+        "id": "15hpPUOther",
+        "label": "15HP P/U **OTHER**",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 410.19,
+        "fla": 42.1,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpOther",
+        "label": "15HP **OTHER**",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 410.19,
+        "fla": 42.1,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpBlower",
+        "label": "15HP Blower",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 410.19,
+        "fla": 37.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "vfd15hpBlower",
+        "label": "15HP Blower VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1996.5,
+        "fla": 37.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpMammothBlower",
+        "label": "15HP Mammoth Blower",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 470.69,
+        "fla": 48.0,
+        "msp": "58A",
+        "cont": "65A"
+    },
+    {
+        "id": "vfd15hpMammothBlower",
+        "label": "15HP Mammoth Blower VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 2238.5,
+        "fla": 48.0,
+        "msp": "58A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpVacuum",
+        "label": "15HP Vacuum",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 410.19,
+        "fla": 40.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpOmniTop",
+        "label": "15HP Omni Top",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 422.29,
+        "fla": 40.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpOmniSides",
+        "label": "15HP Omni Sides",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 422.29,
+        "fla": 40.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpOmniPend",
+        "label": "15HP Omni Pend",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 422.29,
+        "fla": 40.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpOmniTurbo",
+        "label": "15HP Omni Turbo",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 422.29,
+        "fla": 40.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpOmniWheelBlaster",
+        "label": "15HP Omni Wheel Blaster",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 422.29,
+        "fla": 40.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "15hpOmniMirrorRinse",
+        "label": "15HP Omni Mirror Rinse",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 422.29,
+        "fla": 40.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "vfd15hpOmni",
+        "label": "15HP Omni VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 1996.5,
+        "fla": 40.5,
+        "msp": "50A",
+        "cont": "65A"
+    },
+    {
+        "id": "vfd15hpSTIConveyor",
+        "label": "15HP STI Conveyor VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 2238.5,
+        "fla": 39.7,
+        "msp": "50A",
+        "cont": "50A"
+    },
+    {
+        "id": "vfd20hpSTIConveyor",
+        "label": "20HP STI Conveyor VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 2534.95,
+        "fla": 52.9,
+        "msp": "58A",
+        "cont": "65A"
+    },
+    {
+        "id": "20hpOmniPump",
+        "label": "20HP Omni Pump",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 458.59,
+        "fla": 54.0,
+        "msp": "58A",
+        "cont": "65A"
+    },
+    {
+        "id": "20hpPUOther",
+        "label": "20HP P/U **Other**",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 458.59,
+        "fla": 54.2,
+        "msp": "58A",
+        "cont": "65A"
+    },
+    {
+        "id": "20hpVacuum",
+        "label": "20HP Vacuum",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 458.59,
+        "fla": 52.0,
+        "msp": "58A",
+        "cont": "65A"
+    },
+    {
+        "id": "25hpVacuum",
+        "label": "25HP Vacuum",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 470.69,
+        "fla": 62.0,
+        "msp": "75A",
+        "cont": "80A"
+    },
+    {
+        "id": "30hpVacuum",
+        "label": "30HP Vacuum",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 482.79,
+        "fla": 75.0,
+        "msp": "90A",
+        "cont": "95A"
+    },
+    {
+        "id": "40hpVacuum",
+        "label": "40HP Vacuum",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 519.09,
+        "fla": 101.0,
+        "msp": "125A",
+        "cont": null
+    },
+    {
+        "id": "50hpVacuum",
+        "label": "50HP Vacuum",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 961.95,
+        "fla": 124.0,
+        "msp": "175A",
+        "cont": null
+    },
+    {
+        "id": "vfd25hpVacuum",
+        "label": "25HP Vacuum VFD",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 5473.17,
+        "fla": 62.0,
+        "msp": "90A",
+        "cont": "80A"
+    },
+    {
+        "id": "40hpVacuumSS",
+        "label": "40HP Vacuum SS",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 2163.5,
+        "fla": 101.0,
+        "msp": "125A",
+        "cont": null
+    }
+]

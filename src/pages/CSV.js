@@ -1,4 +1,4 @@
-export function CSVButton({ kitsData, partsData, assembly }) {
+export function CSVButton({ projectInfo, kitsData, partsData, assembly }) {
     const downloadCSV = () => {
         if (window.confirm("Are you sure you want to download this file?")) {
             let csvString =
@@ -6,7 +6,7 @@ export function CSVButton({ kitsData, partsData, assembly }) {
 
             let partsBom = {};
 
-            const quoteID = "7777777";
+            const quoteID = projectInfo.p21Num;
 
             for (const k in assembly) {
                 if (assembly[k] > 0) {

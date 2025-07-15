@@ -5,16 +5,16 @@ import { Button } from "../components/Button";
 import { Totals } from "../components/Totals";
 
 export function Forms({
-    calcKitPrice,
+    kitsData,
+    projectInfo,
+    assembly,
     basePrice,
     totalPrice,
-    handleChangeProjectInfo,
-    handleChange,
-    handleUpdateTotals,
-    assembly,
-    projectInfo,
-    kitsData,
     handleReset,
+    handleChangeProjectInfo,
+    handleChangeAssembly,
+    handleUpdateTotals,
+    calcKitPrice,
 }) {
     return (
         <div className="container">
@@ -37,10 +37,10 @@ export function Forms({
                 <ComponentForm>
                     {kitsData.map((kit) => (
                         <ComponentRow
-                            calcKitPrice={calcKitPrice}
-                            kit={kit}
                             assembly={assembly}
-                            handleChange={handleChange}
+                            kit={kit}
+                            handleChangeAssembly={handleChangeAssembly}
+                            calcKitPrice={calcKitPrice}
                             key={kit.id}
                         />
                     ))}

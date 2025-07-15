@@ -10,15 +10,15 @@ export function ProjectInfo({ projectInfo, totalPrice }) {
         <div className="info-box">
             <div className="info-col">
                 <div className="info-row">
-                    <div className="info-label">Job Number: </div>
+                    <div className="info-label">P21 Number: </div>
                     <div className="info-content">
-                        {projectInfo.jobNum.toUpperCase()}
+                        {projectInfo.p21Num.toUpperCase()}
                     </div>
                 </div>
                 <div className="info-row">
-                    <div className="info-label">Project:</div>
+                    <div className="info-label">Project Name:</div>
                     <div className="info-content">
-                        {projectInfo.project.toUpperCase()}
+                        {projectInfo.projectName.toUpperCase()}
                     </div>
                 </div>
                 <div className="info-row">

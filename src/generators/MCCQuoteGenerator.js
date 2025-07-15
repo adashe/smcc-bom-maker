@@ -12,42 +12,20 @@ import { BomKitsView } from "../pages/BomKitsView.js";
 import { BomPartsView } from "../pages/BomPartsView.js";
 import { PDF } from "../pages/PDF.js";
 
-import kitsData from "../data/kits.json";
-import partsData from "../data/parts.json";
+export function MCCQuoteGenerator({
+    title,
+    kitsData,
+    partsData,
+    initialProjectInfo,
+}) {
+    // Build initial assembly object based on kits in kitsData
+    const initialAssembly = kitsData.reduce((prev, curr) => {
+        prev[curr.id] = 0;
+        return prev;
+    }, {});
 
-export function SMCCQuoteGenerator() {
-    let dateIn30Days = new Date();
-    dateIn30Days.setDate(dateIn30Days.getDate() + 30);
-
-    let dateIn60Days = new Date();
-    dateIn60Days.setDate(dateIn60Days.getDate() + 60);
-
-    const initialProjectInfo = {
-        jobNum: "P21###",
-        project: "West River Car Wash",
-        customer: "Sonny's",
-        contact: "Eric Ericson",
-        engineer: "Azem Karaca",
-        shipDate: dateIn30Days.toISOString().split("T")[0],
-        partsDueDate: dateIn60Days.toISOString().split("T")[0],
-        size: "small",
-        stc: "32",
-    };
-    const initialAssem = {
-        starter3hp: 0,
-        starter5hp: 0,
-        starter7hp: 0,
-        starter10hp: 0,
-        starter15hp: 0,
-        starter25hp: 0,
-        starter30hp: 0,
-        vfd1hp: 0,
-        vfd3hp: 0,
-        vfd15hp: 0,
-        vfd20hp: 0,
-    };
     const [projectInfo, setProjectInfo] = useState(initialProjectInfo);
-    const [assembly, setAssembly] = useState(initialAssem);
+    const [assembly, setAssembly] = useState(initialAssembly);
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
     const [page, setPage] = useState("forms");
@@ -58,7 +36,7 @@ export function SMCCQuoteGenerator() {
 
     function handleReset() {
         setProjectInfo(initialProjectInfo);
-        setAssembly(initialAssem);
+        setAssembly(initialAssembly);
         setBasePrice(100);
         setTotalPrice(basePrice);
     }
@@ -72,7 +50,7 @@ export function SMCCQuoteGenerator() {
         }));
     }
 
-    function handleChange(e) {
+    function handleChangeAssembly(e) {
         const { name, value } = e.target;
 
         setAssembly((previous) => ({
@@ -82,15 +60,6 @@ export function SMCCQuoteGenerator() {
     }
 
     function handleUpdateTotals() {
-        calcBasePrice();
-        calcTotalPrice();
-    }
-
-    function calcBasePrice() {
-        setBasePrice(100);
-    }
-
-    function calcTotalPrice() {
         let kitsPrice = 0;
 
         for (const kitID in assembly) {
@@ -102,23 +71,24 @@ export function SMCCQuoteGenerator() {
         setTotalPrice(kitsPrice + basePrice);
     }
 
+    // Calculate the price of each individual kit, for use in total price calculation and kits view
     function calcKitPrice(kitID) {
         const kArr = kitsData.filter((kit) => kit.id === kitID);
         const kit = kArr[0];
         let sum = 0;
 
-        // Cycle through kit components, look up in partsData, sum cost
+        // Cycle through kit components array, use ID to look up in partsData, and sum the price
         kit.components.forEach((component) => {
             const pArr = partsData.filter((part) => part.id === component);
             const part = pArr[0];
-            sum += part?.cost || 0;
+            sum += part?.price || 0;
         });
         return sum;
     }
 
     return (
         <div className="page">
-            <Header title={"SMCC Quote Generator"} />
+            <Header title={title} />
             <Navigation page={page}>
                 <Button
                     isActive={page === "forms" ? "" : "active"}
@@ -145,6 +115,7 @@ export function SMCCQuoteGenerator() {
                     PARTS VIEW
                 </Button>
                 <CSVButton
+                    projectInfo={projectInfo}
                     kitsData={kitsData}
                     partsData={partsData}
                     assembly={assembly}
@@ -153,23 +124,23 @@ export function SMCCQuoteGenerator() {
 
             {page === "forms" && (
                 <Forms
-                    calcKitPrice={calcKitPrice}
+                    kitsData={kitsData}
+                    projectInfo={projectInfo}
+                    assembly={assembly}
                     basePrice={basePrice}
                     totalPrice={totalPrice}
-                    handleChangeProjectInfo={handleChangeProjectInfo}
-                    handleChange={handleChange}
-                    handleUpdateTotals={handleUpdateTotals}
-                    assembly={assembly}
-                    projectInfo={projectInfo}
-                    kitsData={kitsData}
                     handleReset={handleReset}
+                    handleChangeProjectInfo={handleChangeProjectInfo}
+                    handleChangeAssembly={handleChangeAssembly}
+                    handleUpdateTotals={handleUpdateTotals}
+                    calcKitPrice={calcKitPrice}
                 />
             )}
             {page === "kits" && (
                 <BomKitsView
-                    assembly={assembly}
                     kitsData={kitsData}
                     partsData={partsData}
+                    assembly={assembly}
                     calcKitPrice={calcKitPrice}
                 >
                     <ProjectInfo
@@ -180,9 +151,9 @@ export function SMCCQuoteGenerator() {
             )}
             {page === "parts" && (
                 <BomPartsView
-                    assembly={assembly}
                     kitsData={kitsData}
                     partsData={partsData}
+                    assembly={assembly}
                 >
                     <ProjectInfo
                         projectInfo={projectInfo}

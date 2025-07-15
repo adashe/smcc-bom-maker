@@ -1,4 +1,4 @@
-export function BomPartsView({ assembly, kitsData, partsData, children }) {
+export function BomPartsView({ kitsData, partsData, assembly, children }) {
     // Build a partsBom from the assembly object with the parts numbers and their quantities
     let partsBom = {};
 
@@ -24,9 +24,9 @@ export function BomPartsView({ assembly, kitsData, partsData, children }) {
                 <h2>Parts View</h2>
                 <div className="part-bom-row">
                     <div className="part-bom-label">QTY</div>
-                    <div className="part-bom-label med-col">NUMBER</div>
+                    <div className="part-bom-label med-col">PART NUM</div>
                     <div className="part-bom-label wide-col">DESCRIPTION</div>
-                    <div className="part-bom-label">MANU.</div>
+                    <div className="part-bom-label">MANU</div>
                     <div className="part-bom-label">PRICE</div>
                     <div className="part-bom-label">TOTAL</div>
                 </div>
@@ -50,8 +50,8 @@ function PartsBomRow({ part, partsBom }) {
             <div className="med-col">{part.id}</div>
             <div className="wide-col">{part.description}</div>
             <div>{part.manufacturer}</div>
-            <div>${part.cost.toFixed(2)}</div>
-            <div>${(part.cost * partsBom[part.id]).toFixed(2)}</div>
+            <div>${part.price.toFixed(2)}</div>
+            <div>${(part.price * partsBom[part.id]).toFixed(2)}</div>
         </div>
     );
 }

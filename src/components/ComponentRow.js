@@ -1,4 +1,9 @@
-export function ComponentRow({ calcKitPrice, kit, assembly, handleChange }) {
+export function ComponentRow({
+    calcKitPrice,
+    kit,
+    assembly,
+    handleChangeAssembly,
+}) {
     // Select the entire value when user clicks in the input box (for easier editing)
     function handleSelect(e) {
         e.target.select();
@@ -13,7 +18,7 @@ export function ComponentRow({ calcKitPrice, kit, assembly, handleChange }) {
                         name={kit.id}
                         value={assembly[kit.id]}
                         onFocus={handleSelect}
-                        onChange={handleChange}
+                        onChange={handleChangeAssembly}
                         min={0}
                     />
                     {kit.label}

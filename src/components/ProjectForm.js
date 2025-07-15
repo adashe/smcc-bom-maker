@@ -3,11 +3,11 @@ export function ProjectForm({ projectInfo, handleChangeProjectInfo }) {
         <form className="project-form">
             <div>
                 <label>
-                    Job Number:
+                    P21 Number:
                     <input
                         type="text"
-                        name="jobNum"
-                        value={projectInfo.jobNum}
+                        name="p21Num"
+                        value={projectInfo.p21Num}
                         onChange={handleChangeProjectInfo}
                     />
                 </label>
@@ -15,11 +15,11 @@ export function ProjectForm({ projectInfo, handleChangeProjectInfo }) {
 
             <div>
                 <label>
-                    Project:
+                    Project Name:
                     <input
                         type="text"
-                        name="project"
-                        value={projectInfo.project}
+                        name="projectName"
+                        value={projectInfo.projectName}
                         onChange={handleChangeProjectInfo}
                     />
                 </label>

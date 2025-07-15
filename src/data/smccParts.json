@@ -3,7 +3,7 @@
         "id": "NSYSF22860",
         "description": "Spacial SF Enclosure w/o plate, 2200x800x600",
         "manufacturer": "Square-D",
-        "cost": 813.67,
+        "price": 813.67,
         "mm": 0,
         "category": "enclosure"
     },
@@ -11,7 +11,7 @@
         "id": "NSYSPF8200",
         "description": "Front Plinth 800x200",
         "manufacturer": "Square-D",
-        "cost": 28.94,
+        "price": 28.94,
         "mm": 0,
         "category": "enclosure"
     },
@@ -19,7 +19,7 @@
         "id": "NSYSPS6200",
         "description": "Side Panel Plinths 600x200",
         "manufacturer": "Square-D",
-        "cost": 70.33,
+        "price": 70.33,
         "mm": 0,
         "category": "enclosure"
     },
@@ -27,7 +27,7 @@
         "id": "NSYSF221060",
         "description": "Spacial SF Enclosure w/o plate, 2200x1000x600",
         "manufacturer": "Square-D",
-        "cost": 813.67,
+        "price": 813.67,
         "mm": 0,
         "category": "enclosure"
     },
@@ -35,7 +35,7 @@
         "id": "NSYSPF10200",
         "description": "Front Plinth 1000x200",
         "manufacturer": "Square-D",
-        "cost": 28.94,
+        "price": 28.94,
         "mm": 0,
         "category": "enclosure"
     },
@@ -43,7 +43,7 @@
         "id": "NSYEC106",
         "description": "Plain cab gland plate 1000x600 SF",
         "manufacturer": "Square-D",
-        "cost": 35.9,
+        "price": 35.9,
         "mm": 0,
         "category": "enclosure"
     },
@@ -51,7 +51,7 @@
         "id": "NSYSFEB",
         "description": "SET OF2 EYE BOLTS TLN/12",
         "manufacturer": "Square-D",
-        "cost": 10.84,
+        "price": 10.84,
         "mm": 0,
         "category": "enclosure"
     },
@@ -59,7 +59,7 @@
         "id": "NSYSFBK",
         "description": "ASSEMBLY SET",
         "manufacturer": "Square-D",
-        "cost": 93.37,
+        "price": 93.37,
         "mm": 0,
         "category": "enclosure"
     },
@@ -67,7 +67,7 @@
         "id": "NSYCAG291LPF",
         "description": "OUTLET GRILL WITH FILTER FS560",
         "manufacturer": "Square-D",
-        "cost": 66.97,
+        "price": 66.97,
         "mm": 0,
         "category": "enclosure"
     },
@@ -75,7 +75,7 @@
         "id": "NSYDPA3",
         "description": "A3 plastic document pocket D22",
         "manufacturer": "Square-D",
-        "cost": 13.69,
+        "price": 13.69,
         "mm": 0,
         "category": "enclosure"
     },
@@ -83,7 +83,7 @@
         "id": "2001 213 Med",
         "description": "SATIE SMCC - Medium - No plugs",
         "manufacturer": "SATIE",
-        "cost": 0,
+        "price": 0,
         "mm": 0,
         "category": "enclosure"
     },
@@ -91,7 +91,7 @@
         "id": "2203 228 revB",
         "description": "Satie SMCC - Medium - Includes busbar",
         "manufacturer": "Satie",
-        "cost": 1190.32,
+        "price": 1190.32,
         "mm": 0,
         "category": "enclosure"
     },
@@ -99,7 +99,7 @@
         "id": "NSYEC86",
         "description": "Plain cab gland plate 800x600 SF",
         "manufacturer": "Square-D",
-        "cost": 35.9,
+        "price": 35.9,
         "mm": 0,
         "category": "enclosure"
     },
@@ -107,7 +107,7 @@
         "id": "2001 216 Large",
         "description": "SATIE SMCC - Large - No plugs",
         "manufacturer": "SATIE",
-        "cost": 0,
+        "price": 0,
         "mm": 0,
         "category": "enclosure"
     },
@@ -115,7 +115,7 @@
         "id": "NSY2SP226",
         "description": "SET OF 2 SIDE PANELS, 2200 x 600",
         "manufacturer": "Square-D",
-        "cost": 199.85,
+        "price": 199.85,
         "mm": 0,
         "category": "enclosure"
     },
@@ -123,7 +123,7 @@
         "id": "NSYCVF850M115PF",
         "description": "FAN WITH FILTER VF850/115",
         "manufacturer": "Square-D",
-        "cost": 317.69,
+        "price": 317.69,
         "mm": 0,
         "category": "fan"
     },
@@ -131,7 +131,7 @@
         "id": "DFCC2V",
         "description": "FUSEHOLDER 600V 30AMP 2POLES, Class CC",
         "manufacturer": "Square-D",
-        "cost": 0,
+        "price": 0,
         "mm": 0,
         "category": "fuse"
     },
@@ -139,7 +139,7 @@
         "id": "DFCC3V",
         "description": "FUSEHOLDER 600V 30AMP 3POLES, Class CC",
         "manufacturer": "Square-D",
-        "cost": 0,
+        "price": 0,
         "mm": 0,
         "category": "fuse"
     },
@@ -147,7 +147,7 @@
         "id": "FNQ-R-1",
         "description": "Fuse 1A, time delay",
         "manufacturer": "Bussmann",
-        "cost": 4.29,
+        "price": 4.29,
         "mm": 0,
         "category": "fuse"
     },
@@ -155,7 +155,7 @@
         "id": "FNQ-R-5",
         "description": "Fuse 5A, time delay",
         "manufacturer": "Bussmann",
-        "cost": 4.34,
+        "price": 4.34,
         "mm": 0,
         "category": "fuse"
     },
@@ -163,7 +163,7 @@
         "id": "FNQ-R-10",
         "description": "Fuse 10A, time delay",
         "manufacturer": "Bussmann",
-        "cost": 5.49,
+        "price": 5.49,
         "mm": 0,
         "category": "fuse"
     },
@@ -171,7 +171,7 @@
         "id": "GMA-3-R",
         "description": "Fuse 3A, Fast acting",
         "manufacturer": "Bussmann",
-        "cost": 0.38,
+        "price": 0.38,
         "mm": 0,
         "category": "fuse"
     },
@@ -179,7 +179,7 @@
         "id": "GMA-1-R",
         "description": "Fuse 7A, Fast acting",
         "manufacturer": "Bussmann",
-        "cost": 0.9,
+        "price": 0.9,
         "mm": 0,
         "category": "fuse"
     },
@@ -187,7 +187,7 @@
         "id": "FNQ-R-30",
         "description": "Fuse 30A, time delay, class CC",
         "manufacturer": "Bussmann",
-        "cost": 5.4,
+        "price": 5.4,
         "mm": 0,
         "category": "fuse"
     },
@@ -195,7 +195,7 @@
         "id": "JKS-100",
         "description": "Fuse 100A, Class J",
         "manufacturer": "Bussmann",
-        "cost": 23.41,
+        "price": 23.41,
         "mm": 0,
         "category": "fuse"
     },
@@ -203,7 +203,7 @@
         "id": "2004-911/1000-541",
         "description": "Fuse Holder, Remov carrier, 5x20 mm, red",
         "manufacturer": "Wago",
-        "cost": 5.54,
+        "price": 5.54,
         "mm": 0,
         "category": "fuse"
     },
@@ -211,7 +211,7 @@
         "id": "GMC-2.5-R",
         "description": "Fuse, Bussmann, TD, 2.5A, 5x20mm",
         "manufacturer": "Bussmann",
-        "cost": 0.7,
+        "price": 0.7,
         "mm": 0,
         "category": "fuse"
     },
@@ -219,7 +219,7 @@
         "id": "GMC-100-R",
         "description": "Fuse, Bussmann, TD, 100mA, 5x20mm",
         "manufacturer": "Bussmann",
-        "cost": 1.47,
+        "price": 1.47,
         "mm": 0,
         "category": "fuse"
     },
@@ -227,7 +227,7 @@
         "id": "GMC-500-R",
         "description": "Fuse, Bussmann, TD, 500mA, 5x20mm",
         "manufacturer": "Bussmann",
-        "cost": 0.92,
+        "price": 0.92,
         "mm": 0,
         "category": "fuse"
     },
@@ -235,7 +235,7 @@
         "id": "GMC-1-R",
         "description": "Fuse, Bussmann, TD, 1A, 5x20mm",
         "manufacturer": "Bussmann",
-        "cost": 0.92,
+        "price": 0.92,
         "mm": 0,
         "category": "fuse"
     },
@@ -243,7 +243,7 @@
         "id": "GMC-2-R",
         "description": "Fuse, Bussmann, TD, 2A, 5x20mm",
         "manufacturer": "Bussmann",
-        "cost": 10.12,
+        "price": 10.12,
         "mm": 0,
         "category": "fuse"
     },
@@ -251,7 +251,7 @@
         "id": "GMC-3-R",
         "description": "Fuse, Bussmann, TD, 3A, 5x20mm",
         "manufacturer": "Bussmann",
-        "cost": 0.92,
+        "price": 0.92,
         "mm": 0,
         "category": "fuse"
     },
@@ -259,7 +259,7 @@
         "id": "GMC-5-R",
         "description": "Fuse, Bussman TD, 5a, 5x20mm",
         "manufacturer": "Bussmann/Graybar",
-        "cost": 0.78,
+        "price": 0.78,
         "mm": 0,
         "category": "fuse"
     },
@@ -267,7 +267,7 @@
         "id": "709-591",
         "description": "Wago Spare Fuse Drawer",
         "manufacturer": "Wago",
-        "cost": 4.2,
+        "price": 4.2,
         "mm": 0,
         "category": "fuse"
     },
@@ -275,7 +275,7 @@
         "id": "2002-1407",
         "description": "TB, Pass-tru, spring, 2.5mm2, 2-2, Earth",
         "manufacturer": "Wago",
-        "cost": 2.71,
+        "price": 2.71,
         "mm": 0,
         "category": "terminal"
     },
@@ -283,7 +283,7 @@
         "id": "2002-2231",
         "description": "TB, Double Deck, Spring, 2.5mm2, Gray",
         "manufacturer": "Wago",
-        "cost": 1.25,
+        "price": 1.25,
         "mm": 0,
         "category": "terminal"
     },
@@ -291,7 +291,7 @@
         "id": "2002-2292",
         "description": "TB, Double Deck, End/Part Plate, Orange",
         "manufacturer": "Wago",
-        "cost": 0.41,
+        "price": 0.41,
         "mm": 0,
         "category": "terminal"
     },
@@ -299,7 +299,7 @@
         "id": "2002-1892",
         "description": "TB, Remov Carrier, End/Partition, Orange",
         "manufacturer": "Wago",
-        "cost": 0.32,
+        "price": 0.32,
         "mm": 0,
         "category": "terminal"
     },
@@ -307,7 +307,7 @@
         "id": "2002-1861",
         "description": "TB, R. Carrier, Spring, 22-12 AWG, 2-2",
         "manufacturer": "Wago",
-        "cost": 2.2,
+        "price": 2.2,
         "mm": 0,
         "category": "terminal"
     },
@@ -315,7 +315,7 @@
         "id": "2010-1201",
         "description": "TB, 2 Cond, 600V, 65A,20-6awg, gray",
         "manufacturer": "Wago",
-        "cost": 1.76,
+        "price": 1.76,
         "mm": 0,
         "category": "terminal"
     },
@@ -323,7 +323,7 @@
         "id": "2010-1207",
         "description": "TB, 2 Cond, 600V, 65A,20-6awg, ground",
         "manufacturer": "Wago",
-        "cost": 4.69,
+        "price": 4.69,
         "mm": 0,
         "category": "terminal"
     },
@@ -331,7 +331,7 @@
         "id": "2010-1292",
         "description": "Plate end and Intermediate, org",
         "manufacturer": "Wago",
-        "cost": 0.4,
+        "price": 0.4,
         "mm": 0,
         "category": "terminal"
     },
@@ -339,7 +339,7 @@
         "id": "2006-1201",
         "description": "TB, Pass-tru, spring,6mm2, 1-1, Orange",
         "manufacturer": "Wago",
-        "cost": 1.33,
+        "price": 1.33,
         "mm": 0,
         "category": "terminal"
     },
@@ -347,7 +347,7 @@
         "id": "2006-1207",
         "description": "Ground terminal 2006 series",
         "manufacturer": "Wago",
-        "cost": 4.48,
+        "price": 4.48,
         "mm": 0,
         "category": "terminal"
     },
@@ -355,7 +355,7 @@
         "id": "2006-1291",
         "description": "Plate end and Intermediate, Gray",
         "manufacturer": "Wago",
-        "cost": 0.46,
+        "price": 0.46,
         "mm": 0,
         "category": "terminal"
     },
@@ -363,7 +363,7 @@
         "id": "2006-1292",
         "description": "Plate end and Intermediate, Orange",
         "manufacturer": "Wago",
-        "cost": 0.4,
+        "price": 0.4,
         "mm": 0,
         "category": "terminal"
     },
@@ -371,7 +371,7 @@
         "id": "249-116",
         "description": "TB, End-Stop, 6 mm",
         "manufacturer": "Wago",
-        "cost": 0.63,
+        "price": 0.63,
         "mm": 0,
         "category": "terminal"
     },
@@ -379,7 +379,7 @@
         "id": "2016-1201",
         "description": "TB, 2 Cond, 600V, 85A, 20-6awg, gray",
         "manufacturer": "Wago",
-        "cost": 2.12,
+        "price": 2.12,
         "mm": 0,
         "category": "terminal"
     },
@@ -387,7 +387,7 @@
         "id": "2016-1207",
         "description": "TB, 2 Cond, 600V, 85A,20-6awg, ground",
         "manufacturer": "Wago",
-        "cost": 4.69,
+        "price": 4.69,
         "mm": 0,
         "category": "terminal"
     },
@@ -395,7 +395,7 @@
         "id": "2016-1292",
         "description": "Plate end and Intermediate, org",
         "manufacturer": "Wago",
-        "cost": 0.55,
+        "price": 0.55,
         "mm": 0,
         "category": "terminal"
     },
@@ -403,7 +403,7 @@
         "id": "2002-492",
         "description": "Jumper Bar,Vert., Push-in, Lt Gry, DDeck",
         "manufacturer": "Wago",
-        "cost": 0.81,
+        "price": 0.81,
         "mm": 0,
         "category": "terminal"
     },
@@ -411,7 +411,7 @@
         "id": "2002-410",
         "description": "JumperBar,10-Pole,Push-in,Lt Gray, 5.2mm",
         "manufacturer": "Wago",
-        "cost": 2.65,
+        "price": 2.65,
         "mm": 0,
         "category": "terminal"
     },
@@ -419,7 +419,7 @@
         "id": "2004-404",
         "description": "Jumper Bar, 4Pole, Push-in, Lt Gry 6.2mm",
         "manufacturer": "Wago",
-        "cost": 1.03,
+        "price": 1.03,
         "mm": 0,
         "category": "terminal"
     },
@@ -427,7 +427,7 @@
         "id": "2004-406",
         "description": "Jumper Bar, 6Pole, Push-in, Lt Gry,6.2mm",
         "manufacturer": "Wago",
-        "cost": 2.72,
+        "price": 2.72,
         "mm": 0,
         "category": "terminal"
     },
@@ -435,7 +435,7 @@
         "id": "2004-410",
         "description": "JumperBar, 10Pole, Push-in, Lt Gry,6.2mm",
         "manufacturer": "Wago",
-        "cost": 3.12,
+        "price": 3.12,
         "mm": 0,
         "category": "terminal"
     },
@@ -443,7 +443,7 @@
         "id": "859-408",
         "description": "Jumper Bar,8Pole,Push-in, Lt Gry,857 rly",
         "manufacturer": "Wago",
-        "cost": 1.2,
+        "price": 1.2,
         "mm": 0,
         "category": "terminal"
     },
@@ -451,7 +451,7 @@
         "id": "280-482",
         "description": "Jumper, 2-pole , Wago relay board(new board)",
         "manufacturer": "Wago",
-        "cost": 0.29,
+        "price": 0.29,
         "mm": 0,
         "category": "terminal"
     },
@@ -459,7 +459,7 @@
         "id": "721-602",
         "description": "Mating Male Connector",
         "manufacturer": "Wago",
-        "cost": 1.53,
+        "price": 1.53,
         "mm": 0,
         "category": "terminal"
     },
@@ -467,7 +467,7 @@
         "id": "GV3G264",
         "description": "2 Piece Everlink Power Busbar",
         "manufacturer": "Square-D",
-        "cost": 10.19,
+        "price": 10.19,
         "mm": 0,
         "category": "link bar"
     },
@@ -475,7 +475,7 @@
         "id": "GV2G245",
         "description": "MANUAL STARTER BUSBAR 600VAC 63AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 6.22,
+        "price": 6.22,
         "mm": 0,
         "category": "link bar"
     },
@@ -483,7 +483,7 @@
         "id": "GV2G345",
         "description": "MANUAL STARTER BUSBAR 600VAC 63AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 7.65,
+        "price": 7.65,
         "mm": 0,
         "category": "link bar"
     },
@@ -491,7 +491,7 @@
         "id": "GV2G445",
         "description": "Link Bar 4 pole",
         "manufacturer": "Square-D",
-        "cost": 9.12,
+        "price": 9.12,
         "mm": 0,
         "category": "link bar"
     },
@@ -499,7 +499,7 @@
         "id": "GV1G09",
         "description": "MAN-STARTER TERMINAL BLOCK 575VAC 63A",
         "manufacturer": "Square-D",
-        "cost": 9.26,
+        "price": 9.26,
         "mm": 0,
         "category": "link bar"
     },
@@ -507,7 +507,7 @@
         "id": "ATV320U15N4B",
         "description": "2 HP 380...500V 3 PHASE BOOK CNT VFD",
         "manufacturer": "Square-D",
-        "cost": 426.94,
+        "price": 426.94,
         "mm": 45,
         "category": "vfd"
     },
@@ -515,7 +515,7 @@
         "id": "ATV320D15N4B",
         "description": "Variable speed drive, ATV320, 15 kW, 380…500 V, 3 phases, book",
         "manufacturer": "Square-D",
-        "cost": 1194.95,
+        "price": 1194.95,
         "mm": 180,
         "category": "vfd"
     },
@@ -523,7 +523,7 @@
         "id": "VW3A3616",
         "description": "Ethernet IP Option Module",
         "manufacturer": "Square-D",
-        "cost": 165.86,
+        "price": 165.86,
         "mm": 0,
         "category": "vfd"
     },
@@ -531,7 +531,7 @@
         "id": "ATV320U22N4B",
         "description": "2 HP 380...500V 3 PHASE BOOK CNT VFD",
         "manufacturer": "Square-D",
-        "cost": 492.58,
+        "price": 492.58,
         "mm": 60,
         "category": "vfd"
     },
@@ -539,7 +539,7 @@
         "id": "ATV320D11N4B",
         "description": "Variable speed drive, ATV320, 11 kW, 380…500 V, 3 phases, book",
         "manufacturer": "Square-D",
-        "cost": 1005.82,
+        "price": 1005.82,
         "mm": 180,
         "category": "vfd"
     },
@@ -547,7 +547,7 @@
         "id": "ATV320U40N4B",
         "description": "Variable speed drive, ATV320, 4kW, 380-500V, 3 phases",
         "manufacturer": "Square-D",
-        "cost": 590.49,
+        "price": 590.49,
         "mm": 60,
         "category": "vfd"
     },
@@ -555,7 +555,7 @@
         "id": "ATV320U55N4B",
         "description": "Variable speed drive, ATV320, 5.5kW, 380-500V, 3 phases",
         "manufacturer": "Square-D",
-        "cost": 696.6,
+        "price": 696.6,
         "mm": 150,
         "category": "vfd"
     },
@@ -563,7 +563,7 @@
         "id": "ATV320U75N4B",
         "description": "Variable speed drive, ATV320, 7.5kW, 380-500V, 3 phases",
         "manufacturer": "Square-D",
-        "cost": 852.12,
+        "price": 852.12,
         "mm": 150,
         "category": "vfd"
     },
@@ -571,7 +571,7 @@
         "id": "RLW-04P803",
         "description": "Line Reactor, 3HP, 480V, 4.8A, 3% Imp.",
         "manufacturer": "MTE",
-        "cost": 78.0,
+        "price": 78.0,
         "mm": 0,
         "category": "vfd"
     },
@@ -579,7 +579,7 @@
         "id": "XPSUAF13AP",
         "description": "SAFETY RELAY 300V 2.5A PREVENTA",
         "manufacturer": "Square-D",
-        "cost": 113.21,
+        "price": 113.21,
         "mm": 0,
         "category": "relay"
     },
@@ -587,7 +587,7 @@
         "id": "CAD32B7",
         "description": "RELAY 600V 10AMP TESYS + OPTIONS",
         "manufacturer": "Square-D",
-        "cost": 31.85,
+        "price": 31.85,
         "mm": 0,
         "category": "relay"
     },
@@ -595,7 +595,7 @@
         "id": "859-354",
         "description": "Relay, 24VDC/AC, 5A",
         "manufacturer": "Wago",
-        "cost": 18.19,
+        "price": 18.19,
         "mm": 0,
         "category": "relay"
     },
@@ -603,7 +603,7 @@
         "id": "859-525",
         "description": "End Plate for Relays",
         "manufacturer": "Wago",
-        "cost": 0.27,
+        "price": 0.27,
         "mm": 0,
         "category": "relay"
     },
@@ -611,7 +611,7 @@
         "id": "RXM4AB3F7",
         "description": "Plug-in Relay 250V 6A RXM + LED,  NO MANUAL OP",
         "manufacturer": "Square-D",
-        "cost": 5.58,
+        "price": 5.58,
         "mm": 0,
         "category": "relay"
     },
@@ -619,7 +619,7 @@
         "id": "RXZE2S114M",
         "description": "RELAY SOCKET 300V 10A RUZ +OPTIONS",
         "manufacturer": "Square-D",
-        "cost": 4.42,
+        "price": 4.42,
         "mm": 0,
         "category": "relay"
     },
@@ -627,7 +627,7 @@
         "id": "60336132",
         "description": "Module, 16 Relay, 2 Bus AC//DC, Max 40A, 2.5A Per Channel",
         "manufacturer": "Wago",
-        "cost": 410.58,
+        "price": 410.58,
         "mm": 0,
         "category": "relay"
     },
@@ -635,7 +635,7 @@
         "id": "LC1DT20B7",
         "description": "24V coil, 20A relay, relay card power",
         "manufacturer": "Square-D",
-        "cost": 28.97,
+        "price": 28.97,
         "mm": 0,
         "category": "relay"
     },
@@ -643,7 +643,7 @@
         "id": "GV3P40",
         "description": "MANUAL STARTER 600VAC 40 AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 93.63,
+        "price": 93.63,
         "mm": 55,
         "category": "msp"
     },
@@ -651,7 +651,7 @@
         "id": "GV2P22",
         "description": "MANUAL STARTER 600VAC 25AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 58.19,
+        "price": 58.19,
         "mm": 45,
         "category": "msp"
     },
@@ -659,7 +659,7 @@
         "id": "GV2P10",
         "description": "MANUAL STARTER 600VAC 6.3AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 58.19,
+        "price": 58.19,
         "mm": 45,
         "category": "msp"
     },
@@ -667,7 +667,7 @@
         "id": "GV2P14",
         "description": "MANUAL STARTER 600VAC 10AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 58.19,
+        "price": 58.19,
         "mm": 45,
         "category": "msp"
     },
@@ -675,7 +675,7 @@
         "id": "GV3P65",
         "description": "MANUAL STARTER 600VAC 65 AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 93.63,
+        "price": 93.63,
         "mm": 55,
         "category": "msp"
     },
@@ -683,7 +683,7 @@
         "id": "GV2P16",
         "description": "MANUAL STARTER 600VAC 14AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 58.19,
+        "price": 58.19,
         "mm": 45,
         "category": "msp"
     },
@@ -691,7 +691,7 @@
         "id": "GV3P18",
         "description": "MANUAL STARTER 600VAC 18AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 58.19,
+        "price": 58.19,
         "mm": 55,
         "category": "msp"
     },
@@ -699,7 +699,7 @@
         "id": "GV2P20",
         "description": "MANUAL STARTER 600VAC 20AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 58.19,
+        "price": 58.19,
         "mm": 45,
         "category": "msp"
     },
@@ -707,7 +707,7 @@
         "id": "GV3P73",
         "description": "MANUAL STARTER 600VAC 73 AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 100.0,
+        "price": 100.0,
         "mm": 55,
         "category": "msp"
     },
@@ -715,7 +715,7 @@
         "id": "GV2P32",
         "description": "MANUAL STARTER 600VAC 32AMP IEC",
         "manufacturer": "Square-D",
-        "cost": 74.14,
+        "price": 74.14,
         "mm": 45,
         "category": "msp"
     },
@@ -723,7 +723,7 @@
         "id": "TM262L20MESE8T",
         "description": "Logic Controller M262, 3ns/instruction,Ethernet",
         "manufacturer": "Square-D",
-        "cost": 1273.79,
+        "price": 1273.79,
         "mm": 0,
         "category": "plc"
     },
@@ -731,7 +731,7 @@
         "id": "TM3DI32K",
         "description": "TM3-32 INPUTS HE10",
         "manufacturer": "Square-D",
-        "cost": 145.22,
+        "price": 145.22,
         "mm": 0,
         "category": "plc"
     },
@@ -739,7 +739,7 @@
         "id": "TM3DQ32TK",
         "description": "TM3-32 OUT TR.PNP HE10",
         "manufacturer": "Square-D",
-        "cost": 145.22,
+        "price": 145.22,
         "mm": 0,
         "category": "plc"
     },
@@ -747,7 +747,7 @@
         "id": "TPRVM001",
         "description": "Voltage interface module, TeSys island",
         "manufacturer": "Square-D",
-        "cost": 72.31,
+        "price": 72.31,
         "mm": 25,
         "category": "tesys island"
     },
@@ -755,7 +755,7 @@
         "id": "TPRST038",
         "description": "Direct online starter, TeSys island, 40A",
         "manufacturer": "Square-D",
-        "cost": 120.47,
+        "price": 120.47,
         "mm": 45,
         "category": "tesys island"
     },
@@ -763,7 +763,7 @@
         "id": "TPRST025",
         "description": "Direct online starter, TeSys island, 30A",
         "manufacturer": "Square-D",
-        "cost": 86.94,
+        "price": 86.94,
         "mm": 45,
         "category": "tesys island"
     },
@@ -771,7 +771,7 @@
         "id": "TPRBCEIP",
         "description": "Bus coupler, TeSys island, Ethernet",
         "manufacturer": "Square-D",
-        "cost": 179.13,
+        "price": 179.13,
         "mm": 50,
         "category": "tesys island"
     },
@@ -779,7 +779,7 @@
         "id": "TPRST009",
         "description": "Direct online starter, TeSys island, 15A",
         "manufacturer": "Square-D",
-        "cost": 68.6,
+        "price": 68.6,
         "mm": 45,
         "category": "tesys island"
     },
@@ -787,7 +787,7 @@
         "id": "TPRST065",
         "description": "Direct online starter, TeSys island, 65A",
         "manufacturer": "Square-D",
-        "cost": 193.72,
+        "price": 193.72,
         "mm": 55,
         "category": "tesys island"
     },
@@ -795,7 +795,7 @@
         "id": "XB5FVB3",
         "description": "Pilot light flush mounted, plastic, green,24V",
         "manufacturer": "Square-D",
-        "cost": 22.42,
+        "price": 22.42,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -803,7 +803,7 @@
         "id": "XB5FVB6",
         "description": "Pilot light flush mounted, plastic, blue,24V",
         "manufacturer": "Square-D",
-        "cost": 15.32,
+        "price": 15.32,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -811,7 +811,7 @@
         "id": "XB5FVG3",
         "description": "Pilot light flush mounted, plastic, green,120V",
         "manufacturer": "Square-D",
-        "cost": 22.42,
+        "price": 22.42,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -819,7 +819,7 @@
         "id": "XB5FVG6",
         "description": "Pilot light flush mounted, plastic, blue,120V",
         "manufacturer": "Square-D",
-        "cost": 22.42,
+        "price": 22.42,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -827,7 +827,7 @@
         "id": "XB5FVG4",
         "description": "Pilot light flush mounted, plastic, red,120V",
         "manufacturer": "Square-D",
-        "cost": 22.42,
+        "price": 22.42,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -835,7 +835,7 @@
         "id": "XB5FW34B5",
         "description": "Illuminated push button flush mounted,24V",
         "manufacturer": "Square-D",
-        "cost": 36.49,
+        "price": 36.49,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -843,7 +843,7 @@
         "id": "XB5FA31C0",
         "description": "Green Push button",
         "manufacturer": "Square-D",
-        "cost": 5.16,
+        "price": 5.16,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -851,7 +851,7 @@
         "id": "ZBE102",
         "description": "N/C CONTACT BLOCK",
         "manufacturer": "Square-D",
-        "cost": 5.58,
+        "price": 5.58,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -859,7 +859,7 @@
         "id": "ZBE101",
         "description": "N/O CONTACT BLOCK",
         "manufacturer": "Square-D",
-        "cost": 5.58,
+        "price": 5.58,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -867,7 +867,7 @@
         "id": "XB5AS8444",
         "description": "E-STOP TTR W/ 2NC",
         "manufacturer": "Square-D",
-        "cost": 34.65,
+        "price": 34.65,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -875,7 +875,7 @@
         "id": "ZB5FSZ3",
         "description": "Flush-mounted, XB4 / 5, Blk plastic blanking plug, IP66",
         "manufacturer": "Schneider",
-        "cost": 0,
+        "price": 0,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -883,7 +883,7 @@
         "id": "ZBY8330",
         "description": "LEGEND PLATE FOR E-STOP YELLOW",
         "manufacturer": "Square-D",
-        "cost": 1.09,
+        "price": 1.09,
         "mm": 0,
         "category": "30.5mm cutout module"
     },
@@ -891,7 +891,7 @@
         "id": "VCDN12",
         "description": "MINI MAIN EMERG. SWITCH 12A",
         "manufacturer": "Square-D",
-        "cost": 23.08,
+        "price": 23.08,
         "mm": 0,
         "category": "22.5mm cutout module"
     },
@@ -899,7 +899,7 @@
         "id": "ZB5AZ105",
         "description": "Harmony Push Button, 22mm, XB5A, 1NO, 1NC",
         "manufacturer": "Square-D",
-        "cost": 10.31,
+        "price": 10.31,
         "mm": 0,
         "category": "22.5mm cutout module"
     },
@@ -907,7 +907,7 @@
         "id": "TCSESU083FN0",
         "description": "CONNEXIUM SWITCH 8TX",
         "manufacturer": "Square-D",
-        "cost": 93.09,
+        "price": 93.09,
         "mm": 0,
         "category": "networking"
     },
@@ -915,7 +915,7 @@
         "id": "M9F43105",
         "description": "Multi9 C60BP 1P D 5A MCB",
         "manufacturer": "Square-D",
-        "cost": 15.24,
+        "price": 15.24,
         "mm": 0,
         "category": "circuit breaker"
     },
@@ -923,7 +923,7 @@
         "id": "M9F43115",
         "description": "Multi9 C60BP 1P D 15A MCB",
         "manufacturer": "Square-D",
-        "cost": 13.9,
+        "price": 13.9,
         "mm": 0,
         "category": "circuit breaker"
     },
@@ -931,7 +931,7 @@
         "id": "M9F43125",
         "description": "Multi9 C60BP 1P D 25A MCB",
         "manufacturer": "Square-D",
-        "cost": 13.9,
+        "price": 13.9,
         "mm": 0,
         "category": "circuit breaker"
     },
@@ -939,7 +939,7 @@
         "id": "M9F43140",
         "description": "Multi9 C60BP 1P D 40A MCB",
         "manufacturer": "Square-D",
-        "cost": 14.64,
+        "price": 14.64,
         "mm": 0,
         "category": "circuit breaker"
     },
@@ -947,7 +947,7 @@
         "id": "M9F43120",
         "description": "Multi9 C60BP 1P D 20A MCB",
         "manufacturer": "Square-D",
-        "cost": 13.53,
+        "price": 13.53,
         "mm": 0,
         "category": "circuit breaker"
     },
@@ -955,7 +955,7 @@
         "id": "HMIG5U2",
         "description": "HMI GTU CPU Box Open Type, Windows 7",
         "manufacturer": "Square-D",
-        "cost": 678.74,
+        "price": 678.74,
         "mm": 0,
         "category": "hmi"
     },
@@ -963,7 +963,7 @@
         "id": "HMIG5U22",
         "description": "HMI GTU CPU Box Open Type, Windows 10",
         "manufacturer": "Square-D",
-        "cost": 678.74,
+        "price": 678.74,
         "mm": 0,
         "category": "hmi"
     },
@@ -971,7 +971,7 @@
         "id": "HMIDT642",
         "description": "GTU 12.1\" Touch Smart Display XGA",
         "manufacturer": "Square-D",
-        "cost": 755.26,
+        "price": 755.26,
         "mm": 0,
         "category": "hmi"
     },
@@ -979,7 +979,7 @@
         "id": "9080LBA262104",
         "description": "POWER DISTRIBUTION BLOCK 600V 175A",
         "manufacturer": "Square-D",
-        "cost": 20.45,
+        "price": 20.45,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -987,7 +987,7 @@
         "id": "9080LBA365202",
         "description": "PWR DISTR BLK 600V 760A",
         "manufacturer": "Square-D",
-        "cost": 74.15,
+        "price": 74.15,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -995,7 +995,7 @@
         "id": "9080LBA365208",
         "description": "PWR DISTR BLK 600V 760A",
         "manufacturer": "Square-D",
-        "cost": 112.08,
+        "price": 112.08,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1003,7 +1003,7 @@
         "id": "9080LBA365212",
         "description": "PWR DISTR BLK 600V 760A",
         "manufacturer": "Square-D",
-        "cost": 116.41,
+        "price": 116.41,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1011,7 +1011,7 @@
         "id": "PL250",
         "description": "Ground lug",
         "manufacturer": "Suncoast",
-        "cost": 2.0,
+        "price": 2.0,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1019,7 +1019,7 @@
         "id": "US016251905",
         "description": "760A 30x10mm busbar, 2.4m long",
         "manufacturer": "Woehner",
-        "cost": 147.81,
+        "price": 147.81,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1027,7 +1027,7 @@
         "id": "01508",
         "description": "Universal busbar supports, UL rated",
         "manufacturer": "Woehner",
-        "cost": 15.17,
+        "price": 15.17,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1035,7 +1035,7 @@
         "id": "01573",
         "description": "Busbar endcaps",
         "manufacturer": "Woehner",
-        "cost": 3.23,
+        "price": 3.23,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1043,7 +1043,7 @@
         "id": "01245",
         "description": "Busbar cover 12 x 10mm",
         "manufacturer": "Woehner",
-        "cost": 13.24,
+        "price": 13.24,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1051,7 +1051,7 @@
         "id": "01358",
         "description": "Fixing piece spacer",
         "manufacturer": "Woehner",
-        "cost": 8.65,
+        "price": 8.65,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1059,7 +1059,7 @@
         "id": "01539",
         "description": "Cover, terminal plate",
         "manufacturer": "Woehner",
-        "cost": 27.47,
+        "price": 27.47,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1067,7 +1067,7 @@
         "id": "01537",
         "description": "Terminal plate, assy 600mcm",
         "manufacturer": "Woehner",
-        "cost": 61.03,
+        "price": 61.03,
         "mm": 153,
         "category": "power distribution and grounding"
     },
@@ -1075,7 +1075,7 @@
         "id": "31959",
         "description": "Cylindrical fuse holder, 3P, Class CC, 30A",
         "manufacturer": "Woehner",
-        "cost": 48.15,
+        "price": 48.15,
         "mm": 27,
         "category": "power distribution and grounding"
     },
@@ -1083,7 +1083,7 @@
         "id": "33422",
         "description": "Class J fuse holder, 3P, 60A",
         "manufacturer": "Woehner",
-        "cost": 0,
+        "price": 0,
         "mm": 106,
         "category": "power distribution and grounding"
     },
@@ -1091,7 +1091,7 @@
         "id": "33402",
         "description": "Class J fuse holder, 3P, 100A",
         "manufacturer": "Woehner",
-        "cost": 97.32,
+        "price": 97.32,
         "mm": 106,
         "category": "power distribution and grounding"
     },
@@ -1099,7 +1099,7 @@
         "id": "33403",
         "description": "Class J fuse holder, 3P, 200A",
         "manufacturer": "Woehner",
-        "cost": 184,
+        "price": 184,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1107,7 +1107,7 @@
         "id": "16582-3",
         "description": "3-Pole Power Distribution Block",
         "manufacturer": "Bussman",
-        "cost": 0,
+        "price": 0,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1115,7 +1115,7 @@
         "id": "9080LB22",
         "description": "Cover for LBA or LBC 262 PDB's",
         "manufacturer": "Schneider",
-        "cost": 0,
+        "price": 0,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1123,7 +1123,7 @@
         "id": "CPDB165",
         "description": "Protective Cover for 16582-3, 1 Pole Cover",
         "manufacturer": "Bussman",
-        "cost": 0,
+        "price": 0,
         "mm": 0,
         "category": "power distribution and grounding"
     },
@@ -1131,7 +1131,7 @@
         "id": "PC1MDUL",
         "description": "Phase Monitor",
         "manufacturer": "Macromatic",
-        "cost": 292.5,
+        "price": 292.5,
         "mm": 0,
         "category": "line conditioning"
     },
@@ -1139,7 +1139,7 @@
         "id": "SDSA3650",
         "description": "SPD T1 SDSA 40KA 600V MAX 3P4W",
         "manufacturer": "Square-D",
-        "cost": 90.97,
+        "price": 90.97,
         "mm": 0,
         "category": "line conditioning"
     },
@@ -1147,7 +1147,7 @@
         "id": "9070T1000D2",
         "description": "TRANSFORMER CONTROL 1000VA 240/480V-24V",
         "manufacturer": "Square-D",
-        "cost": 235.78,
+        "price": 235.78,
         "mm": 0,
         "category": "transformer"
     },
@@ -1155,7 +1155,7 @@
         "id": "9070T2000D1",
         "description": "Transformer, Control, 2kVA 240/480V-120V",
         "manufacturer": "Square-D",
-        "cost": 299.86,
+        "price": 299.86,
         "mm": 0,
         "category": "transformer"
     },
@@ -1163,7 +1163,7 @@
         "id": "2S1F",
         "description": "TRANSFORMER DRY 2KVA 240X480V-120/240V (Ship loose)",
         "manufacturer": "Square-D",
-        "cost": 268.84,
+        "price": 268.84,
         "mm": 0,
         "category": "transformer"
     },
@@ -1171,7 +1171,7 @@
         "id": "NSYCCOTHOF",
         "description": "THERMOSTAT NO Fahrenheit SCALE TS141F",
         "manufacturer": "Square-D",
-        "cost": 29.24,
+        "price": 29.24,
         "mm": 0,
         "category": "thermostat"
     },
@@ -1179,7 +1179,7 @@
         "id": "SCE-LF18",
         "description": "Cabinet Light with outlet",
         "manufacturer": "Saginaw",
-        "cost": 182.27,
+        "price": 182.27,
         "mm": 0,
         "category": "cabinet light"
     },
@@ -1187,7 +1187,7 @@
         "id": "OMNI - SCWL04C01",
         "description": "4ft. 1 CONNECTOR 1X1",
         "manufacturer": "Omni Cables",
-        "cost": 28.01,
+        "price": 28.01,
         "mm": 0,
         "category": "cable"
     },
@@ -1195,7 +1195,7 @@
         "id": "CKF-12-12-3",
         "description": "Cable, Turck, CKF-12-12-3 Plug 12-pin",
         "manufacturer": "Turck/Allied",
-        "cost": 72.61,
+        "price": 72.61,
         "mm": 0,
         "category": "cable"
     },
@@ -1203,7 +1203,7 @@
         "id": "OMNI - SCWL05C02",
         "description": "5FT. 2 Connectors 1x1",
         "manufacturer": "Omni Cables",
-        "cost": 42.6,
+        "price": 42.6,
         "mm": 0,
         "category": "cable"
     },
@@ -1211,7 +1211,7 @@
         "id": "OMNI - SCWL06C02",
         "description": "6FT. 2 Connectors 1x1",
         "manufacturer": "Omni Cables",
-        "cost": 45.25,
+        "price": 45.25,
         "mm": 0,
         "category": "cable"
     },
@@ -1219,7 +1219,7 @@
         "id": "GBPO1001-10-REDB",
         "description": "Cable, Eth, CAT5, RED, 1 End Sield, 10ft",
         "manufacturer": "Graybar",
-        "cost": 5.13,
+        "price": 5.13,
         "mm": 0,
         "category": "cable"
     },
@@ -1227,7 +1227,7 @@
         "id": "GBPO1001-10-GRNB",
         "description": "Cable, Eth, CAT5, Grn, 1 End Sield, 10ft",
         "manufacturer": "Graybar",
-        "cost": 5.13,
+        "price": 5.13,
         "mm": 0,
         "category": "cable"
     },
@@ -1235,7 +1235,7 @@
         "id": "GBPO1001-02-GRYB",
         "description": "Cable, Eth, CAT5, Gry, 1 End Sield, 2ft",
         "manufacturer": "Graybar",
-        "cost": 5.13,
+        "price": 5.13,
         "mm": 0,
         "category": "cable"
     },
@@ -1243,7 +1243,7 @@
         "id": "GBPO1001-05-GRNB",
         "description": "Cable, Eth, CAT5, Grn, 1 End Sield, 5ft",
         "manufacturer": "Graybar",
-        "cost": 5.13,
+        "price": 5.13,
         "mm": 0,
         "category": "cable"
     },
@@ -1251,7 +1251,7 @@
         "id": "GBPO1001-10-BLUB",
         "description": "Cable, Eth, CAT5, Blu, 1 End Sield, 10ft",
         "manufacturer": "Graybar",
-        "cost": 5.13,
+        "price": 5.13,
         "mm": 0,
         "category": "cable"
     },
@@ -1259,7 +1259,7 @@
         "id": "GBPO1001-15-BLUB",
         "description": "Cable, Eth, CAT5, Blu, 1 End Sield, 15ft",
         "manufacturer": "Graybar",
-        "cost": 5.13,
+        "price": 5.13,
         "mm": 0,
         "category": "cable"
     },
@@ -1267,7 +1267,7 @@
         "id": "GBPO1001-05-BLUB",
         "description": "Cable, Eth, CAT5, Blu, 1 End Sield, 5ft",
         "manufacturer": "Graybar",
-        "cost": 5.13,
+        "price": 5.13,
         "mm": 0,
         "category": "cable"
     },
@@ -1275,7 +1275,7 @@
         "id": "ECAT5SH-15-BLB",
         "description": "Cable, Eth, CAT5, Blu, Shielded + Booted, 15ft",
         "manufacturer": "Graybar",
-        "cost": 4.61,
+        "price": 4.61,
         "mm": 0,
         "category": "cable"
     },
@@ -1283,7 +1283,7 @@
         "id": "OMNI-SCWL07C01",
         "description": "7ft. 1 CONNECTOR 1X1",
         "manufacturer": "Omni Cables",
-        "cost": 28.01,
+        "price": 28.01,
         "mm": 0,
         "category": "cable"
     },
@@ -1291,7 +1291,7 @@
         "id": "GBPO1001-03-GRYB",
         "description": "Cable, Eth, CAT5, Gry, 1 End Sield, 3ft",
         "manufacturer": "Graybar",
-        "cost": 5.13,
+        "price": 5.13,
         "mm": 0,
         "category": "cable"
     },
@@ -1299,7 +1299,7 @@
         "id": "STC-32",
         "description": "STC with 32 functions",
         "manufacturer": "SunCoast",
-        "cost": 11067.24,
+        "price": 11067.24,
         "mm": 0,
         "category": "misc"
     },
@@ -1307,7 +1307,7 @@
         "id": "STC-48",
         "description": "STC with 48 functions",
         "manufacturer": "SunCoast",
-        "cost": 11567.24,
+        "price": 11567.24,
         "mm": 0,
         "category": "misc"
     },
@@ -1315,7 +1315,7 @@
         "id": "STC-64",
         "description": "STC with 64 functions",
         "manufacturer": "SunCoast",
-        "cost": 12067.24,
+        "price": 12067.24,
         "mm": 0,
         "category": "misc"
     },
@@ -1323,7 +1323,7 @@
         "id": "STC-80",
         "description": "STC with 80 functions",
         "manufacturer": "SunCoast",
-        "cost": 12567.24,
+        "price": 12567.24,
         "mm": 0,
         "category": "misc"
     },
@@ -1331,7 +1331,7 @@
         "id": "STC-96",
         "description": "STC with 96 functions",
         "manufacturer": "SunCoast",
-        "cost": 13067.24,
+        "price": 13067.24,
         "mm": 0,
         "category": "misc"
     },
@@ -1339,7 +1339,7 @@
         "id": "STC-112",
         "description": "STC with 112 functions",
         "manufacturer": "SunCoast",
-        "cost": 13567.24,
+        "price": 13567.24,
         "mm": 0,
         "category": "misc"
     },
@@ -1347,7 +1347,7 @@
         "id": "STC-128",
         "description": "STC with 128 functions",
         "manufacturer": "SunCoast",
-        "cost": 14067.24,
+        "price": 14067.24,
         "mm": 0,
         "category": "misc"
     },
@@ -1355,7 +1355,7 @@
         "id": "SDSDB-008GB-R",
         "description": "Memory Card, Flash, PLC, SD, 8GB –",
         "manufacturer": "SanDisc",
-        "cost": 12.47,
+        "price": 12.47,
         "mm": 0,
         "category": "misc"
     },
@@ -1363,7 +1363,7 @@
         "id": "890-382",
         "description": "Operating Tool Insulated 2-way",
         "manufacturer": "Wago",
-        "cost": 6.7,
+        "price": 6.7,
         "mm": 0,
         "category": "misc"
     },
@@ -1371,7 +1371,7 @@
         "id": "3RV2711-1JD10",
         "description": "MANUAL STARTER 600VAC 7-10 AMP IEC",
         "manufacturer": "Siemens",
-        "cost": 56.35,
+        "price": 56.35,
         "mm": 0,
         "category": "starter"
     },
@@ -1379,7 +1379,7 @@
         "id": "3RV2721-4CD10",
         "description": "MANUAL STARTER 600VAC 22AMP IEC",
         "manufacturer": "Siemens",
-        "cost": 127.65,
+        "price": 127.65,
         "mm": 0,
         "category": "starter"
     },
@@ -1387,7 +1387,7 @@
         "id": "3RV2742-5FD10",
         "description": "MANUAL STARTER 600VAC 35 AMP IEC",
         "manufacturer": "Siemens",
-        "cost": 197.2,
+        "price": 197.2,
         "mm": 0,
         "category": "starter"
     },
@@ -1395,7 +1395,7 @@
         "id": "3RV2742-5LD10",
         "description": "MANUAL STARTER 600VAC 60 AMP IEC",
         "manufacturer": "Siemens",
-        "cost": 248.95,
+        "price": 248.95,
         "mm": 0,
         "category": "starter"
     }

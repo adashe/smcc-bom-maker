@@ -1,7 +1,7 @@
 export function BomKitsView({
-    assembly,
     kitsData,
     partsData,
+    assembly,
     calcKitPrice,
     children,
 }) {
@@ -52,7 +52,7 @@ function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
 }
 
 function PartsList({ components, partsData, kitQty }) {
-    /* Build an object from the kit parts array with the part numbers and their quantities */
+    /* Build a kitBom from the kit parts array with the part numbers and their quantities */
     let kitBom = {};
 
     components.forEach((component) => {
@@ -66,9 +66,9 @@ function PartsList({ components, partsData, kitQty }) {
         <ul>
             <li className="kit-bom-row">
                 <div className="kit-bom-label">QTY</div>
-                <div className="kit-bom-label med-col">NUMBER</div>
+                <div className="kit-bom-label med-col">PART NUM</div>
                 <div className="kit-bom-label wide-col">DESCRIPTION</div>
-                <div className="kit-bom-label">MANU.</div>
+                <div className="kit-bom-label">MANU</div>
                 <div className="kit-bom-label">PRICE</div>
                 <div className="kit-bom-label">TOTAL</div>
             </li>
@@ -93,9 +93,9 @@ function PartListItem({ component, quantity, kitQty }) {
                 {component?.description || "Item not found in parts database"}
             </div>
             <div>{component?.manufacturer}</div>
-            <div>${component?.cost.toFixed(2) || 0.0}</div>
+            <div>${component?.price.toFixed(2) || 0.0}</div>
             <div>
-                ${(component?.cost * quantity * kitQty).toFixed(2) || 0.0}
+                ${(component?.price * quantity * kitQty).toFixed(2) || 0.0}
             </div>
         </li>
     );
