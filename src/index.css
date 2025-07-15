@@ -128,8 +128,8 @@ select {
 }
 .component-row .header {
     text-align: center;
-    margin: 10px;
     font-size: 14px;
+    font-weight: 600;
 }
 
 /* INFO BOX STYLES */

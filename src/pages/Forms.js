@@ -28,7 +28,6 @@ export function Forms({
                     totalPrice={totalPrice}
                     handleUpdateTotals={handleUpdateTotals}
                 >
-                    {" "}
                     <Button isActive={"active"} handleClick={handleReset}>
                         RESET FORM
                     </Button>
