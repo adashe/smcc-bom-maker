@@ -66,7 +66,7 @@ export default function App() {
             {generator === "460vmcc" && (
                 <MCCQuoteGenerator
                     title={"460V Quote Generator"}
-                    kitsData={SMCCKitsData}
+                    kitsData={v208MCCKitsData}
                     partsData={SMCCPartsData}
                     initialProjectInfo={SMCCInitialProjectInfo}
                 />

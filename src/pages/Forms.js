@@ -17,22 +17,23 @@ export function Forms({
     calcKitPrice,
 }) {
     return (
-        <div className="container">
-            <div>
+        <div>
+            <div className="container">
                 <ProjectForm
                     projectInfo={projectInfo}
                     handleChangeProjectInfo={handleChangeProjectInfo}
-                />
-                <Totals basePrice={basePrice} totalPrice={totalPrice}>
-                    <Button
-                        isActive={"active"}
-                        handleClick={handleUpdateTotals}
-                    >
-                        UPDATE TOTALS
+                ></ProjectForm>
+                <Totals
+                    basePrice={basePrice}
+                    totalPrice={totalPrice}
+                    handleUpdateTotals={handleUpdateTotals}
+                >
+                    {" "}
+                    <Button isActive={"active"} handleClick={handleReset}>
+                        RESET FORM
                     </Button>
                 </Totals>
             </div>
-
             <div>
                 <ComponentForm>
                     {kitsData.map((kit) => (

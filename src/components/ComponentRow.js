@@ -24,9 +24,9 @@ export function ComponentRow({
                     {kit.label}
                 </label>
             </div>
-
-            <div className="col">MSP</div>
-            <div className="col">Cont.</div>
+            <div className="col">{kit.fla || "--"}</div>
+            <div className="col">{kit.msp || "--"}</div>
+            <div className="col">{kit.cont || "--"}</div>
             <div className="col">${calcKitPrice(kit.id).toFixed(2)}</div>
         </div>
     );

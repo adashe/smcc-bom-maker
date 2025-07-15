@@ -12,7 +12,7 @@
             "2006-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "starter5hp",
@@ -27,7 +27,7 @@
             "2006-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "starter7hp",
@@ -42,7 +42,7 @@
             "2006-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "starter10hp",
@@ -57,7 +57,7 @@
             "2010-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "starter15hp",
@@ -72,7 +72,7 @@
             "2010-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "starter25hp",
@@ -87,7 +87,7 @@
             "2016-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "starter30hp",
@@ -102,7 +102,7 @@
             "2016-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "vfd1hp",
@@ -120,7 +120,7 @@
             "GBPO1001-15-BLUB"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "vfd3hp",
@@ -137,7 +137,7 @@
             "2006-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
 
     {
@@ -154,7 +154,7 @@
             "2010-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     },
     {
         "id": "vfd20hp",
@@ -170,6 +170,6 @@
             "2016-1292"
         ],
         "price": 1,
-        "fla": 1
+        "fla": null
     }
 ]

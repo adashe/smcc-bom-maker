@@ -31,11 +31,11 @@ body {
 .sidebar {
     width: 220px;
     padding-top: 120px;
-    padding-right: 20px;
+    padding-right: 10px;
     border-right: 1px solid #d3d2d2;
 }
 .page {
-    width: 1000px;
+    width: 1100px;
 }
 button {
     font-family: "Source Sans 3", serif;
@@ -79,41 +79,46 @@ select {
 
 /* PROJECT FORM STYLES */
 .project-form {
-    margin: 10px;
-    padding: 10px;
-    display: block;
+    display: flex;
+    justify-content: space-around;
     text-align: right;
+}
+.project-form div {
+    width: 300px;
+    margin-right: 40px;
 }
 
 /* TOTALS DISPLAY STYLES */
-.totals-header {
-    margin: 10px;
-}
-#totals-div {
+.totals {
     border: 1px solid #b4b3b3;
     border-radius: 3px;
-    margin: 20px;
-    padding: 10px;
+    text-align: center;
+    width: 300px;
 }
-#totals-div div {
-    text-align: left;
-    margin: 6px;
-    padding: 10px;
+.totals div {
+    margin: 20px auto;
+    padding: 10px auto;
 }
 
 /* COMPONENT FORM STYLES */
+.component-form {
+    width: 960px;
+    margin: 60px auto;
+    padding: 10px auto;
+}
 .component-row {
     display: flex;
     text-align: left;
     border-bottom: 1px solid #d3d2d2;
     align-items: center;
+    justify-content: space-between;
 }
 .component-row input {
     width: 40px;
 }
 .component-row .option-col {
     display: inline-block;
-    width: 360px;
+    width: 340px;
 }
 .component-row .col {
     display: inline-block;
@@ -123,7 +128,7 @@ select {
 }
 .component-row .header {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px;
     font-size: 14px;
 }
 
