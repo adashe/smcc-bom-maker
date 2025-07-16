@@ -21,7 +21,7 @@ export function ComponentRow({
                         onChange={handleChangeAssembly}
                         min={0}
                     />
-                    {kit.label}
+                    {kit.description}
                 </label>
             </div>
             <div className="col">{kit.fla || "--"}</div>

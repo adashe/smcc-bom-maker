@@ -6,6 +6,7 @@ import SMCCKitsData from "./data/smccKits.json";
 import SMCCPartsData from "./data/smccParts.json";
 
 import v208MCCKitsData from "./data/v208mccKits.json";
+import mccAddersData from "./data/mccAdders.json";
 
 export default function App() {
     const [generator, setGenerator] = useState("208vmcc");
@@ -39,32 +40,40 @@ export default function App() {
             />
             {generator === "smcc" && (
                 <MCCQuoteGenerator
+                    generator={generator}
                     title={"SMCC Quote Generator"}
                     kitsData={SMCCKitsData}
+                    addersData={mccAddersData}
                     partsData={SMCCPartsData}
                     initialProjectInfo={SMCCInitialProjectInfo}
                 />
             )}
             {generator === "ezmcc" && (
                 <MCCQuoteGenerator
+                    generator={generator}
                     title={"EZMCC Quote Generator"}
                     kitsData={SMCCKitsData}
+                    addersData={mccAddersData}
                     partsData={SMCCPartsData}
                     initialProjectInfo={SMCCInitialProjectInfo}
                 />
             )}
             {generator === "208vmcc" && (
                 <MCCQuoteGenerator
+                    generator={generator}
                     title={"208V Quote Generator"}
                     kitsData={v208MCCKitsData}
+                    addersData={mccAddersData}
                     partsData={SMCCPartsData}
                     initialProjectInfo={SMCCInitialProjectInfo}
                 />
             )}
             {generator === "460vmcc" && (
                 <MCCQuoteGenerator
+                    generator={generator}
                     title={"460V Quote Generator"}
                     kitsData={v208MCCKitsData}
+                    addersData={mccAddersData}
                     partsData={SMCCPartsData}
                     initialProjectInfo={SMCCInitialProjectInfo}
                 />

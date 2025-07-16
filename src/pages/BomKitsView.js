@@ -31,7 +31,7 @@ function KitBomRow({ assembly, kit, partsData, calcKitPrice }) {
     return (
         <div>
             <div className="kit-bom-row-header">
-                <div className="wide-col">{kit.label.toUpperCase()}</div>
+                <div className="wide-col">{kit.description.toUpperCase()}</div>
                 <div>QTY: {assembly[kit.id]}</div>
                 <div>KIT PRICE: ${calcKitPrice(kit.id).toFixed(2)}</div>
                 <div>

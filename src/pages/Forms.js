@@ -1,21 +1,27 @@
 import { ComponentForm } from "../components/ComponentForm";
 import { ComponentRow } from "../components/ComponentRow";
 import { ProjectForm } from "../components/ProjectForm";
+import { AddersForm } from "../components/AddersForm";
+import { AdderRow } from "../components/AdderRow";
 import { Button } from "../components/Button";
 import { Totals } from "../components/Totals";
 import { OptionsForm } from "../components/OptionsForm";
 
 export function Forms({
+    generator,
     kitsData,
+    addersData,
     projectInfo,
     options,
     assembly,
+    adders,
     basePrice,
     totalPrice,
     handleReset,
     handleChangeProjectInfo,
     handleChangeOptions,
     handleChangeAssembly,
+    handleChangeAdders,
     handleUpdateTotals,
     calcKitPrice,
 }) {
@@ -54,9 +60,42 @@ export function Forms({
                         />
                     ))}
                 </ComponentForm>
-                <Button isActive={"active"} handleClick={handleReset}>
-                    RESET FORM
-                </Button>
+                {generator === "208vmcc" && (
+                    <>
+                        <AddersForm>
+                            {addersData.map((adder) => (
+                                <AdderRow
+                                    adders={adders}
+                                    adder={adder}
+                                    handleChangeAdders={handleChangeAdders}
+                                    calcKitPrice={calcKitPrice}
+                                    key={adder.id}
+                                />
+                            ))}
+                        </AddersForm>
+                        <Button isActive={"active"} handleClick={handleReset}>
+                            RESET FORM
+                        </Button>
+                    </>
+                )}
+                {generator === "460vmcc" && (
+                    <>
+                        <AddersForm>
+                            {addersData.map((adder) => (
+                                <AdderRow
+                                    adders={adders}
+                                    adder={adder}
+                                    handleChangeAdders={handleChangeAdders}
+                                    calcKitPrice={calcKitPrice}
+                                    key={adder.id}
+                                />
+                            ))}
+                        </AddersForm>
+                        <Button isActive={"active"} handleClick={handleReset}>
+                            RESET FORM
+                        </Button>
+                    </>
+                )}
             </div>
         </div>
     );

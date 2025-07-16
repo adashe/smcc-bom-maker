@@ -1,7 +1,7 @@
 [
     {
         "id": "vfd1hpWrap",
-        "label": "1.5HP Wrap VFD",
+        "description": "1.5HP Wrap VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -18,7 +18,7 @@
     },
     {
         "id": "vfd1hpWrapBnd",
-        "label": "1.5HP Wrap VFD BND",
+        "description": "1.5HP Wrap VFD BND",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -35,7 +35,7 @@
     },
     {
         "id": "vfd1hpTopBrush",
-        "label": "1.5HP Top Brush VFD",
+        "description": "1.5HP Top Brush VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -52,7 +52,7 @@
     },
     {
         "id": "vfd1hpTopBrushRev",
-        "label": "1.5HP Top Brush VFD REV",
+        "description": "1.5HP Top Brush VFD REV",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -69,7 +69,7 @@
     },
     {
         "id": "vfd1hpTopBrushBnd",
-        "label": "1.5HP Top Brush VFD BND",
+        "description": "1.5HP Top Brush VFD BND",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -86,7 +86,7 @@
     },
     {
         "id": "vfd1hpOmni",
-        "label": "1.5HP Omni VFD",
+        "description": "1.5HP Omni VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -103,7 +103,7 @@
     },
     {
         "id": "vfd1hpMitter",
-        "label": "1.5HP Mitter VFD",
+        "description": "1.5HP Mitter VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -120,7 +120,7 @@
     },
     {
         "id": "1hpMitter",
-        "label": "1.5HP Mitter",
+        "description": "1.5HP Mitter",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -137,7 +137,7 @@
     },
     {
         "id": "vfd3hpOmni1",
-        "label": "3HP Omni 1 VFD",
+        "description": "3HP Omni 1 VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -154,7 +154,7 @@
     },
     {
         "id": "vfd3hpRocker1",
-        "label": "3HP Rocker 1 VFD",
+        "description": "3HP Rocker 1 VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -171,7 +171,7 @@
     },
     {
         "id": "vfd3hpTireBrush1",
-        "label": "3HP Tire Brush 1 VFD",
+        "description": "3HP Tire Brush 1 VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -188,7 +188,7 @@
     },
     {
         "id": "vfd3hpTireShine1",
-        "label": "3HP Tire Shine 1 VFD",
+        "description": "3HP Tire Shine 1 VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -205,7 +205,7 @@
     },
     {
         "id": "vfd3hpSideBrush1",
-        "label": "3HP Side Brush 1 VFD",
+        "description": "3HP Side Brush 1 VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -222,7 +222,7 @@
     },
     {
         "id": "vfd3hpGrillBrush1",
-        "label": "3HP Grill Brush 1 VFD",
+        "description": "3HP Grill Brush 1 VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -239,7 +239,7 @@
     },
     {
         "id": "vfd3hpWheelBlaster1",
-        "label": "3HP Wheel Blaster 1 VFD",
+        "description": "3HP Wheel Blaster 1 VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -256,7 +256,7 @@
     },
     {
         "id": "3hpBoosterPump",
-        "label": "3HP Booster Pump",
+        "description": "3HP Booster Pump",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -273,7 +273,7 @@
     },
     {
         "id": "3hpPUOmni",
-        "label": "3HP P/U Omni",
+        "description": "3HP P/U Omni",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -290,7 +290,7 @@
     },
     {
         "id": "3hpPUTireShine",
-        "label": "3HP P/U Tire Shine",
+        "description": "3HP P/U Tire Shine",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -307,7 +307,7 @@
     },
     {
         "id": "3hpPUTopBrush",
-        "label": "3HP P/U Top Brush",
+        "description": "3HP P/U Top Brush",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -324,7 +324,7 @@
     },
     {
         "id": "vfd3hpConveyor",
-        "label": "3HP Conveyor VFD",
+        "description": "3HP Conveyor VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -341,7 +341,7 @@
     },
     {
         "id": "5hpBooster",
-        "label": "5HP Booster",
+        "description": "5HP Booster",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -358,7 +358,7 @@
     },
     {
         "id": "5hpPrepGun",
-        "label": "5HP Prep Gun",
+        "description": "5HP Prep Gun",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -375,7 +375,7 @@
     },
     {
         "id": "5hpPU2FLOmni",
-        "label": "5HP P/U 2FL Omni",
+        "description": "5HP P/U 2FL Omni",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -392,7 +392,7 @@
     },
     {
         "id": "5hpPUGrillBrush",
-        "label": "5HP P/U Grill Brush",
+        "description": "5HP P/U Grill Brush",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -409,7 +409,7 @@
     },
     {
         "id": "5hpPURockers",
-        "label": "5HP P/U Rockers",
+        "description": "5HP P/U Rockers",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -426,7 +426,7 @@
     },
     {
         "id": "5hpPUSideBrush",
-        "label": "5HP P/U Side Brush",
+        "description": "5HP P/U Side Brush",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -443,7 +443,7 @@
     },
     {
         "id": "5hpPUTopBrush",
-        "label": "5HP P/U Top Brush",
+        "description": "5HP P/U Top Brush",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -460,7 +460,7 @@
     },
     {
         "id": "5hpPUTireBrush",
-        "label": "5HP P/U Tire Brush",
+        "description": "5HP P/U Tire Brush",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -477,7 +477,7 @@
     },
     {
         "id": "5hpPUTireShine",
-        "label": "5HP P/U Tire Shine",
+        "description": "5HP P/U Tire Shine",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -494,7 +494,7 @@
     },
     {
         "id": "5hpPUConveyor",
-        "label": "5HP P/U Conveyor",
+        "description": "5HP P/U Conveyor",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -511,7 +511,7 @@
     },
     {
         "id": "5hpPUTwinConveyor",
-        "label": "5HP P/U Twin Conveyor",
+        "description": "5HP P/U Twin Conveyor",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -528,7 +528,7 @@
     },
     {
         "id": "breaker1hpRO",
-        "label": "1.5HP R/O Breaker",
+        "description": "1.5HP R/O Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -545,7 +545,7 @@
     },
     {
         "id": "breaker2hpOzone",
-        "label": "2HP Ozone Breaker",
+        "description": "2HP Ozone Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -562,7 +562,7 @@
     },
     {
         "id": "breaker3hpRO",
-        "label": "3HP R/O Breaker",
+        "description": "3HP R/O Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -579,7 +579,7 @@
     },
     {
         "id": "breaker5hpHydraflex",
-        "label": "5HP Hydraflex Breaker",
+        "description": "5HP Hydraflex Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -596,7 +596,7 @@
     },
     {
         "id": "breaker5hpAirComp",
-        "label": "5HP Air Comp Breaker",
+        "description": "5HP Air Comp Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -613,7 +613,7 @@
     },
     {
         "id": "breaker5hpBoosterPump",
-        "label": "5HP Booster Pump Breaker",
+        "description": "5HP Booster Pump Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -630,7 +630,7 @@
     },
     {
         "id": "breaker5hpRO",
-        "label": "5HP R/O Breaker",
+        "description": "5HP R/O Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -647,7 +647,7 @@
     },
     {
         "id": "breaker5hpReclaim",
-        "label": "5HP Reclaim Breaker",
+        "description": "5HP Reclaim Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -664,7 +664,7 @@
     },
     {
         "id": "breaker5hpRejectPump",
-        "label": "5HP Reject Pump Breaker",
+        "description": "5HP Reject Pump Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -681,7 +681,7 @@
     },
     {
         "id": "breaker5hpRepressPump",
-        "label": "5HP Repress Pump Breaker",
+        "description": "5HP Repress Pump Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -698,7 +698,7 @@
     },
     {
         "id": "breaker6hpHydraflex",
-        "label": "6HP Hydraflex Breaker",
+        "description": "6HP Hydraflex Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -715,7 +715,7 @@
     },
     {
         "id": "breaker7hpAirComp",
-        "label": "7HP Air Comp Breaker",
+        "description": "7HP Air Comp Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -732,7 +732,7 @@
     },
     {
         "id": "breaker10hpAirComp",
-        "label": "10HP Air Comp Breaker",
+        "description": "10HP Air Comp Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -749,7 +749,7 @@
     },
     {
         "id": "breaker25hpVacuum",
-        "label": "25HP Vacuum Breaker",
+        "description": "25HP Vacuum Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -766,7 +766,7 @@
     },
     {
         "id": "breaker30hpVacuum",
-        "label": "30HP Vacuum Breaker",
+        "description": "30HP Vacuum Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -783,7 +783,7 @@
     },
     {
         "id": "breaker40hpVacuum",
-        "label": "40HP Vacuum Breaker",
+        "description": "40HP Vacuum Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -800,7 +800,7 @@
     },
     {
         "id": "breaker50hpVacuum",
-        "label": "50HP Vacuum Breaker",
+        "description": "50HP Vacuum Breaker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -817,7 +817,7 @@
     },
     {
         "id": "7hp2FLOther",
-        "label": "7.5HP 2FL **Other**",
+        "description": "7.5HP 2FL **Other**",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -834,7 +834,7 @@
     },
     {
         "id": "7hpHaloPump",
-        "label": "7.5HP Halo Pump",
+        "description": "7.5HP Halo Pump",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -851,7 +851,7 @@
     },
     {
         "id": "7hpPrepGun",
-        "label": "7.5HP Prep Gun",
+        "description": "7.5HP Prep Gun",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -868,7 +868,7 @@
     },
     {
         "id": "7hp2FLWraps",
-        "label": "7.5HP 2FL Wraps",
+        "description": "7.5HP 2FL Wraps",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -885,7 +885,7 @@
     },
     {
         "id": "7hp2FLTireRocker",
-        "label": "7.5HP 2FL Tire/Rocker",
+        "description": "7.5HP 2FL Tire/Rocker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -902,7 +902,7 @@
     },
     {
         "id": "7hp2FL63inSides",
-        "label": "7.5HP 2FL 63\" Sides",
+        "description": "7.5HP 2FL 63\" Sides",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -919,7 +919,7 @@
     },
     {
         "id": "7hp2FLGrillBrush",
-        "label": "7.5HP 2FL Grill Brush",
+        "description": "7.5HP 2FL Grill Brush",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -936,7 +936,7 @@
     },
     {
         "id": "7hp2FLOmni",
-        "label": "7.5HP 2FL Omni",
+        "description": "7.5HP 2FL Omni",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -953,7 +953,7 @@
     },
     {
         "id": "7hp2FLTopBrushRocker",
-        "label": "7.5HP 2FL Top Brush/Rocker",
+        "description": "7.5HP 2FL Top Brush/Rocker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -970,7 +970,7 @@
     },
     {
         "id": "7hp3FLOmni",
-        "label": "7.5HP 3FL Omni",
+        "description": "7.5HP 3FL Omni",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -987,7 +987,7 @@
     },
     {
         "id": "7hpConveyor",
-        "label": "7.5HP Conveyor",
+        "description": "7.5HP Conveyor",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1004,7 +1004,7 @@
     },
     {
         "id": "7hp2FLConveyorTireShine",
-        "label": "7.5HP 2FL Conveyor/Tire Shine",
+        "description": "7.5HP 2FL Conveyor/Tire Shine",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1021,7 +1021,7 @@
     },
     {
         "id": "7hpTwinConveyor",
-        "label": "7.5HP 2FL Twin Conveyor",
+        "description": "7.5HP 2FL Twin Conveyor",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1038,7 +1038,7 @@
     },
     {
         "id": "7hp2FLTwinConveyorTireShine",
-        "label": "7.5HP 2FL Twin Converyor/Tire Shine",
+        "description": "7.5HP 2FL Twin Converyor/Tire Shine",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1055,7 +1055,7 @@
     },
     {
         "id": "10hpOther",
-        "label": "10HP **OTHER**",
+        "description": "10HP **OTHER**",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1072,7 +1072,7 @@
     },
     {
         "id": "10hpPUOther",
-        "label": "10HP P/U **OTHER**",
+        "description": "10HP P/U **OTHER**",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1089,7 +1089,7 @@
     },
     {
         "id": "10hp3FLWrapsTire",
-        "label": "10HP 3FL Wraps/Tire",
+        "description": "10HP 3FL Wraps/Tire",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1106,7 +1106,7 @@
     },
     {
         "id": "10hp3FLTopBrushRocker",
-        "label": "10HP 3FL Top Brush/Rocker",
+        "description": "10HP 3FL Top Brush/Rocker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1123,7 +1123,7 @@
     },
     {
         "id": "10hp3FLTopSideOmniRocker",
-        "label": "10HP 3FL Top/Side Omni, Rocker",
+        "description": "10HP 3FL Top/Side Omni, Rocker",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1140,7 +1140,7 @@
     },
     {
         "id": "10hpBlower",
-        "label": "10HP Blower",
+        "description": "10HP Blower",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1157,7 +1157,7 @@
     },
     {
         "id": "10hpConveyor",
-        "label": "10HP Conveyor",
+        "description": "10HP Conveyor",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1174,7 +1174,7 @@
     },
     {
         "id": "10hp2FLConveyorTireShine",
-        "label": "10HP 2FL Conveyor/Tire Shine",
+        "description": "10HP 2FL Conveyor/Tire Shine",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1191,7 +1191,7 @@
     },
     {
         "id": "10hpTwinConveyor",
-        "label": "10HP Twin Conveyor",
+        "description": "10HP Twin Conveyor",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1208,7 +1208,7 @@
     },
     {
         "id": "10hp2FLTwinConveyorTireShine",
-        "label": "10HP 2FL Twin Conveyor/Tire Shine",
+        "description": "10HP 2FL Twin Conveyor/Tire Shine",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1225,7 +1225,7 @@
     },
     {
         "id": "15hpPUOther",
-        "label": "15HP P/U **OTHER**",
+        "description": "15HP P/U **OTHER**",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1242,7 +1242,7 @@
     },
     {
         "id": "15hpOther",
-        "label": "15HP **OTHER**",
+        "description": "15HP **OTHER**",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1259,7 +1259,7 @@
     },
     {
         "id": "15hpBlower",
-        "label": "15HP Blower",
+        "description": "15HP Blower",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1276,7 +1276,7 @@
     },
     {
         "id": "vfd15hpBlower",
-        "label": "15HP Blower VFD",
+        "description": "15HP Blower VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1293,7 +1293,7 @@
     },
     {
         "id": "15hpMammothBlower",
-        "label": "15HP Mammoth Blower",
+        "description": "15HP Mammoth Blower",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1310,7 +1310,7 @@
     },
     {
         "id": "vfd15hpMammothBlower",
-        "label": "15HP Mammoth Blower VFD",
+        "description": "15HP Mammoth Blower VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1327,7 +1327,7 @@
     },
     {
         "id": "15hpVacuum",
-        "label": "15HP Vacuum",
+        "description": "15HP Vacuum",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1344,7 +1344,7 @@
     },
     {
         "id": "15hpOmniTop",
-        "label": "15HP Omni Top",
+        "description": "15HP Omni Top",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1361,7 +1361,7 @@
     },
     {
         "id": "15hpOmniSides",
-        "label": "15HP Omni Sides",
+        "description": "15HP Omni Sides",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1378,7 +1378,7 @@
     },
     {
         "id": "15hpOmniPend",
-        "label": "15HP Omni Pend",
+        "description": "15HP Omni Pend",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1395,7 +1395,7 @@
     },
     {
         "id": "15hpOmniTurbo",
-        "label": "15HP Omni Turbo",
+        "description": "15HP Omni Turbo",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1412,7 +1412,7 @@
     },
     {
         "id": "15hpOmniWheelBlaster",
-        "label": "15HP Omni Wheel Blaster",
+        "description": "15HP Omni Wheel Blaster",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1429,7 +1429,7 @@
     },
     {
         "id": "15hpOmniMirrorRinse",
-        "label": "15HP Omni Mirror Rinse",
+        "description": "15HP Omni Mirror Rinse",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1446,7 +1446,7 @@
     },
     {
         "id": "vfd15hpOmni",
-        "label": "15HP Omni VFD",
+        "description": "15HP Omni VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1463,7 +1463,7 @@
     },
     {
         "id": "vfd15hpSTIConveyor",
-        "label": "15HP STI Conveyor VFD",
+        "description": "15HP STI Conveyor VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1480,7 +1480,7 @@
     },
     {
         "id": "vfd20hpSTIConveyor",
-        "label": "20HP STI Conveyor VFD",
+        "description": "20HP STI Conveyor VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1497,7 +1497,7 @@
     },
     {
         "id": "20hpOmniPump",
-        "label": "20HP Omni Pump",
+        "description": "20HP Omni Pump",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1514,7 +1514,7 @@
     },
     {
         "id": "20hpPUOther",
-        "label": "20HP P/U **Other**",
+        "description": "20HP P/U **Other**",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1531,7 +1531,7 @@
     },
     {
         "id": "20hpVacuum",
-        "label": "20HP Vacuum",
+        "description": "20HP Vacuum",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1548,7 +1548,7 @@
     },
     {
         "id": "25hpVacuum",
-        "label": "25HP Vacuum",
+        "description": "25HP Vacuum",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1565,7 +1565,7 @@
     },
     {
         "id": "30hpVacuum",
-        "label": "30HP Vacuum",
+        "description": "30HP Vacuum",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1582,7 +1582,7 @@
     },
     {
         "id": "40hpVacuum",
-        "label": "40HP Vacuum",
+        "description": "40HP Vacuum",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1599,7 +1599,7 @@
     },
     {
         "id": "50hpVacuum",
-        "label": "50HP Vacuum",
+        "description": "50HP Vacuum",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1616,7 +1616,7 @@
     },
     {
         "id": "vfd25hpVacuum",
-        "label": "25HP Vacuum VFD",
+        "description": "25HP Vacuum VFD",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -1633,7 +1633,7 @@
     },
     {
         "id": "40hpVacuumSS",
-        "label": "40HP Vacuum SS",
+        "description": "40HP Vacuum SS",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",

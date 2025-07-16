@@ -1,0 +1,408 @@
+[
+    {
+        "id": "hoaSw",
+        "description": "H-O-A SW",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 28.6
+    },
+    {
+        "id": "offOnSw",
+        "description": "OFF-ON SW",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 26.4
+    },
+    {
+        "id": "conveyorWrapOverrideSelectSw",
+        "description": "Conveyor + Wrap Override Select SW",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 37.4
+    },
+    {
+        "id": "lockoutsForSwitches",
+        "description": "Lockouts for Switches",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 17.6
+    },
+    {
+        "id": "ledLamp",
+        "description": "LED Lamp",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 28.6
+    },
+    {
+        "id": "ledLampLowOil",
+        "description": "LED Lamp - Low Oil",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 28.6
+    },
+    {
+        "id": "auxCont",
+        "description": "Aux Cont.",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 17.6
+    },
+    {
+        "id": "eStop",
+        "description": "E-Stop",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 31.9
+    },
+    {
+        "id": "conveyorStartRelayCWC",
+        "description": "Conveyor Start Relay 4P - CWC",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 38.5
+    },
+    {
+        "id": "conveyorStartRelayWBC",
+        "description": "Conveyor Start Relay 4P - ICS/WBC",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 38.5
+    },
+    {
+        "id": "conveyorStartRelayDRB",
+        "description": "Conveyor Start Relay 4P - DRB",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 38.5
+    },
+    {
+        "id": "conveyorStartRelayMicrologix",
+        "description": "Conveyor Start Relay 4P - MicroLogix",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 38.5
+    },
+    {
+        "id": "wrapRelays",
+        "description": "Wrap Relays",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 33.0
+    },
+    {
+        "id": "tmrOnDelay",
+        "description": "TMR ON DELAY",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 97.9
+    },
+    {
+        "id": "tmrOffDelay",
+        "description": "TMR OFF DELAY",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 108.9
+    },
+    {
+        "id": "WBCInstall96",
+        "description": "ICS/WBC Install per 96 functions",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 2600.0
+    },
+    {
+        "id": "DRBInstall72",
+        "description": "DRB Install 72 functions",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 2550.0
+    },
+    {
+        "id": "CWCInstall72",
+        "description": "CWC Install 72 functions",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 500.0
+    },
+    {
+        "id": "cwcInstall16board",
+        "description": "CWC Install per 16 board",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 500.0
+    },
+    {
+        "id": "plugAndPlay",
+        "description": "Plug & Play",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 115.0
+    },
+    {
+        "id": "LineReactorNo",
+        "description": "Line Reactor 2HP - No",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 176.0
+    },
+    {
+        "id": "horn",
+        "description": "Horn",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 97.9
+    },
+    {
+        "id": "startStopTunnel",
+        "description": "Start-Stop Tunnel",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 185.0
+    },
+    {
+        "id": "startStopVacsPrep",
+        "description": "Start-Stop Vacs/Prep",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 185.0
+    },
+    {
+        "id": "eStopTunnel",
+        "description": "E-Stop for Tunnel",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 95.0
+    },
+    {
+        "id": "eStopSide",
+        "description": "E-Stop Side 30mm",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 34.0
+    },
+    {
+        "id": "eStopLight",
+        "description": "E-Stop with Light",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 500.0
+    },
+    {
+        "id": "strobeLightHydraflex",
+        "description": "Strobe Light/120V Hydraflex",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 95.0
+    },
+    {
+        "id": "cbRelayPanel",
+        "description": "CB for Relay Panel",
+        "components": [
+            "3RV2711-1JD10",
+            "TPRST009",
+            "2006-1201",
+            "2006-1201",
+            "2006-1201",
+            "2006-1207",
+            "2006-1292"
+        ],
+        "price": 44.0
+    }
+]

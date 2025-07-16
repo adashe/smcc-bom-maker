@@ -1,7 +1,7 @@
 [
     {
         "id": "starter3hp",
-        "label": "1, 2, and 3HP Starter/MSP",
+        "description": "1, 2, and 3HP Starter/MSP",
         "components": [
             "3RV2711-1JD10",
             "TPRST009",
@@ -16,7 +16,7 @@
     },
     {
         "id": "starter5hp",
-        "label": "5HP Starter/MSP",
+        "description": "5HP Starter/MSP",
         "components": [
             "3RV2721-4CD10",
             "TPRST025",
@@ -31,7 +31,7 @@
     },
     {
         "id": "starter7hp",
-        "label": "7.5HP Starter/MSP",
+        "description": "7.5HP Starter/MSP",
         "components": [
             "3RV2721-4CD10",
             "TPRST025",
@@ -46,7 +46,7 @@
     },
     {
         "id": "starter10hp",
-        "label": "10HP Starter/MSP",
+        "description": "10HP Starter/MSP",
         "components": [
             "3RV2721-4CD10",
             "TPRST025",
@@ -61,7 +61,7 @@
     },
     {
         "id": "starter15hp",
-        "label": "15HP Starter/MSP",
+        "description": "15HP Starter/MSP",
         "components": [
             "3RV2742-5FD10",
             "TPRST038",
@@ -76,7 +76,7 @@
     },
     {
         "id": "starter25hp",
-        "label": "20 and 25HP Starter/MSP",
+        "description": "20 and 25HP Starter/MSP",
         "components": [
             "3RV2742-5LD10",
             "TPRST065",
@@ -91,7 +91,7 @@
     },
     {
         "id": "starter30hp",
-        "label": "20 and 25HP Starter/MSP",
+        "description": "20 and 25HP Starter/MSP",
         "components": [
             "3RV2742-5LD10",
             "TPRST065",
@@ -106,7 +106,7 @@
     },
     {
         "id": "vfd1hp",
-        "label": "1 and 1.5HP VFD/MSP",
+        "description": "1 and 1.5HP VFD/MSP",
         "components": [
             "ATV320U15N4B",
             "VW3A3616",
@@ -124,7 +124,7 @@
     },
     {
         "id": "vfd3hp",
-        "label": "2 and 3HP VFD/MSP",
+        "description": "2 and 3HP VFD/MSP",
         "components": [
             "ATV320U22N4B",
             "VW3A3616",
@@ -142,7 +142,7 @@
 
     {
         "id": "vfd15hp",
-        "label": "15HP VFD/MSP",
+        "description": "15HP VFD/MSP",
         "components": [
             "ATV320D11N4B",
             "VW3A3616",
@@ -158,7 +158,7 @@
     },
     {
         "id": "vfd20hp",
-        "label": "20HP VFD/MSP",
+        "description": "20HP VFD/MSP",
         "components": [
             "ATV320D15N4B",
             "VW3A3616",

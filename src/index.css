@@ -116,7 +116,8 @@ select {
     justify-content: space-between;
 }
 .component-row input {
-    width: 40px;
+    width: 30px;
+    padding: 4px;
 }
 .component-row .option-col {
     display: inline-block;

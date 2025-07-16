@@ -13,8 +13,10 @@ import { BomPartsView } from "../pages/BomPartsView.js";
 import { PDF } from "../pages/PDF.js";
 
 export function MCCQuoteGenerator({
+    generator,
     title,
     kitsData,
+    addersData,
     partsData,
     initialProjectInfo,
 }) {
@@ -26,9 +28,16 @@ export function MCCQuoteGenerator({
         return prev;
     }, {});
 
+    // Build initial adders object based on adders in addersData
+    const initialAdders = addersData.reduce((prev, curr) => {
+        prev[curr.id] = 0;
+        return prev;
+    }, {});
+
     const [projectInfo, setProjectInfo] = useState(initialProjectInfo);
     const [options, setOptions] = useState(initialOptions);
     const [assembly, setAssembly] = useState(initialAssembly);
+    const [adders, setAdders] = useState(initialAdders);
     const [basePrice, setBasePrice] = useState(100);
     const [totalPrice, setTotalPrice] = useState(basePrice);
     const [page, setPage] = useState("forms");
@@ -40,6 +49,7 @@ export function MCCQuoteGenerator({
     function handleReset() {
         setProjectInfo(initialProjectInfo);
         setAssembly(initialAssembly);
+        setAdders(initialAdders);
         setBasePrice(100);
         setTotalPrice(basePrice);
     }
@@ -70,16 +80,31 @@ export function MCCQuoteGenerator({
         }));
     }
 
+    function handleChangeAdders(e) {
+        const { name, value } = e.target;
+
+        setAdders((previous) => ({
+            ...previous,
+            [name]: Number(value),
+        }));
+    }
+
     function handleUpdateTotals() {
-        let kitsPrice = 0;
+        let price = 0;
 
         for (const kitID in assembly) {
             const quantity = assembly[kitID];
             const kitPrice = calcKitPrice(kitID);
-            kitsPrice += kitPrice * quantity;
+            price += kitPrice * quantity;
         }
 
-        setTotalPrice(kitsPrice + basePrice);
+        for (const adderID in adders) {
+            const quantity = adders[adderID];
+            const adderPrice = calcAdderPrice(adderID);
+            price += adderPrice * quantity;
+        }
+
+        setTotalPrice(price + basePrice);
     }
 
     // Calculate the price of each individual kit, for use in total price calculation and kits view
@@ -90,6 +115,21 @@ export function MCCQuoteGenerator({
 
         // Cycle through kit components array, use ID to look up in partsData, and sum the price
         kit.components.forEach((component) => {
+            const pArr = partsData.filter((part) => part.id === component);
+            const part = pArr[0];
+            sum += part?.price || 0;
+        });
+        return sum;
+    }
+
+    // Calculate the price of each individual adder, for use in total price calculation and kits view
+    function calcAdderPrice(adderID) {
+        const aArr = addersData.filter((adder) => adder.id === adderID);
+        const adder = aArr[0];
+        let sum = 0;
+
+        // Cycle through kit components array, use ID to look up in partsData, and sum the price
+        adder.components.forEach((component) => {
             const pArr = partsData.filter((part) => part.id === component);
             const part = pArr[0];
             sum += part?.price || 0;
@@ -135,16 +175,20 @@ export function MCCQuoteGenerator({
 
             {page === "forms" && (
                 <Forms
+                    generator={generator}
                     kitsData={kitsData}
+                    addersData={addersData}
                     projectInfo={projectInfo}
                     options={options}
                     assembly={assembly}
+                    adders={adders}
                     basePrice={basePrice}
                     totalPrice={totalPrice}
                     handleReset={handleReset}
                     handleChangeProjectInfo={handleChangeProjectInfo}
                     handleChangeOptions={handleChangeOptions}
                     handleChangeAssembly={handleChangeAssembly}
+                    handleChangeAdders={handleChangeAdders}
                     handleUpdateTotals={handleUpdateTotals}
                     calcKitPrice={calcKitPrice}
                 />
