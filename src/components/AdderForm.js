@@ -1,4 +1,4 @@
-export function AddersForm({ children }) {
+export function AdderForm({ children }) {
     return (
         <form className="component-form">
             <h2>ADDERS</h2>

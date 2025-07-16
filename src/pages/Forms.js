@@ -1,7 +1,7 @@
 import { ComponentForm } from "../components/ComponentForm";
 import { ComponentRow } from "../components/ComponentRow";
 import { ProjectForm } from "../components/ProjectForm";
-import { AddersForm } from "../components/AddersForm";
+import { AdderForm } from "../components/AdderForm";
 import { AdderRow } from "../components/AdderRow";
 import { Button } from "../components/Button";
 import { Totals } from "../components/Totals";
@@ -62,7 +62,7 @@ export function Forms({
                 </ComponentForm>
                 {generator === "208vmcc" && (
                     <>
-                        <AddersForm>
+                        <AdderForm>
                             {addersData.map((adder) => (
                                 <AdderRow
                                     adders={adders}
@@ -72,7 +72,7 @@ export function Forms({
                                     key={adder.id}
                                 />
                             ))}
-                        </AddersForm>
+                        </AdderForm>
                         <Button isActive={"active"} handleClick={handleReset}>
                             RESET FORM
                         </Button>
@@ -80,7 +80,7 @@ export function Forms({
                 )}
                 {generator === "460vmcc" && (
                     <>
-                        <AddersForm>
+                        <AdderForm>
                             {addersData.map((adder) => (
                                 <AdderRow
                                     adders={adders}
@@ -90,7 +90,7 @@ export function Forms({
                                     key={adder.id}
                                 />
                             ))}
-                        </AddersForm>
+                        </AdderForm>
                         <Button isActive={"active"} handleClick={handleReset}>
                             RESET FORM
                         </Button>
